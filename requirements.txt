@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+yfinance
+requests
+python-docx
+openpyxl
+plotly
+pandas-market-calendars
+pillow
+lxml
