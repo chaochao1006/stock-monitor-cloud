@@ -24,6 +24,21 @@ data/
 
 Streamlit Cloud 读取 `data/` 并展示网页仪表盘。
 
+## 自动清理规则
+
+为了避免 GitHub 仓库长期变大，定时任务每天会运行：
+
+```bash
+python cleanup_old_outputs.py
+```
+
+清理规则：
+
+- Word 报告：只保留最近 30 天
+- 日志 `.log`：只保留最近 3 天
+- Excel 跟踪文件：保留
+- TXT 触发记录：保留
+
 ## 本地测试
 
 ```bash

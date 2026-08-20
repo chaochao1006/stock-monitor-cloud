@@ -40,6 +40,9 @@ jobs:
       - name: Run all monitors
         run: python run_all_monitors.py
 
+      - name: Clean old reports and logs
+        run: python cleanup_old_outputs.py
+
       - name: Commit generated reports
         run: |
           git config user.name "github-actions[bot]"
