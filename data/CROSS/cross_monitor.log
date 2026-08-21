@@ -278,3 +278,10 @@
 2026-08-21 10:41:34,763 [INFO] 已更新 INSP_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/INSP_1_20260819.xlsx，记录 2/30 个交易日。
 2026-08-21 10:41:34,857 [INFO] 已更新 MRVL_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/MRVL_1_20260819.xlsx，记录 2/30 个交易日。
 2026-08-21 10:41:34,857 [INFO] 报告生成完成：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/强势金叉监控报告_2026-08-20.docx
+2026-08-21 10:49:04,497 [INFO] 报告已存在，未覆盖：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/强势金叉监控报告_2026-08-20.docx。若需覆盖请使用 --force
+2026-08-21 10:49:04,766 [INFO] 已更新 COIN_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/COIN_1_20260819.xlsx，记录 2/30 个交易日。
+2026-08-21 10:49:04,939 [INFO] 已更新 CRCL_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/CRCL_1_20260819.xlsx，记录 2/30 个交易日。
+2026-08-21 10:49:05,103 [INFO] 已更新 CRSP_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/CRSP_1_20260819.xlsx，记录 2/30 个交易日。
+2026-08-21 10:49:05,256 [INFO] 已更新 IBRX_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/IBRX_1_20260819.xlsx，记录 2/30 个交易日。
+2026-08-21 10:49:05,423 [INFO] 已更新 INSP_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/INSP_1_20260819.xlsx，记录 2/30 个交易日。
+2026-08-21 10:49:05,621 [INFO] 已更新 MRVL_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/MRVL_1_20260819.xlsx，记录 2/30 个交易日。
