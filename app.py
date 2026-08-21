@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import re
 import os
 from dataclasses import dataclass
@@ -19,6 +20,7 @@ except Exception:  # pragma: no cover - optional local dependency
 
 
 BASE_DIR = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parent / "data"))
+RUN_STATUS_PATH = BASE_DIR / "last_run_status.json"
 
 
 @dataclass(frozen=True)
@@ -103,6 +105,16 @@ def read_text_lines(path: Path) -> list[str]:
         except UnicodeDecodeError:
             continue
     return []
+
+
+@st.cache_data(ttl=60)
+def load_run_status() -> dict:
+    if not RUN_STATUS_PATH.exists():
+        return {}
+    try:
+        return json.loads(RUN_STATUS_PATH.read_text(encoding="utf-8"))
+    except Exception as exc:
+        return {"状态": "状态文件读取失败", "错误": str(exc)}
 
 
 @st.cache_data(ttl=60)
@@ -285,6 +297,28 @@ def render_kpis(triggers: pd.DataFrame, tracking: pd.DataFrame, reports: pd.Data
     st.caption(f"最新触发日期：{latest_trigger_date.strftime('%Y-%m-%d') if pd.notna(latest_trigger_date) else 'N/A'}")
 
 
+def render_run_status(status: dict) -> None:
+    st.subheader("云端运行状态")
+    if not status:
+        st.warning("还没有读取到云端运行状态文件。可能是 GitHub Actions 尚未成功运行，或还没有把 data/last_run_status.json 提交到仓库。")
+        return
+
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("最近运行状态", status.get("状态", "未知"))
+    c2.metric("结束时间", status.get("结束时间", "N/A"))
+    c3.metric("成功模块", f"{status.get('成功模块数', 0)}/{status.get('模块总数', 0)}")
+    c4.metric("耗时", f"{status.get('耗时秒', 0)} 秒")
+
+    modules = status.get("模块", [])
+    if modules:
+        display = pd.DataFrame(modules)
+        wanted = ["模块", "状态", "退出码", "触发记录数", "本次新增触发", "最新触发日期", "开始时间", "结束时间", "耗时秒"]
+        cols = [col for col in wanted if col in display.columns]
+        st.dataframe(display[cols], use_container_width=True, hide_index=True)
+    if status.get("错误"):
+        st.error(status["错误"])
+
+
 def render_tracking_section(tracking: pd.DataFrame) -> None:
     st.subheader("触发后涨跌幅排名")
     if tracking.empty:
@@ -361,6 +395,7 @@ def main() -> None:
     triggers = load_trigger_records()
     tracking = load_tracking_records()
     reports = load_reports()
+    run_status = load_run_status()
 
     module_labels = [m.label for m in MODULES]
     selected_modules = st.sidebar.multiselect("模块筛选", module_labels, default=module_labels)
@@ -369,6 +404,8 @@ def main() -> None:
         ["总览", "BOLL", "CROSS", "短线风险", "中长期风险", "BOLL中长期下跌", "报告中心", "数据诊断"],
     )
     st.sidebar.caption(f"数据目录：{BASE_DIR}")
+    if run_status:
+        st.sidebar.caption(f"最近云端运行：{run_status.get('结束时间', 'N/A')} | {run_status.get('状态', '未知')}")
     if st.sidebar.button("刷新数据"):
         st.cache_data.clear()
         st.rerun()
@@ -378,6 +415,7 @@ def main() -> None:
     filtered_reports = filter_by_modules(reports, selected_modules)
 
     if page == "总览":
+        render_run_status(run_status)
         render_kpis(filtered_triggers, filtered_tracking, filtered_reports)
         c1, c2 = st.columns([1.15, 1])
         with c1:
@@ -426,8 +464,10 @@ def main() -> None:
                 "Excel跟踪记录": len(tracking),
                 "Word报告": len(reports),
                 "基础目录存在": BASE_DIR.exists(),
+                "运行状态文件存在": RUN_STATUS_PATH.exists(),
             }
         )
+        render_run_status(run_status)
         st.dataframe(pd.DataFrame([m.__dict__ for m in MODULES]), use_container_width=True)
 
 
