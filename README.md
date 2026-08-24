@@ -10,7 +10,7 @@
 
 ## 运行逻辑
 
-GitHub Actions 每周一至周五北京时间 09:40 左右运行：
+GitHub Actions 每周一至周五北京时间 07:00 左右运行：
 
 ```bash
 python run_all_monitors.py
