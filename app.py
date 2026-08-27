@@ -96,6 +96,20 @@ def clean_symbol(raw: str) -> tuple[str, int | None]:
     return text.upper(), None
 
 
+def extract_history_percentile(detail: str) -> tuple[str, str]:
+    """从BOLL触发记录中提取历史分位，并返回清理后的信号文本。"""
+    text = str(detail or "").strip()
+    match = re.search(r"历史分位\s*[：:=]\s*(N/A|[-+]?\d+(?:\.\d+)?%?)", text, flags=re.IGNORECASE)
+    if not match:
+        return text, "N/A"
+    percentile = match.group(1)
+    if percentile.upper() != "N/A" and not percentile.endswith("%"):
+        percentile = f"{percentile}%"
+    cleaned = (text[: match.start()] + text[match.end() :]).strip()
+    cleaned = re.sub(r"\s{2,}", " ", cleaned).strip(" \t|；;,，")
+    return cleaned, percentile
+
+
 def read_text_lines(path: Path) -> list[str]:
     if not path or not path.exists():
         return []
@@ -132,19 +146,23 @@ def load_trigger_records() -> pd.DataFrame:
             trigger_date = parse_date(parts[0])
             symbol, count = clean_symbol(parts[1])
             detail = " ".join(parts[2:]).strip() if len(parts) > 2 else ""
+            history_percentile = "N/A"
+            if module.key == "boll":
+                detail, history_percentile = extract_history_percentile(detail)
             rows.append(
                 {
                     "模块": module.label,
                     "日期": trigger_date,
                     "股票": symbol,
                     "触发次数": count,
+                    "历史分位": history_percentile,
                     "信号/评分": detail,
                     "原始记录": line,
                     "来源文件": str(module.trigger_file),
                 }
             )
     if not rows:
-        return pd.DataFrame(columns=["模块", "日期", "股票", "触发次数", "信号/评分", "原始记录", "来源文件"])
+        return pd.DataFrame(columns=["模块", "日期", "股票", "触发次数", "历史分位", "信号/评分", "原始记录", "来源文件"])
     df = pd.DataFrame(rows)
     df["日期"] = pd.to_datetime(df["日期"], errors="coerce")
     return df.sort_values(["日期", "模块", "股票"], ascending=[False, True, True]).reset_index(drop=True)
@@ -355,7 +373,8 @@ def render_trigger_section(triggers: pd.DataFrame) -> None:
     if isinstance(chosen, tuple) and len(chosen) == 2:
         start, end = pd.to_datetime(chosen[0]), pd.to_datetime(chosen[1])
         triggers = triggers[(triggers["日期"] >= start) & (triggers["日期"] <= end)]
-    st.dataframe(triggers[["日期", "模块", "股票", "触发次数", "信号/评分", "原始记录"]], use_container_width=True, hide_index=True)
+    display_columns = ["日期", "模块", "股票", "触发次数", "历史分位", "信号/评分", "原始记录"]
+    st.dataframe(triggers[display_columns], use_container_width=True, hide_index=True)
 
 
 def render_reports_section(reports: pd.DataFrame) -> None:
@@ -425,7 +444,7 @@ def main() -> None:
             if filtered_triggers.empty:
                 st.info("暂无触发记录。")
             else:
-                st.dataframe(filtered_triggers.head(25)[["日期", "模块", "股票", "信号/评分"]], use_container_width=True, hide_index=True)
+                st.dataframe(filtered_triggers.head(25)[["日期", "模块", "股票", "历史分位", "信号/评分"]], use_container_width=True, hide_index=True)
             st.subheader("最新报告")
             if filtered_reports.empty:
                 st.info("暂无报告。")

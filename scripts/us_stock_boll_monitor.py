@@ -88,8 +88,8 @@ STOCK_POOL = [
     "DELL", "BB", "ONDS", "SMR", "OKLO", "IONQ", "QBTS", "NVDA", "AMZN",
     "AMD", "CRCL", "FLY", "CBRS", "CIEN", "SIVEF", "SHAZ", "LUNR", "ASTS",
     "AAOI", "INOD","SPCX","RDW","QCOM","COIN","CORZ","IREN","VELO","MSFT","GOOG","AVGO",
-    "AMAT","AMKR","LRCX","SNDK","MU","VICR","NNE","CCJ","VST","NEE","BWAY","MANE",
-    "QSI","ERAS","CRSP","IBRX","INSP",
+    "AMAT","AMKR","LRCX","SNDK","MU","VICR","NNE","CCJ","BWAY","MANE",
+    "QSI","CRSP","IBRX","INSP",
 ]
 
 REPORT_BASE_DIR = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parents[1] / "data"))
@@ -1140,6 +1140,8 @@ def append_triggered_symbols_txt(output_dir: Path, report_date: date, triggered:
         return
     txt_path = output_dir / "BOLL.txt"
     existing = set()
+    existing_lines: List[str] = []
+    key_to_count: Dict[str, int] = {}
     symbol_counts: Dict[str, int] = {}
 
     def format_signal_grade_for_txt(signal_grade: str) -> str:
@@ -1149,6 +1151,12 @@ def append_triggered_symbols_txt(output_dir: Path, report_date: date, triggered:
         if len(grade) >= 2 and grade[0] in {"A", "B", "C"} and grade[1] == ".":
             return grade
         return grade
+
+    def format_percentile_for_txt(value) -> str:
+        percentile = safe_float(value)
+        if percentile is None:
+            return "历史分位：N/A"
+        return f"历史分位：{percentile * 100:.2f}%"
 
     def parse_symbol_from_line(line: str) -> str:
         parts = line.strip().split()
@@ -1160,6 +1168,14 @@ def append_triggered_symbols_txt(output_dir: Path, report_date: date, triggered:
         elif "(" in symbol_text:
             symbol_text = symbol_text.split("(", 1)[0].strip()
         return symbol_text
+
+    def parse_count_from_line(line: str) -> int:
+        parts = line.strip().split()
+        if len(parts) < 2:
+            return 1
+        symbol_text = parts[1].strip()
+        match = re.search(r"[（(](\d+)[）)]", symbol_text)
+        return int(match.group(1)) if match else 1
 
     def parse_date_symbol_key(line: str) -> str:
         parts = line.strip().split()
@@ -1174,30 +1190,50 @@ def append_triggered_symbols_txt(output_dir: Path, report_date: date, triggered:
                 line = raw_line.strip()
                 if not line:
                     continue
+                existing_lines.append(line)
                 existing.add(parse_date_symbol_key(line))
                 symbol = parse_symbol_from_line(line)
                 if symbol:
+                    key_to_count[parse_date_symbol_key(line)] = parse_count_from_line(line)
                     symbol_counts[symbol] = symbol_counts.get(symbol, 0) + 1
         except Exception:
             existing = set()
+            existing_lines = []
+            key_to_count = {}
             symbol_counts = {}
 
     new_lines = []
+    changed = False
     date_text = report_date.strftime("%Y-%m-%d")
+
+    def build_line(result: BollResult, trigger_count: int) -> str:
+        symbol_text = f"{result.symbol}（{trigger_count}）" if trigger_count > 1 else result.symbol
+        signal_grade = format_signal_grade_for_txt(result.signal_grade)
+        percentile_text = format_percentile_for_txt(result.bandwidth_percentile)
+        detail_parts = [part for part in (signal_grade, percentile_text) if part]
+        return f"{date_text}\t{symbol_text}\t" + "\t".join(detail_parts) if detail_parts else f"{date_text}\t{symbol_text}"
+
     for result in triggered:
         key = f"{date_text}\t{result.symbol}"
-        if key not in existing:
+        if key in existing:
+            trigger_count = key_to_count.get(key, 1)
+            updated_line = build_line(result, trigger_count)
+            for idx, line in enumerate(existing_lines):
+                if parse_date_symbol_key(line) == key and line != updated_line:
+                    existing_lines[idx] = updated_line
+                    changed = True
+                    break
+        else:
             next_count = symbol_counts.get(result.symbol, 0) + 1
-            symbol_text = f"{result.symbol}（{next_count}）" if next_count > 1 else result.symbol
-            signal_grade = format_signal_grade_for_txt(result.signal_grade)
-            new_lines.append(f"{date_text}\t{symbol_text}\t{signal_grade}" if signal_grade else f"{date_text}\t{symbol_text}")
+            new_lines.append(build_line(result, next_count))
             existing.add(key)
             symbol_counts[result.symbol] = next_count
+            changed = True
 
-    if new_lines:
-        with txt_path.open("a", encoding="utf-8-sig") as f:
-            for line in new_lines:
-                f.write(line + "\n")
+    if changed:
+        txt_path.parent.mkdir(parents=True, exist_ok=True)
+        all_lines = existing_lines + new_lines
+        txt_path.write_text("\n".join(all_lines) + "\n", encoding="utf-8-sig")
 
 
 def parse_plain_symbol(symbol_text: str) -> str:
