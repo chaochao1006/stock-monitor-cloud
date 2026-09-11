@@ -1,6 +1,6 @@
 {
   "module": "BOLL分位排名",
-  "generated_at_cn": "2026-09-11 09:41:35",
+  "generated_at_cn": "2026-09-11 09:47:25",
   "ranking_date": "2026-09-09",
   "latest_data_date": "2026-09-10",
   "data_date_counts": {
@@ -18,7 +18,7 @@
     {
       "rank": 1,
       "ticker": "IBRX",
-      "company_name": "IBRX",
+      "company_name": "ImmunityBio, Inc.",
       "data_date": "2026-09-09",
       "close": 8.06,
       "upper_band": 8.4312,
@@ -34,7 +34,7 @@
     {
       "rank": 2,
       "ticker": "MU",
-      "company_name": "MU",
+      "company_name": "Micron Technology, Inc.",
       "data_date": "2026-09-09",
       "close": 1027.77,
       "upper_band": 1023.8212,
@@ -50,7 +50,7 @@
     {
       "rank": 3,
       "ticker": "GOOG",
-      "company_name": "GOOG",
+      "company_name": "Alphabet Inc.",
       "data_date": "2026-09-09",
       "close": 328.38,
       "upper_band": 347.7562,
@@ -82,7 +82,7 @@
     {
       "rank": 5,
       "ticker": "QSI",
-      "company_name": "QSI",
+      "company_name": "Quantum-Si Incorporated",
       "data_date": "2026-09-09",
       "close": 0.75,
       "upper_band": 0.8401,
@@ -130,7 +130,7 @@
     {
       "rank": 8,
       "ticker": "NNE",
-      "company_name": "NNE",
+      "company_name": "Nano Nuclear Energy Inc.",
       "data_date": "2026-09-09",
       "close": 18.17,
       "upper_band": 20.2303,
@@ -162,7 +162,7 @@
     {
       "rank": 10,
       "ticker": "VELO",
-      "company_name": "VELO",
+      "company_name": "Velo3D, Inc.",
       "data_date": "2026-09-09",
       "close": 10.91,
       "upper_band": 16.1222,
@@ -178,7 +178,7 @@
     {
       "rank": 11,
       "ticker": "SNDK",
-      "company_name": "SNDK",
+      "company_name": "Sandisk Corporation",
       "data_date": "2026-09-09",
       "close": 1764.17,
       "upper_band": 1797.3865,
@@ -210,7 +210,7 @@
     {
       "rank": 13,
       "ticker": "CCJ",
-      "company_name": "CCJ",
+      "company_name": "Cameco Corporation",
       "data_date": "2026-09-09",
       "close": 100.41,
       "upper_band": 107.0868,
@@ -290,7 +290,7 @@
     {
       "rank": 18,
       "ticker": "IREN",
-      "company_name": "IREN",
+      "company_name": "IREN LIMITED",
       "data_date": "2026-09-09",
       "close": 45.37,
       "upper_band": 47.8009,
@@ -322,7 +322,7 @@
     {
       "rank": 20,
       "ticker": "CRSP",
-      "company_name": "CRSP",
+      "company_name": "CRISPR Therapeutics AG",
       "data_date": "2026-09-09",
       "close": 53.45,
       "upper_band": 61.3041,
@@ -338,7 +338,7 @@
     {
       "rank": 21,
       "ticker": "MSFT",
-      "company_name": "MSFT",
+      "company_name": "Microsoft Corporation",
       "data_date": "2026-09-09",
       "close": 491.65,
       "upper_band": 513.5382,
@@ -354,7 +354,7 @@
     {
       "rank": 22,
       "ticker": "LRCX",
-      "company_name": "LRCX",
+      "company_name": "Lam Research Corporation",
       "data_date": "2026-09-09",
       "close": 315.84,
       "upper_band": 342.8765,
@@ -434,7 +434,7 @@
     {
       "rank": 27,
       "ticker": "QCOM",
-      "company_name": "QCOM",
+      "company_name": "QUALCOMM Incorporated",
       "data_date": "2026-09-09",
       "close": 176.4,
       "upper_band": 174.682,
@@ -450,7 +450,7 @@
     {
       "rank": 28,
       "ticker": "INSP",
-      "company_name": "INSP",
+      "company_name": "Inspire Medical Systems, Inc.",
       "data_date": "2026-09-09",
       "close": 66.48,
       "upper_band": 65.6953,
@@ -578,7 +578,7 @@
     {
       "rank": 36,
       "ticker": "RDW",
-      "company_name": "RDW",
+      "company_name": "Redwire Corporation",
       "data_date": "2026-09-09",
       "close": 10.7,
       "upper_band": 13.8751,
@@ -594,7 +594,7 @@
     {
       "rank": 37,
       "ticker": "MANE",
-      "company_name": "MANE",
+      "company_name": "Veradermics, Incorporated",
       "data_date": "2026-09-09",
       "close": 99.67,
       "upper_band": 113.8466,
@@ -722,7 +722,7 @@
     {
       "rank": 45,
       "ticker": "AMKR",
-      "company_name": "AMKR",
+      "company_name": "Amkor Technology, Inc.",
       "data_date": "2026-09-09",
       "close": 51.35,
       "upper_band": 59.6698,
@@ -802,7 +802,7 @@
     {
       "rank": 50,
       "ticker": "CORZ",
-      "company_name": "CORZ",
+      "company_name": "Core Scientific, Inc.",
       "data_date": "2026-09-09",
       "close": 18.09,
       "upper_band": 20.7525,
@@ -818,7 +818,7 @@
     {
       "rank": 51,
       "ticker": "AMAT",
-      "company_name": "AMAT",
+      "company_name": "Applied Materials, Inc.",
       "data_date": "2026-09-09",
       "close": 468.85,
       "upper_band": 546.917,
@@ -834,7 +834,7 @@
     {
       "rank": 52,
       "ticker": "VICR",
-      "company_name": "VICR",
+      "company_name": "Vicor Corporation",
       "data_date": "2026-09-09",
       "close": 183.87,
       "upper_band": 247.4486,
@@ -898,7 +898,7 @@
     {
       "rank": 56,
       "ticker": "AVGO",
-      "company_name": "AVGO",
+      "company_name": "Broadcom Inc.",
       "data_date": "2026-09-09",
       "close": 364.38,
       "upper_band": 408.5835,
@@ -914,7 +914,7 @@
     {
       "rank": 57,
       "ticker": "BWAY",
-      "company_name": "BWAY",
+      "company_name": "Brainsway Ltd.",
       "data_date": "2026-09-09",
       "close": 14.41,
       "upper_band": 16.3575,
@@ -946,7 +946,7 @@
     {
       "rank": 59,
       "ticker": "COIN",
-      "company_name": "COIN",
+      "company_name": "Coinbase Global, Inc.",
       "data_date": "2026-09-09",
       "close": 174.72,
       "upper_band": 203.064,
@@ -979,7 +979,7 @@
   "failures": [
     {
       "ticker": "SPCX",
-      "company_name": "SPCX",
+      "company_name": "Space Exploration Technologies",
       "error": "BOLL 有效数据少于60个交易日，无法计算8个月分位"
     }
   ]
