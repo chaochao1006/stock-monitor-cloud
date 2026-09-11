@@ -21,6 +21,7 @@ except Exception:  # pragma: no cover - optional local dependency
 
 BASE_DIR = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parent / "data"))
 RUN_STATUS_PATH = BASE_DIR / "last_run_status.json"
+BOLL_PERCENTILE_RANK_PATH = BASE_DIR / "BOLL" / "BOLL_percentile_rank.json"
 
 
 @dataclass(frozen=True)
@@ -129,6 +130,23 @@ def load_run_status() -> dict:
         return json.loads(RUN_STATUS_PATH.read_text(encoding="utf-8"))
     except Exception as exc:
         return {"状态": "状态文件读取失败", "错误": str(exc)}
+
+
+@st.cache_data(ttl=60)
+def load_boll_percentile_rank() -> tuple[dict, pd.DataFrame, pd.DataFrame]:
+    if not BOLL_PERCENTILE_RANK_PATH.exists():
+        return {}, pd.DataFrame(), pd.DataFrame()
+    try:
+        payload = json.loads(BOLL_PERCENTILE_RANK_PATH.read_text(encoding="utf-8"))
+    except Exception as exc:
+        return {"读取错误": str(exc)}, pd.DataFrame(), pd.DataFrame()
+
+    records = pd.DataFrame(payload.get("records", []))
+    failures = pd.DataFrame(payload.get("failures", []))
+    if not records.empty and "history_percentile" in records.columns:
+        records["history_percentile"] = pd.to_numeric(records["history_percentile"], errors="coerce")
+        records = records.sort_values(["history_percentile", "bandwidth", "ticker"], ascending=[True, True, True])
+    return payload, records.reset_index(drop=True), failures
 
 
 @st.cache_data(ttl=60)
@@ -377,6 +395,60 @@ def render_trigger_section(triggers: pd.DataFrame) -> None:
     st.dataframe(triggers[display_columns], use_container_width=True, hide_index=True)
 
 
+def render_boll_percentile_rank(meta: dict, ranking: pd.DataFrame, failures: pd.DataFrame) -> None:
+    st.header("BOLL分位排名")
+    st.caption("每日统计 BOLL 股票池全部股票的 Bandwidth 和近8个月历史分位，并按历史分位从低到高排序。")
+
+    if meta.get("读取错误"):
+        st.error(f"读取排名文件失败：{meta['读取错误']}")
+        return
+    if ranking.empty:
+        st.info("还没有 BOLL 分位排名数据。请先让 GitHub Actions 或本地 `run_all_monitors.py` 跑一次。")
+        return
+
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("排名日期", meta.get("ranking_date") or "N/A")
+    c2.metric("股票池数量", meta.get("stock_pool_count", len(ranking)))
+    c3.metric("成功计算", meta.get("success_count", len(ranking)))
+    c4.metric("失败数量", meta.get("failure_count", len(failures)))
+    if meta.get("latest_data_date") and meta.get("latest_data_date") != meta.get("ranking_date"):
+        st.caption(f"最晚数据日期：{meta.get('latest_data_date')}；排名日期采用股票池中数量最多的共同数据日期。")
+
+    display = ranking.copy()
+    display["股票"] = display["ticker"]
+    display["公司名称"] = display["company_name"]
+    display["交易日"] = display["data_date"]
+    display["收盘价"] = display["close"].map(lambda value: f"{value:.2f}" if pd.notna(value) else "N/A")
+    display["Bandwidth"] = display["bandwidth"].map(format_pct)
+    display["历史分位"] = display["history_percentile"].map(format_pct)
+    display["%B"] = display["percent_b"].map(lambda value: f"{value:.3f}" if pd.notna(value) else "N/A")
+    display["20日带宽变化"] = display["bandwidth_20d_change"].map(format_pct)
+    display["数据源"] = display["data_source"]
+    cols = ["rank", "股票", "公司名称", "交易日", "收盘价", "Bandwidth", "历史分位", "%B", "20日带宽变化", "数据源"]
+    st.dataframe(display[cols], use_container_width=True, hide_index=True)
+
+    chart_df = ranking.head(30).copy()
+    chart_df["股票显示"] = chart_df["ticker"] + " " + chart_df["company_name"].fillna("")
+    chart_df["历史分位数值"] = chart_df["history_percentile"] * 100
+    fig = px.bar(
+        chart_df.sort_values("历史分位数值", ascending=False),
+        x="历史分位数值",
+        y="股票显示",
+        orientation="h",
+        title="BOLL带宽历史分位最低的股票 Top 30",
+        labels={"历史分位数值": "近8个月历史分位(%)", "股票显示": "股票"},
+        hover_data=["data_date", "close", "bandwidth", "percent_b"],
+    )
+    fig.add_vline(x=20, line_dash="dash", line_color="#f59e0b", annotation_text="20%")
+    fig.add_vline(x=30, line_dash="dash", line_color="#94a3b8", annotation_text="30%")
+    fig.update_layout(height=720, xaxis_range=[0, max(35, chart_df["历史分位数值"].max() * 1.1)])
+    st.plotly_chart(fig, use_container_width=True)
+
+    if not failures.empty:
+        with st.expander("查看数据获取失败股票", expanded=False):
+            st.dataframe(failures, use_container_width=True, hide_index=True)
+
+
 def render_reports_section(reports: pd.DataFrame) -> None:
     st.subheader("Word 报告")
     if reports.empty:
@@ -415,12 +487,13 @@ def main() -> None:
     tracking = load_tracking_records()
     reports = load_reports()
     run_status = load_run_status()
+    boll_rank_meta, boll_rank, boll_rank_failures = load_boll_percentile_rank()
 
     module_labels = [m.label for m in MODULES]
     selected_modules = st.sidebar.multiselect("模块筛选", module_labels, default=module_labels)
     page = st.sidebar.radio(
         "页面",
-        ["总览", "BOLL", "CROSS", "短线风险", "中长期风险", "BOLL中长期下跌", "报告中心", "数据诊断"],
+        ["总览", "BOLL", "BOLL分位排名", "CROSS", "短线风险", "中长期风险", "BOLL中长期下跌", "报告中心", "数据诊断"],
     )
     st.sidebar.caption(f"数据目录：{BASE_DIR}")
     if run_status:
@@ -457,6 +530,9 @@ def main() -> None:
         render_tracking_section(filter_by_modules(tracking, modules))
         render_trigger_section(filter_by_modules(triggers, modules))
 
+    elif page == "BOLL分位排名":
+        render_boll_percentile_rank(boll_rank_meta, boll_rank, boll_rank_failures)
+
     elif page == "CROSS":
         modules = ["CROSS 金叉"]
         render_kpis(filter_by_modules(triggers, modules), filter_by_modules(tracking, modules), filter_by_modules(reports, modules))
@@ -482,8 +558,10 @@ def main() -> None:
                 "触发记录": len(triggers),
                 "Excel跟踪记录": len(tracking),
                 "Word报告": len(reports),
+                "BOLL分位排名记录": len(boll_rank),
                 "基础目录存在": BASE_DIR.exists(),
                 "运行状态文件存在": RUN_STATUS_PATH.exists(),
+                "BOLL分位排名文件存在": BOLL_PERCENTILE_RANK_PATH.exists(),
             }
         )
         render_run_status(run_status)

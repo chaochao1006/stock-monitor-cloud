@@ -18,6 +18,7 @@ BEIJING_TZ = ZoneInfo("Asia/Shanghai")
 
 MONITORS = [
     ("BOLL", SCRIPTS_DIR / "us_stock_boll_monitor.py", DATA_DIR / "BOLL" / "BOLL.txt"),
+    ("BOLL分位排名", SCRIPTS_DIR / "boll_percentile_rank.py", DATA_DIR / "BOLL" / "BOLL_percentile_rank.json"),
     ("CROSS", SCRIPTS_DIR / "cross_monitor.py", DATA_DIR / "CROSS" / "CROSS.txt"),
     ("短线风险", SCRIPTS_DIR / "short-risk.py", DATA_DIR / "drop" / "short-risk" / "RISK.txt"),
     ("中长期风险", SCRIPTS_DIR / "drop_monitor.py", DATA_DIR / "drop" / "drop.txt"),
@@ -31,9 +32,17 @@ def now_bj() -> datetime:
 
 
 def read_trigger_lines(path: Path) -> list[str]:
-    """读取触发记录行。"""
+    """读取触发记录行；JSON排名文件按 records 数组计数。"""
     if not path.exists():
         return []
+    if path.suffix.lower() == ".json":
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            records = payload.get("records", [])
+            if isinstance(records, list):
+                return [json.dumps(item, ensure_ascii=False) for item in records]
+        except Exception:
+            return []
     for encoding in ("utf-8-sig", "utf-8", "gbk"):
         try:
             return [line.strip() for line in path.read_text(encoding=encoding).splitlines() if line.strip()]
@@ -55,6 +64,17 @@ def latest_trigger_date(lines: list[str]) -> str:
     return latest
 
 
+def latest_output_date(path: Path, lines: list[str]) -> str:
+    """获取文本触发文件或JSON排名文件的最新日期。"""
+    if path.exists() and path.suffix.lower() == ".json":
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            return str(payload.get("ranking_date") or payload.get("latest_date") or "")
+        except Exception:
+            return ""
+    return latest_trigger_date(lines)
+
+
 def run_monitor(label: str, script_path: Path, trigger_file: Path) -> dict:
     """运行单个监控脚本，并返回运行状态。"""
     env = os.environ.copy()
@@ -73,7 +93,7 @@ def run_monitor(label: str, script_path: Path, trigger_file: Path) -> dict:
             "结束时间": now_bj().strftime("%Y-%m-%d %H:%M:%S"),
             "触发记录数": len(before_lines),
             "本次新增触发": 0,
-            "最新触发日期": latest_trigger_date(before_lines),
+            "最新触发日期": latest_output_date(trigger_file, before_lines),
         }
 
     result = subprocess.run(
@@ -97,7 +117,7 @@ def run_monitor(label: str, script_path: Path, trigger_file: Path) -> dict:
         "耗时秒": round((finished_at - started_at).total_seconds(), 1),
         "触发记录数": len(after_lines),
         "本次新增触发": max(len(after_lines) - len(before_lines), 0),
-        "最新触发日期": latest_trigger_date(after_lines),
+        "最新触发日期": latest_output_date(trigger_file, after_lines),
     }
 
 
@@ -137,7 +157,7 @@ def main() -> None:
                     "退出码": 124,
                     "触发记录数": len(lines),
                     "本次新增触发": 0,
-                    "最新触发日期": latest_trigger_date(lines),
+                    "最新触发日期": latest_output_date(trigger_file, lines),
                 }
             )
         except Exception as exc:
@@ -150,7 +170,7 @@ def main() -> None:
                     "退出码": 1,
                     "触发记录数": len(lines),
                     "本次新增触发": 0,
-                    "最新触发日期": latest_trigger_date(lines),
+                    "最新触发日期": latest_output_date(trigger_file, lines),
                 }
             )
 
