@@ -1,10 +1,11 @@
 {
   "module": "BOLL分位排名",
-  "generated_at_cn": "2026-09-14 09:12:45",
+  "generated_at_cn": "2026-09-15 09:34:14",
   "ranking_date": "2026-09-11",
-  "latest_data_date": "2026-09-11",
+  "latest_data_date": "2026-09-14",
   "data_date_counts": {
-    "2026-09-11": 60
+    "2026-09-11": 59,
+    "2026-09-14": 1
   },
   "stock_pool_count": 61,
   "success_count": 60,
@@ -640,6 +641,22 @@
     },
     {
       "rank": 40,
+      "ticker": "SIVEF",
+      "company_name": "Sivers Semiconductors",
+      "data_date": "2026-09-14",
+      "close": 2.8,
+      "upper_band": 4.2947,
+      "middle_band": 3.2467,
+      "lower_band": 2.1986,
+      "bandwidth": 0.645615,
+      "history_percentile": 0.306931,
+      "percent_b": 0.286902,
+      "bandwidth_20d_change": 0.055568,
+      "data_source": "Yahoo Chart API",
+      "status": "OK"
+    },
+    {
+      "rank": 41,
       "ticker": "CRSP",
       "company_name": "CRISPR Therapeutics AG",
       "data_date": "2026-09-11",
@@ -655,7 +672,7 @@
       "status": "OK"
     },
     {
-      "rank": 41,
+      "rank": 42,
       "ticker": "AMD",
       "company_name": "Advanced Micro Devices",
       "data_date": "2026-09-11",
@@ -671,7 +688,7 @@
       "status": "OK"
     },
     {
-      "rank": 42,
+      "rank": 43,
       "ticker": "QCOM",
       "company_name": "QUALCOMM Incorporated",
       "data_date": "2026-09-11",
@@ -687,7 +704,7 @@
       "status": "OK"
     },
     {
-      "rank": 43,
+      "rank": 44,
       "ticker": "QBTS",
       "company_name": "D-Wave Quantum",
       "data_date": "2026-09-11",
@@ -699,22 +716,6 @@
       "history_percentile": 0.345238,
       "percent_b": 0.279025,
       "bandwidth_20d_change": -0.138142,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 44,
-      "ticker": "SIVEF",
-      "company_name": "Sivers Semiconductors",
-      "data_date": "2026-09-11",
-      "close": 3.05,
-      "upper_band": 4.4729,
-      "middle_band": 3.328,
-      "lower_band": 2.1832,
-      "bandwidth": 0.688002,
-      "history_percentile": 0.36,
-      "percent_b": 0.378575,
-      "bandwidth_20d_change": 0.160702,
       "data_source": "Yahoo Chart API",
       "status": "OK"
     },
