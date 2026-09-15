@@ -527,8 +527,8 @@ def main() -> None:
     elif page == "BOLL":
         modules = ["BOLL 布林线"]
         render_kpis(filter_by_modules(triggers, modules), filter_by_modules(tracking, modules), filter_by_modules(reports, modules))
-        render_tracking_section(filter_by_modules(tracking, modules))
         render_trigger_section(filter_by_modules(triggers, modules))
+        render_tracking_section(filter_by_modules(tracking, modules))
 
     elif page == "BOLL分位排名":
         render_boll_percentile_rank(boll_rank_meta, boll_rank, boll_rank_failures)
@@ -536,8 +536,8 @@ def main() -> None:
     elif page == "CROSS":
         modules = ["CROSS 金叉"]
         render_kpis(filter_by_modules(triggers, modules), filter_by_modules(tracking, modules), filter_by_modules(reports, modules))
-        render_tracking_section(filter_by_modules(tracking, modules))
         render_trigger_section(filter_by_modules(triggers, modules))
+        render_tracking_section(filter_by_modules(tracking, modules))
 
     elif page == "短线风险":
         render_single_module_page("短线风险", triggers, tracking, reports)
