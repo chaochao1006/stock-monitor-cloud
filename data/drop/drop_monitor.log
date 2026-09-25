@@ -351,3 +351,14 @@
 2026-09-24 09:30:43,287 [INFO] [8/8] 分析 ONDS
 2026-09-24 09:30:43,748 [INFO] 已写入 drop.txt：2026-09-22	CRWV(1)	4分
 2026-09-24 09:30:43,748 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-09-22.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
+2026-09-25 09:37:48,441 [INFO] 开始美股技术风险监控，共 8 只股票；目标交易日：2026-09-24。
+2026-09-25 09:37:48,441 [INFO] [1/8] 分析 OPTX
+2026-09-25 09:37:49,043 [INFO] [2/8] 分析 ASTS
+2026-09-25 09:37:49,548 [INFO] [3/8] 分析 CRWV
+2026-09-25 09:37:49,966 [INFO] [4/8] 分析 FLY
+2026-09-25 09:37:50,384 [INFO] [5/8] 分析 AAOI
+2026-09-25 09:37:50,798 [INFO] [6/8] 分析 LUNR
+2026-09-25 09:37:51,218 [INFO] [7/8] 分析 CRCL
+2026-09-25 09:37:51,637 [INFO] [8/8] 分析 ONDS
+2026-09-25 09:37:52,093 [INFO] 本交易日无新增触发记录，或 drop.txt 已存在对应记录。
+2026-09-25 09:37:52,093 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-09-24.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
