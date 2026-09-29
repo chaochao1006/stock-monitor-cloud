@@ -88,7 +88,7 @@ STOCK_POOL = [
     "DELL", "BB", "ONDS", "SMR", "OKLO", "IONQ", "QBTS", "NVDA", "AMZN",
     "AMD", "CRCL", "FLY", "CBRS", "SIVEF", "SHAZ", "LUNR", "ASTS",
     "AAOI", "SPCX", "RDW", "QCOM", "COIN", "VELO", "MSFT", "GOOG", "AVGO",
-    "AMAT", "AMKR", "LRCX", "SNDK", "MU",
+    "AMAT", "AMKR", "LRCX", "SNDK", "MU", "TSLA", "PLTR", "IBM", "FORM", "MXL", "MRNA", "BE",
 ]
 
 REPORT_BASE_DIR = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parents[1] / "data"))
