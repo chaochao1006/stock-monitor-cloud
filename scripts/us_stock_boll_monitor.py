@@ -84,12 +84,11 @@ except Exception:
 
 STOCK_POOL = [
     "NOK", "XE", "RKLB", "NBIS", "ARM", "OPTX", "GLW", "COHR", "LITE",
-    "MRVL", "INTC", "ALAB", "FLNC", "CRWV", "ORCL", "NVTS", "POET",
+    "MRVL", "INTC", "ALAB", "CRWV", "ORCL", "NVTS", "POET",
     "DELL", "BB", "ONDS", "SMR", "OKLO", "IONQ", "QBTS", "NVDA", "AMZN",
-    "AMD", "CRCL", "FLY", "CBRS", "CIEN", "SIVEF", "SHAZ", "LUNR", "ASTS",
-    "AAOI", "INOD","SPCX","RDW","QCOM","COIN","CORZ","IREN","VELO","MSFT","GOOG","AVGO",
-    "AMAT","AMKR","LRCX","SNDK","MU","VICR","NNE","CCJ","BWAY","MANE",
-    "QSI","CRSP","IBRX","INSP",
+    "AMD", "CRCL", "FLY", "CBRS", "SIVEF", "SHAZ", "LUNR", "ASTS",
+    "AAOI", "SPCX", "RDW", "QCOM", "COIN", "VELO", "MSFT", "GOOG", "AVGO",
+    "AMAT", "AMKR", "LRCX", "SNDK", "MU",
 ]
 
 REPORT_BASE_DIR = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parents[1] / "data"))
