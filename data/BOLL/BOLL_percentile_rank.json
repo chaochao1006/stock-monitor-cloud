@@ -1,14 +1,14 @@
 {
   "module": "BOLL分位排名",
-  "generated_at_cn": "2026-09-29 10:37:09",
+  "generated_at_cn": "2026-09-29 16:29:32",
   "ranking_date": "2026-09-28",
   "latest_data_date": "2026-09-28",
   "data_date_counts": {
     "2026-09-25": 1,
-    "2026-09-28": 59
+    "2026-09-28": 52
   },
-  "stock_pool_count": 61,
-  "success_count": 60,
+  "stock_pool_count": 54,
+  "success_count": 53,
   "failure_count": 1,
   "lookback_days": 168,
   "lookback_note": "近8个月约168个交易日",
@@ -161,22 +161,6 @@
     },
     {
       "rank": 10,
-      "ticker": "QSI",
-      "company_name": "Quantum-Si Incorporated",
-      "data_date": "2026-09-28",
-      "close": 0.795,
-      "upper_band": 0.8113,
-      "middle_band": 0.7602,
-      "lower_band": 0.7091,
-      "bandwidth": 0.134362,
-      "history_percentile": 0.02381,
-      "percent_b": 0.840703,
-      "bandwidth_20d_change": -0.216474,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 11,
       "ticker": "SIVEF",
       "company_name": "Sivers Semiconductors",
       "data_date": "2026-09-25",
@@ -192,7 +176,7 @@
       "status": "OK"
     },
     {
-      "rank": 12,
+      "rank": 11,
       "ticker": "MSFT",
       "company_name": "Microsoft Corporation",
       "data_date": "2026-09-28",
@@ -208,7 +192,7 @@
       "status": "OK"
     },
     {
-      "rank": 13,
+      "rank": 12,
       "ticker": "LUNR",
       "company_name": "Intuitive Machines",
       "data_date": "2026-09-28",
@@ -224,7 +208,7 @@
       "status": "OK"
     },
     {
-      "rank": 14,
+      "rank": 13,
       "ticker": "CBRS",
       "company_name": "Chain Bridge Bancorp",
       "data_date": "2026-09-28",
@@ -240,7 +224,7 @@
       "status": "OK"
     },
     {
-      "rank": 15,
+      "rank": 14,
       "ticker": "RDW",
       "company_name": "Redwire Corporation",
       "data_date": "2026-09-28",
@@ -256,7 +240,7 @@
       "status": "OK"
     },
     {
-      "rank": 16,
+      "rank": 15,
       "ticker": "FLY",
       "company_name": "Firefly Aerospace",
       "data_date": "2026-09-28",
@@ -272,7 +256,7 @@
       "status": "OK"
     },
     {
-      "rank": 17,
+      "rank": 16,
       "ticker": "NBIS",
       "company_name": "Nebius Group",
       "data_date": "2026-09-28",
@@ -288,7 +272,7 @@
       "status": "OK"
     },
     {
-      "rank": 18,
+      "rank": 17,
       "ticker": "OPTX",
       "company_name": "Syntec Optics Holdings",
       "data_date": "2026-09-28",
@@ -304,23 +288,7 @@
       "status": "OK"
     },
     {
-      "rank": 19,
-      "ticker": "CRSP",
-      "company_name": "CRISPR Therapeutics AG",
-      "data_date": "2026-09-28",
-      "close": 54.09,
-      "upper_band": 59.4886,
-      "middle_band": 55.1618,
-      "lower_band": 50.8349,
-      "bandwidth": 0.15688,
-      "history_percentile": 0.077381,
-      "percent_b": 0.376152,
-      "bandwidth_20d_change": -0.309602,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 20,
+      "rank": 18,
       "ticker": "NVDA",
       "company_name": "NVIDIA",
       "data_date": "2026-09-28",
@@ -336,7 +304,7 @@
       "status": "OK"
     },
     {
-      "rank": 21,
+      "rank": 19,
       "ticker": "CRWV",
       "company_name": "CoreWeave",
       "data_date": "2026-09-28",
@@ -352,7 +320,7 @@
       "status": "OK"
     },
     {
-      "rank": 22,
+      "rank": 20,
       "ticker": "AMZN",
       "company_name": "Amazon.com",
       "data_date": "2026-09-28",
@@ -368,39 +336,7 @@
       "status": "OK"
     },
     {
-      "rank": 23,
-      "ticker": "BWAY",
-      "company_name": "Brainsway Ltd.",
-      "data_date": "2026-09-28",
-      "close": 13.25,
-      "upper_band": 14.6596,
-      "middle_band": 13.8125,
-      "lower_band": 12.9654,
-      "bandwidth": 0.122658,
-      "history_percentile": 0.107143,
-      "percent_b": 0.167989,
-      "bandwidth_20d_change": -0.355388,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 24,
-      "ticker": "CORZ",
-      "company_name": "Core Scientific, Inc.",
-      "data_date": "2026-09-28",
-      "close": 16.52,
-      "upper_band": 19.1183,
-      "middle_band": 17.467,
-      "lower_band": 15.8157,
-      "bandwidth": 0.189078,
-      "history_percentile": 0.107143,
-      "percent_b": 0.213259,
-      "bandwidth_20d_change": -0.483653,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 25,
+      "rank": 21,
       "ticker": "OKLO",
       "company_name": "Oklo",
       "data_date": "2026-09-28",
@@ -416,23 +352,7 @@
       "status": "OK"
     },
     {
-      "rank": 26,
-      "ticker": "CIEN",
-      "company_name": "Ciena",
-      "data_date": "2026-09-28",
-      "close": 344.19,
-      "upper_band": 379.8039,
-      "middle_band": 346.831,
-      "lower_band": 313.8581,
-      "bandwidth": 0.190138,
-      "history_percentile": 0.113095,
-      "percent_b": 0.459952,
-      "bandwidth_20d_change": -0.016929,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 27,
+      "rank": 22,
       "ticker": "CRCL",
       "company_name": "Circle Internet Group",
       "data_date": "2026-09-28",
@@ -448,7 +368,7 @@
       "status": "OK"
     },
     {
-      "rank": 28,
+      "rank": 23,
       "ticker": "IONQ",
       "company_name": "IonQ",
       "data_date": "2026-09-28",
@@ -464,7 +384,7 @@
       "status": "OK"
     },
     {
-      "rank": 29,
+      "rank": 24,
       "ticker": "AVGO",
       "company_name": "Broadcom Inc.",
       "data_date": "2026-09-28",
@@ -480,7 +400,7 @@
       "status": "OK"
     },
     {
-      "rank": 30,
+      "rank": 25,
       "ticker": "SNDK",
       "company_name": "Sandisk Corporation",
       "data_date": "2026-09-28",
@@ -496,7 +416,23 @@
       "status": "OK"
     },
     {
-      "rank": 31,
+      "rank": 26,
+      "ticker": "TSLA",
+      "company_name": "Tesla, Inc.",
+      "data_date": "2026-09-28",
+      "close": 357.45,
+      "upper_band": 382.585,
+      "middle_band": 366.1195,
+      "lower_band": 349.654,
+      "bandwidth": 0.089946,
+      "history_percentile": 0.136905,
+      "percent_b": 0.236738,
+      "bandwidth_20d_change": -0.360289,
+      "data_source": "Yahoo Chart API",
+      "status": "OK"
+    },
+    {
+      "rank": 27,
       "ticker": "GLW",
       "company_name": "Corning",
       "data_date": "2026-09-28",
@@ -512,7 +448,7 @@
       "status": "OK"
     },
     {
-      "rank": 32,
+      "rank": 28,
       "ticker": "GOOG",
       "company_name": "Alphabet Inc.",
       "data_date": "2026-09-28",
@@ -528,39 +464,7 @@
       "status": "OK"
     },
     {
-      "rank": 33,
-      "ticker": "NNE",
-      "company_name": "Nano Nuclear Energy Inc.",
-      "data_date": "2026-09-28",
-      "close": 16.16,
-      "upper_band": 18.9472,
-      "middle_band": 17.081,
-      "lower_band": 15.2148,
-      "bandwidth": 0.218517,
-      "history_percentile": 0.160714,
-      "percent_b": 0.253248,
-      "bandwidth_20d_change": 0.379668,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 34,
-      "ticker": "IBRX",
-      "company_name": "ImmunityBio, Inc.",
-      "data_date": "2026-09-28",
-      "close": 8.52,
-      "upper_band": 8.9818,
-      "middle_band": 8.2675,
-      "lower_band": 7.5532,
-      "bandwidth": 0.172799,
-      "history_percentile": 0.178571,
-      "percent_b": 0.676745,
-      "bandwidth_20d_change": -0.096471,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 35,
+      "rank": 29,
       "ticker": "COHR",
       "company_name": "Coherent",
       "data_date": "2026-09-28",
@@ -576,7 +480,7 @@
       "status": "OK"
     },
     {
-      "rank": 36,
+      "rank": 30,
       "ticker": "RKLB",
       "company_name": "Rocket Lab USA",
       "data_date": "2026-09-28",
@@ -592,7 +496,7 @@
       "status": "OK"
     },
     {
-      "rank": 37,
+      "rank": 31,
       "ticker": "NOK",
       "company_name": "Nokia Oyj",
       "data_date": "2026-09-28",
@@ -608,23 +512,7 @@
       "status": "OK"
     },
     {
-      "rank": 38,
-      "ticker": "IREN",
-      "company_name": "IREN LIMITED",
-      "data_date": "2026-09-28",
-      "close": 41.72,
-      "upper_band": 49.8906,
-      "middle_band": 43.5995,
-      "lower_band": 37.3084,
-      "bandwidth": 0.288586,
-      "history_percentile": 0.220238,
-      "percent_b": 0.350622,
-      "bandwidth_20d_change": 0.254616,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 39,
+      "rank": 32,
       "ticker": "MU",
       "company_name": "Micron Technology, Inc.",
       "data_date": "2026-09-28",
@@ -640,7 +528,7 @@
       "status": "OK"
     },
     {
-      "rank": 40,
+      "rank": 33,
       "ticker": "AMAT",
       "company_name": "Applied Materials, Inc.",
       "data_date": "2026-09-28",
@@ -656,7 +544,7 @@
       "status": "OK"
     },
     {
-      "rank": 41,
+      "rank": 34,
       "ticker": "AMKR",
       "company_name": "Amkor Technology, Inc.",
       "data_date": "2026-09-28",
@@ -672,7 +560,7 @@
       "status": "OK"
     },
     {
-      "rank": 42,
+      "rank": 35,
       "ticker": "ORCL",
       "company_name": "Oracle",
       "data_date": "2026-09-28",
@@ -688,7 +576,7 @@
       "status": "OK"
     },
     {
-      "rank": 43,
+      "rank": 36,
       "ticker": "LRCX",
       "company_name": "Lam Research Corporation",
       "data_date": "2026-09-28",
@@ -704,7 +592,39 @@
       "status": "OK"
     },
     {
-      "rank": 44,
+      "rank": 37,
+      "ticker": "IBM",
+      "company_name": "International Business Machines",
+      "data_date": "2026-09-28",
+      "close": 220.67,
+      "upper_band": 247.9873,
+      "middle_band": 234.3735,
+      "lower_band": 220.7597,
+      "bandwidth": 0.116172,
+      "history_percentile": 0.35119,
+      "percent_b": -0.003294,
+      "bandwidth_20d_change": 1.134237,
+      "data_source": "Yahoo Chart API",
+      "status": "OK"
+    },
+    {
+      "rank": 38,
+      "ticker": "PLTR",
+      "company_name": "Palantir Technologies Inc.",
+      "data_date": "2026-09-28",
+      "close": 187.48,
+      "upper_band": 194.8513,
+      "middle_band": 178.462,
+      "lower_band": 162.0727,
+      "bandwidth": 0.183672,
+      "history_percentile": 0.386905,
+      "percent_b": 0.775119,
+      "bandwidth_20d_change": -0.384356,
+      "data_source": "Yahoo Chart API",
+      "status": "OK"
+    },
+    {
+      "rank": 39,
       "ticker": "BB",
       "company_name": "BlackBerry",
       "data_date": "2026-09-28",
@@ -720,7 +640,7 @@
       "status": "OK"
     },
     {
-      "rank": 45,
+      "rank": 40,
       "ticker": "COIN",
       "company_name": "Coinbase Global, Inc.",
       "data_date": "2026-09-28",
@@ -736,23 +656,7 @@
       "status": "OK"
     },
     {
-      "rank": 46,
-      "ticker": "CCJ",
-      "company_name": "Cameco Corporation",
-      "data_date": "2026-09-28",
-      "close": 87.04,
-      "upper_band": 103.4284,
-      "middle_band": 94.544,
-      "lower_band": 85.6596,
-      "bandwidth": 0.187941,
-      "history_percentile": 0.428571,
-      "percent_b": 0.077684,
-      "bandwidth_20d_change": 0.022437,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 47,
+      "rank": 41,
       "ticker": "XE",
       "company_name": "X-energy",
       "data_date": "2026-09-28",
@@ -768,7 +672,23 @@
       "status": "OK"
     },
     {
-      "rank": 48,
+      "rank": 42,
+      "ticker": "BE",
+      "company_name": "Bloom Energy Corporation",
+      "data_date": "2026-09-28",
+      "close": 262.87,
+      "upper_band": 304.3615,
+      "middle_band": 259.1005,
+      "lower_band": 213.8395,
+      "bandwidth": 0.34937,
+      "history_percentile": 0.458333,
+      "percent_b": 0.541642,
+      "bandwidth_20d_change": 0.676622,
+      "data_source": "Yahoo Chart API",
+      "status": "OK"
+    },
+    {
+      "rank": 43,
       "ticker": "DELL",
       "company_name": "Dell Technologies",
       "data_date": "2026-09-28",
@@ -784,39 +704,7 @@
       "status": "OK"
     },
     {
-      "rank": 49,
-      "ticker": "MANE",
-      "company_name": "Veradermics, Incorporated",
-      "data_date": "2026-09-28",
-      "close": 115.0,
-      "upper_band": 120.1338,
-      "middle_band": 105.435,
-      "lower_band": 90.7362,
-      "bandwidth": 0.278822,
-      "history_percentile": 0.541667,
-      "percent_b": 0.825367,
-      "bandwidth_20d_change": 0.566712,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 50,
-      "ticker": "INSP",
-      "company_name": "Inspire Medical Systems, Inc.",
-      "data_date": "2026-09-28",
-      "close": 70.0,
-      "upper_band": 78.7689,
-      "middle_band": 68.956,
-      "lower_band": 59.1431,
-      "bandwidth": 0.284614,
-      "history_percentile": 0.553571,
-      "percent_b": 0.553195,
-      "bandwidth_20d_change": 0.687939,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 51,
+      "rank": 44,
       "ticker": "MRVL",
       "company_name": "Marvell Technology",
       "data_date": "2026-09-28",
@@ -832,7 +720,7 @@
       "status": "OK"
     },
     {
-      "rank": 52,
+      "rank": 45,
       "ticker": "QCOM",
       "company_name": "QUALCOMM Incorporated",
       "data_date": "2026-09-28",
@@ -848,7 +736,7 @@
       "status": "OK"
     },
     {
-      "rank": 53,
+      "rank": 46,
       "ticker": "ALAB",
       "company_name": "Astera Labs",
       "data_date": "2026-09-28",
@@ -864,7 +752,23 @@
       "status": "OK"
     },
     {
-      "rank": 54,
+      "rank": 47,
+      "ticker": "FORM",
+      "company_name": "FormFactor, Inc.",
+      "data_date": "2026-09-28",
+      "close": 130.97,
+      "upper_band": 136.2421,
+      "middle_band": 112.5005,
+      "lower_band": 88.7589,
+      "bandwidth": 0.422071,
+      "history_percentile": 0.690476,
+      "percent_b": 0.888969,
+      "bandwidth_20d_change": 0.328323,
+      "data_source": "Yahoo Chart API",
+      "status": "OK"
+    },
+    {
+      "rank": 48,
       "ticker": "SMR",
       "company_name": "NuScale Power",
       "data_date": "2026-09-28",
@@ -880,39 +784,7 @@
       "status": "OK"
     },
     {
-      "rank": 55,
-      "ticker": "INOD",
-      "company_name": "Innodata",
-      "data_date": "2026-09-28",
-      "close": 66.79,
-      "upper_band": 72.1924,
-      "middle_band": 59.158,
-      "lower_band": 46.1236,
-      "bandwidth": 0.440665,
-      "history_percentile": 0.738095,
-      "percent_b": 0.792763,
-      "bandwidth_20d_change": 0.858517,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 56,
-      "ticker": "FLNC",
-      "company_name": "Fluence Energy",
-      "data_date": "2026-09-28",
-      "close": 7.5,
-      "upper_band": 11.7336,
-      "middle_band": 9.0455,
-      "lower_band": 6.3574,
-      "bandwidth": 0.594342,
-      "history_percentile": 0.744048,
-      "percent_b": 0.212525,
-      "bandwidth_20d_change": 0.440998,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 57,
+      "rank": 49,
       "ticker": "INTC",
       "company_name": "Intel",
       "data_date": "2026-09-28",
@@ -928,7 +800,23 @@
       "status": "OK"
     },
     {
-      "rank": 58,
+      "rank": 50,
+      "ticker": "MRNA",
+      "company_name": "Moderna, Inc.",
+      "data_date": "2026-09-28",
+      "close": 197.28,
+      "upper_band": 200.0134,
+      "middle_band": 158.6575,
+      "lower_band": 117.3016,
+      "bandwidth": 0.521323,
+      "history_percentile": 0.785714,
+      "percent_b": 0.966953,
+      "bandwidth_20d_change": -0.716806,
+      "data_source": "Yahoo Chart API",
+      "status": "OK"
+    },
+    {
+      "rank": 51,
       "ticker": "ARM",
       "company_name": "Arm Holdings",
       "data_date": "2026-09-28",
@@ -944,7 +832,23 @@
       "status": "OK"
     },
     {
-      "rank": 59,
+      "rank": 52,
+      "ticker": "MXL",
+      "company_name": "MaxLinear, Inc",
+      "data_date": "2026-09-28",
+      "close": 90.0,
+      "upper_band": 95.6053,
+      "middle_band": 73.306,
+      "lower_band": 51.0067,
+      "bandwidth": 0.60839,
+      "history_percentile": 0.821429,
+      "percent_b": 0.874316,
+      "bandwidth_20d_change": 0.650325,
+      "data_source": "Yahoo Chart API",
+      "status": "OK"
+    },
+    {
+      "rank": 53,
       "ticker": "AMD",
       "company_name": "Advanced Micro Devices",
       "data_date": "2026-09-28",
@@ -956,22 +860,6 @@
       "history_percentile": 0.839286,
       "percent_b": 0.795149,
       "bandwidth_20d_change": 2.62796,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 60,
-      "ticker": "VICR",
-      "company_name": "Vicor Corporation",
-      "data_date": "2026-09-28",
-      "close": 285.1,
-      "upper_band": 293.8833,
-      "middle_band": 213.798,
-      "lower_band": 133.7127,
-      "bandwidth": 0.749168,
-      "history_percentile": 0.970238,
-      "percent_b": 0.945163,
-      "bandwidth_20d_change": 1.398938,
       "data_source": "Yahoo Chart API",
       "status": "OK"
     }
