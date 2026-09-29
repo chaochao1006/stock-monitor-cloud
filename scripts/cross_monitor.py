@@ -59,6 +59,8 @@ except Exception:
     PatternFill = None
     get_column_letter = None
 
+from us_stock_boll_monitor import STOCK_POOL
+
 
 REPORT_BASE_DIR = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parents[1] / "data"))
 OUTPUT_DIR = REPORT_BASE_DIR / "CROSS"
@@ -68,16 +70,7 @@ GOOGLE_WORKSHEET_NAME = "CROSS"
 GOOGLE_SERVICE_ACCOUNT_ENV = "GOOGLE_SERVICE_ACCOUNT_JSON"
 GOOGLE_SERVICE_ACCOUNT_FILE = OUTPUT_DIR / "google_service_account.json"
 TRACKING_DAYS = 30
-TICKERS = [
-    "NOK", "XE", "RKLB", "NBIS", "ARM", "OPTX", "GLW", "COHR", "LITE",
-    "MRVL", "INTC", "ALAB", "FLNC", "CRWV", "ORCL", "NVTS", "POET",
-    "DELL", "BB", "ONDS", "SMR", "OKLO", "IONQ", "QBTS", "NVDA",
-    "AMZN", "AMD", "CRCL", "FLY", "CBRS", "CIEN", "SIVEF", "SHAZ",
-    "LUNR", "ASTS", "AAOI", "INOD", "SPCX", "RDW", "QCOM", "COIN",
-    "CORZ", "IREN", "VELO", "MSFT", "GOOG", "AVGO", "AMAT", "AMKR",
-    "LRCX", "SNDK", "MU", "VICR", "NNE", "CCJ", "BWAY",
-    "MANE", "QSI", "CRSP", "IBRX", "INSP",
-]
+TICKERS = list(STOCK_POOL)
 
 HISTORY_PERIOD = "2y"
 INTERVAL = "1d"
