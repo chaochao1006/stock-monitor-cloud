@@ -450,3 +450,14 @@
 2026-10-06 11:07:51,806 [INFO] [8/8] 分析 ONDS
 2026-10-06 11:07:52,356 [INFO] 已写入 drop.txt：2026-10-05	CRCL(9)	8分
 2026-10-06 11:07:52,356 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-10-05.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
+2026-10-07 10:29:50,115 [INFO] 开始美股技术风险监控，共 8 只股票；目标交易日：2026-10-06。
+2026-10-07 10:29:50,115 [INFO] [1/8] 分析 OPTX
+2026-10-07 10:29:50,658 [INFO] [2/8] 分析 ASTS
+2026-10-07 10:29:51,123 [INFO] [3/8] 分析 CRWV
+2026-10-07 10:29:51,536 [INFO] [4/8] 分析 FLY
+2026-10-07 10:29:52,032 [INFO] [5/8] 分析 AAOI
+2026-10-07 10:29:52,427 [INFO] [6/8] 分析 LUNR
+2026-10-07 10:29:52,830 [INFO] [7/8] 分析 CRCL
+2026-10-07 10:29:53,228 [INFO] [8/8] 分析 ONDS
+2026-10-07 10:29:53,761 [INFO] 已写入 drop.txt：2026-10-06	CRCL(10)	8分
+2026-10-07 10:29:53,761 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-10-06.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
