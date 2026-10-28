@@ -8757,3 +8757,183 @@
 2026-10-27 10:11:01,882 [INFO] 已更新 VICR_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/VICR_1_20260918.xlsx，记录 27/30 个交易日。
 2026-10-27 10:11:01,968 [INFO] 已更新 XE_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/XE_1_20261006.xlsx，记录 15/30 个交易日。
 2026-10-27 10:11:01,968 [INFO] 报告生成完成：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/强势金叉监控报告_2026-10-26.docx
+2026-10-28 10:22:52,566 [INFO] 开始扫描 54 只股票，正式交易日：2026-10-27
+2026-10-28 10:22:52,567 [INFO] [1/54] NOK
+2026-10-28 10:22:53,008 [INFO] NOK 综合评分为 24.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:53,209 [INFO] [2/54] XE
+2026-10-28 10:22:53,391 [INFO] XE 综合评分为 35.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:53,591 [INFO] [3/54] RKLB
+2026-10-28 10:22:53,809 [INFO] RKLB 综合评分为 24.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:54,009 [INFO] [4/54] NBIS
+2026-10-28 10:22:54,262 [INFO] NBIS 综合评分为 17.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:54,462 [INFO] [5/54] ARM
+2026-10-28 10:22:54,709 [INFO] ARM 综合评分为 20.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:54,910 [INFO] [6/54] OPTX
+2026-10-28 10:22:55,085 [INFO] OPTX 综合评分为 27.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:55,286 [INFO] [7/54] GLW
+2026-10-28 10:22:55,566 [INFO] GLW 综合评分为 27.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:55,766 [INFO] [8/54] COHR
+2026-10-28 10:22:56,001 [INFO] COHR 综合评分为 22.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:56,201 [INFO] [9/54] LITE
+2026-10-28 10:22:56,410 [INFO] LITE 综合评分为 27.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:56,610 [INFO] [10/54] MRVL
+2026-10-28 10:22:56,827 [INFO] MRVL 综合评分为 40.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:57,027 [INFO] [11/54] INTC
+2026-10-28 10:22:57,235 [INFO] INTC 综合评分为 22.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:57,435 [INFO] [12/54] ALAB
+2026-10-28 10:22:57,686 [INFO] ALAB 综合评分为 25.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:57,887 [INFO] [13/54] CRWV
+2026-10-28 10:22:58,081 [INFO] CRWV 综合评分为 17.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:58,281 [INFO] [14/54] ORCL
+2026-10-28 10:22:58,633 [INFO] ORCL 综合评分为 23.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:58,833 [INFO] [15/54] NVTS
+2026-10-28 10:22:59,045 [INFO] NVTS 综合评分为 34.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:59,246 [INFO] [16/54] POET
+2026-10-28 10:22:59,426 [INFO] POET 综合评分为 10.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:22:59,626 [INFO] [17/54] DELL
+2026-10-28 10:22:59,834 [INFO] DELL 综合评分为 29.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:00,035 [INFO] [18/54] BB
+2026-10-28 10:23:00,473 [INFO] [19/54] ONDS
+2026-10-28 10:23:00,648 [INFO] ONDS 综合评分为 53.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:00,848 [INFO] [20/54] SMR
+2026-10-28 10:23:01,084 [INFO] SMR 综合评分为 17.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:01,284 [INFO] [21/54] OKLO
+2026-10-28 10:23:01,534 [INFO] OKLO 综合评分为 17.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:01,734 [INFO] [22/54] IONQ
+2026-10-28 10:23:01,896 [INFO] IONQ 综合评分为 12.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:02,096 [INFO] [23/54] QBTS
+2026-10-28 10:23:02,301 [INFO] QBTS 综合评分为 10.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:02,501 [INFO] [24/54] NVDA
+2026-10-28 10:23:03,917 [INFO] NVDA 综合评分为 27.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:04,117 [INFO] [25/54] AMZN
+2026-10-28 10:23:04,344 [INFO] AMZN 综合评分为 19.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:04,544 [INFO] [26/54] AMD
+2026-10-28 10:23:04,723 [INFO] AMD 综合评分为 40.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:04,923 [INFO] [27/54] CRCL
+2026-10-28 10:23:05,116 [INFO] CRCL 综合评分为 14.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:05,316 [INFO] [28/54] FLY
+2026-10-28 10:23:05,525 [INFO] FLY 综合评分为 56.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:05,726 [INFO] [29/54] CBRS
+2026-10-28 10:23:05,884 [INFO] CBRS 综合评分为 25.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:06,085 [INFO] [30/54] SIVEF
+2026-10-28 10:23:06,294 [WARNING] SIVEF 数据日期滞后：最新行情日期为 2026-10-26，缺少 2026-10-27 的正式收盘数据
+2026-10-28 10:23:06,294 [INFO] SIVEF 综合评分为 0.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:06,494 [INFO] [31/54] SHAZ
+2026-10-28 10:23:06,672 [INFO] SHAZ 综合评分为 17.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:06,872 [INFO] [32/54] LUNR
+2026-10-28 10:23:07,103 [INFO] LUNR 综合评分为 24.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:07,303 [INFO] [33/54] ASTS
+2026-10-28 10:23:07,546 [INFO] ASTS 综合评分为 12.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:07,746 [INFO] [34/54] AAOI
+2026-10-28 10:23:07,999 [INFO] AAOI 综合评分为 20.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:08,199 [INFO] [35/54] SPCX
+2026-10-28 10:23:08,783 [INFO] SPCX 综合评分为 21.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:08,984 [INFO] [36/54] RDW
+2026-10-28 10:23:09,578 [INFO] RDW 综合评分为 24.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:09,778 [INFO] [37/54] QCOM
+2026-10-28 10:23:10,549 [INFO] [38/54] COIN
+2026-10-28 10:23:11,091 [INFO] COIN 综合评分为 8.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:11,291 [INFO] [39/54] VELO
+2026-10-28 10:23:11,796 [INFO] VELO 综合评分为 10.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:11,996 [INFO] [40/54] MSFT
+2026-10-28 10:23:12,676 [INFO] MSFT 综合评分为 46.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:12,876 [INFO] [41/54] GOOG
+2026-10-28 10:23:13,436 [INFO] GOOG 综合评分为 5.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:13,636 [INFO] [42/54] AVGO
+2026-10-28 10:23:14,204 [INFO] AVGO 综合评分为 37.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:14,404 [INFO] [43/54] AMAT
+2026-10-28 10:23:15,097 [INFO] AMAT 综合评分为 17.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:15,297 [INFO] [44/54] AMKR
+2026-10-28 10:23:15,847 [INFO] AMKR 综合评分为 27.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:16,047 [INFO] [45/54] LRCX
+2026-10-28 10:23:16,694 [INFO] LRCX 综合评分为 17.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:16,894 [INFO] [46/54] SNDK
+2026-10-28 10:23:17,445 [INFO] SNDK 综合评分为 17.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:17,645 [INFO] [47/54] MU
+2026-10-28 10:23:18,246 [INFO] MU 综合评分为 17.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:18,447 [INFO] [48/54] TSLA
+2026-10-28 10:23:19,199 [INFO] [49/54] PLTR
+2026-10-28 10:23:19,754 [INFO] PLTR 综合评分为 48.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:19,954 [INFO] [50/54] IBM
+2026-10-28 10:23:20,595 [INFO] IBM 综合评分为 43.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:20,795 [INFO] [51/54] FORM
+2026-10-28 10:23:21,404 [INFO] FORM 综合评分为 25.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:21,604 [INFO] [52/54] MXL
+2026-10-28 10:23:22,151 [INFO] MXL 综合评分为 25.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:22,351 [INFO] [53/54] MRNA
+2026-10-28 10:23:22,908 [INFO] MRNA 综合评分为 29.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:23,108 [INFO] [54/54] BE
+2026-10-28 10:23:23,667 [INFO] BE 综合评分为 23.0，低于60分，不触发且不搜索新闻。
+2026-10-28 10:23:23,867 [INFO] TSLA 达到 80.0 分，开始搜索新闻。
+2026-10-28 10:23:25,362 [INFO] QCOM 达到 75.0 分，开始搜索新闻。
+2026-10-28 10:23:26,056 [INFO] BB 达到 64.0 分，开始搜索新闻。
+2026-10-28 10:23:26,816 [INFO] 已写入 CROSS.txt：TSLA（7）, QCOM（6）, BB（12）
+2026-10-28 10:23:26,816 [INFO] 未配置 Google Sheets 授权，已跳过云端表格写入。可设置环境变量 GOOGLE_SERVICE_ACCOUNT_JSON，或把服务账号 JSON 放到：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/google_service_account.json
+2026-10-28 10:23:26,993 [INFO] 已更新 AAOI_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/AAOI_1_20260921.xlsx，记录 27/30 个交易日。
+2026-10-28 10:23:27,147 [INFO] 已更新 ALAB_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/ALAB_1_20260904.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:27,330 [INFO] 已更新 AMAT_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/AMAT_1_20260921.xlsx，记录 27/30 个交易日。
+2026-10-28 10:23:27,485 [INFO] 已更新 AMD_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/AMD_1_20260904.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:27,670 [INFO] 已更新 AMKR_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/AMKR_1_20261002.xlsx，记录 18/30 个交易日。
+2026-10-28 10:23:27,827 [INFO] 已更新 AMZN_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/AMZN_1_20260828.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:27,834 [INFO] 已更新 AMZN_2 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/AMZN_2_20261019.xlsx，记录 7/30 个交易日。
+2026-10-28 10:23:27,987 [INFO] 已更新 ARM_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/ARM_1_20260918.xlsx，记录 28/30 个交易日。
+2026-10-28 10:23:28,159 [INFO] 已更新 ASTS_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/ASTS_1_20261006.xlsx，记录 16/30 个交易日。
+2026-10-28 10:23:28,337 [INFO] 已更新 AVGO_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/AVGO_1_20260921.xlsx，记录 27/30 个交易日。
+2026-10-28 10:23:28,492 [INFO] 已更新 BB_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/BB_1_20260921.xlsx，记录 27/30 个交易日。
+2026-10-28 10:23:28,659 [INFO] 已更新 BE_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/BE_1_20260929.xlsx，记录 21/30 个交易日。
+2026-10-28 10:23:28,764 [INFO] 已更新 CBRS_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/CBRS_1_20260918.xlsx，记录 28/30 个交易日。
+2026-10-28 10:23:29,040 [INFO] 已更新 CCJ_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/CCJ_1_20260821.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:29,219 [INFO] 已更新 COHR_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/COHR_1_20260918.xlsx，记录 28/30 个交易日。
+2026-10-28 10:23:29,419 [INFO] 已更新 COIN_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/COIN_1_20260819.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:29,629 [INFO] 已更新 CRCL_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/CRCL_1_20260819.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:29,636 [INFO] 已更新 CRCL_2 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/CRCL_2_20261021.xlsx，记录 5/30 个交易日。
+2026-10-28 10:23:29,857 [INFO] 已更新 CRSP_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/CRSP_1_20260819.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:30,028 [INFO] 已更新 CRWV_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/CRWV_1_20260924.xlsx，记录 24/30 个交易日。
+2026-10-28 10:23:30,193 [INFO] 已更新 DELL_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/DELL_1_20260827.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:30,388 [INFO] 已更新 ERAS_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/ERAS_1_20260826.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:30,484 [INFO] 已更新 FLY_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/FLY_1_20260925.xlsx，记录 23/30 个交易日。
+2026-10-28 10:23:30,659 [INFO] 已更新 FORM_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/FORM_1_20260930.xlsx，记录 20/30 个交易日。
+2026-10-28 10:23:30,866 [INFO] 已更新 GLW_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/GLW_1_20260904.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:30,987 [INFO] 已更新 GOOG_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/GOOG_1_20260918.xlsx，记录 28/30 个交易日。
+2026-10-28 10:23:31,144 [INFO] 已更新 IBM_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/IBM_1_20261015.xlsx，记录 9/30 个交易日。
+2026-10-28 10:23:31,391 [INFO] 已更新 IBRX_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/IBRX_1_20260819.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:31,667 [INFO] 已更新 INOD_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/INOD_1_20260921.xlsx，记录 27/30 个交易日。
+2026-10-28 10:23:31,895 [INFO] 已更新 INSP_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/INSP_1_20260819.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:32,044 [INFO] 已更新 INTC_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/INTC_1_20260918.xlsx，记录 28/30 个交易日。
+2026-10-28 10:23:32,143 [INFO] 已更新 IONQ_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/IONQ_1_20260918.xlsx，记录 28/30 个交易日。
+2026-10-28 10:23:32,366 [INFO] 已更新 IREN_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/IREN_1_20260904.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:32,530 [INFO] 已更新 LITE_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/LITE_1_20260825.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:32,674 [INFO] 已更新 LRCX_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/LRCX_1_20261002.xlsx，记录 18/30 个交易日。
+2026-10-28 10:23:32,798 [INFO] 已更新 LUNR_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/LUNR_1_20260921.xlsx，记录 27/30 个交易日。
+2026-10-28 10:23:32,964 [INFO] 已更新 MANE_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/MANE_1_20260918.xlsx，记录 28/30 个交易日。
+2026-10-28 10:23:33,082 [INFO] 已更新 MRNA_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/MRNA_1_20261009.xlsx，记录 13/30 个交易日。
+2026-10-28 10:23:33,253 [INFO] 已更新 MRVL_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/MRVL_1_20260819.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:33,259 [INFO] 已更新 MRVL_2 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/MRVL_2_20261001.xlsx，记录 19/30 个交易日。
+2026-10-28 10:23:33,419 [INFO] 已更新 MSFT_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/MSFT_1_20260826.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:33,426 [INFO] 已更新 MSFT_2 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/MSFT_2_20261009.xlsx，记录 13/30 个交易日。
+2026-10-28 10:23:33,608 [INFO] 已更新 MU_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/MU_1_20260831.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:33,775 [INFO] 已更新 MXL_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/MXL_1_20261002.xlsx，记录 18/30 个交易日。
+2026-10-28 10:23:33,934 [INFO] 已更新 NBIS_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/NBIS_1_20260921.xlsx，记录 27/30 个交易日。
+2026-10-28 10:23:34,154 [INFO] 已更新 NNE_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/NNE_1_20260827.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:34,341 [INFO] 已更新 NOK_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/NOK_1_20260911.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:34,515 [INFO] 已更新 NVDA_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/NVDA_1_20260827.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:34,654 [INFO] 已更新 NVTS_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/NVTS_1_20260918.xlsx，记录 28/30 个交易日。
+2026-10-28 10:23:34,821 [INFO] 已更新 OKLO_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/OKLO_1_20260825.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:34,944 [INFO] 已更新 OPTX_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/OPTX_1_20260930.xlsx，记录 20/30 个交易日。
+2026-10-28 10:23:35,148 [INFO] 已更新 ORCL_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/ORCL_1_20260826.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:35,155 [INFO] 已更新 ORCL_2 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/ORCL_2_20261013.xlsx，记录 11/30 个交易日。
+2026-10-28 10:23:35,320 [INFO] 已更新 PLTR_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/PLTR_1_20261006.xlsx，记录 16/30 个交易日。
+2026-10-28 10:23:35,470 [INFO] 已更新 POET_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/POET_1_20260921.xlsx，记录 27/30 个交易日。
+2026-10-28 10:23:35,673 [INFO] 已更新 QCOM_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/QCOM_1_20260827.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:35,678 [INFO] 已更新 QCOM_2 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/QCOM_2_20261027.xlsx，记录 1/30 个交易日。
+2026-10-28 10:23:35,917 [INFO] 已更新 QSI_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/QSI_1_20260821.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:36,092 [INFO] 已更新 RKLB_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/RKLB_1_20260921.xlsx，记录 27/30 个交易日。
+2026-10-28 10:23:36,253 [INFO] 已更新 SHAZ_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/SHAZ_1_20260918.xlsx，记录 28/30 个交易日。
+2026-10-28 10:23:36,396 [INFO] 已更新 SIVEF_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/SIVEF_1_20261005.xlsx，记录 16/30 个交易日。
+2026-10-28 10:23:36,593 [INFO] 已更新 SMR_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/SMR_1_20260825.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:36,728 [INFO] 已更新 SNDK_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/SNDK_1_20260904.xlsx，记录 30/30 个交易日。
+2026-10-28 10:23:36,837 [INFO] 已更新 SPCX_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/SPCX_1_20261006.xlsx，记录 16/30 个交易日。
+2026-10-28 10:23:37,027 [INFO] 已更新 TSLA_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/TSLA_1_20261005.xlsx，记录 17/30 个交易日。
+2026-10-28 10:23:37,214 [INFO] 已更新 VICR_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/VICR_1_20260918.xlsx，记录 28/30 个交易日。
+2026-10-28 10:23:37,349 [INFO] 已更新 XE_1 跟踪 Excel：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/EXCLE/XE_1_20261006.xlsx，记录 16/30 个交易日。
+2026-10-28 10:23:37,350 [INFO] 报告生成完成：/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/CROSS/强势金叉监控报告_2026-10-27.docx
