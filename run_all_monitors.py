@@ -22,7 +22,6 @@ MONITORS = [
     ("CROSS", SCRIPTS_DIR / "cross_monitor.py", DATA_DIR / "CROSS" / "CROSS.txt"),
     ("短线风险", SCRIPTS_DIR / "short-risk.py", DATA_DIR / "drop" / "short-risk" / "RISK.txt"),
     ("中长期风险", SCRIPTS_DIR / "drop_monitor.py", DATA_DIR / "drop" / "drop.txt"),
-    ("BOLL中长期下跌", SCRIPTS_DIR / "BOLL_MACD_RSI_Downtrend_monitor.py", DATA_DIR / "drop" / "drop-BOLL" / "BOLL-dip.txt"),
 ]
 
 

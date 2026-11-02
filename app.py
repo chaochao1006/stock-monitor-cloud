@@ -59,14 +59,6 @@ MODULES = [
         report_patterns=("美股短线反弹风险监控_*.docx",),
     ),
     ModuleConfig(
-        key="drop_boll",
-        label="BOLL中长期下跌",
-        folder=BASE_DIR / "drop" / "drop-BOLL",
-        trigger_file=BASE_DIR / "drop" / "drop-BOLL" / "BOLL-dip.txt",
-        excel_folder=BASE_DIR / "drop" / "drop-BOLL" / "EXCLE",
-        report_patterns=("BOLL_MACD_RSI_Downtrend_Report_*.docx",),
-    ),
-    ModuleConfig(
         key="drop",
         label="中长期风险",
         folder=BASE_DIR / "drop",
@@ -493,7 +485,7 @@ def main() -> None:
     selected_modules = st.sidebar.multiselect("模块筛选", module_labels, default=module_labels)
     page = st.sidebar.radio(
         "页面",
-        ["总览", "BOLL", "BOLL分位排名", "CROSS", "短线风险", "中长期风险", "BOLL中长期下跌", "报告中心", "数据诊断"],
+        ["总览", "BOLL", "BOLL分位排名", "CROSS", "短线风险", "中长期风险", "报告中心", "数据诊断"],
     )
     st.sidebar.caption(f"数据目录：{BASE_DIR}")
     if run_status:
@@ -544,9 +536,6 @@ def main() -> None:
 
     elif page == "中长期风险":
         render_single_module_page("中长期风险", triggers, tracking, reports)
-
-    elif page == "BOLL中长期下跌":
-        render_single_module_page("BOLL中长期下跌", triggers, tracking, reports)
 
     elif page == "报告中心":
         render_reports_section(filtered_reports)

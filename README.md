@@ -1,12 +1,12 @@
 # 股票技术监控云端版
 
-这个目录是云端部署版本，包含五个监控模块：
+这个目录是云端部署版本，包含以下监控模块：
 
 - BOLL：`scripts/us_stock_boll_monitor.py`
 - CROSS：`scripts/cross_monitor.py`
 - 短线风险：`scripts/short-risk.py`
 - 中长期风险：`scripts/drop_monitor.py`
-- BOLL中长期下跌：`scripts/BOLL_MACD_RSI_Downtrend_monitor.py`
+- BOLL分位排名：`scripts/boll_percentile_rank.py`
 
 ## 运行逻辑
 
