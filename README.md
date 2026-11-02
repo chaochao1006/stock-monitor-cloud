@@ -16,6 +16,9 @@
 失败显示空状态，行情滞后单独标注，不把旧信号当作当日触发。历史触发保留在折叠表中。
 使用NYSE实际收盘时间（含节假日及提前收盘），收盘15分钟后才接受当日日K。
 Yahoo复权OHLC从2016年或上市后开始计算，与旧AkShare数据口径可能不同。
+日线请求使用明确起止时间，不使用可能被Yahoo自动降为季度线的 `range=max`。
+逐票校验返回元数据为 `1d` 并检查日期间隔；页面显示数据周期和日K数量。
+旧版未校验快照会被页面拒绝展示，必须用修复后的脚本重算。
 输出：`data/super-trend/signals.json`；支持 `REPORT_BASE_DIR`。
 单独更新：`python scripts/super_trend_monitor.py`。全量更新：`python run_all_monitors.py`。
 本地改动需提交推送至部署仓库后，GitHub Actions和Streamlit Cloud才会生效。

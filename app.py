@@ -453,6 +453,9 @@ def render_super_trend() -> None:
     except Exception as exc:
         st.error(f"读取 super-trend 失败：{exc}")
         return
+    if payload.get("schema_version", 0) < 2 or payload.get("data_interval") != "1d":
+        st.error("此快照未通过日线周期校验，已停止展示。请更新监控脚本并重新运行 super-trend。")
+        return
     st.caption(f"信号交易日：{payload.get('latest_date', 'N/A')} ｜ 最近计算：{payload.get('generated_at_cn', 'N/A')}")
     st.caption(f"股票池 {payload.get('stock_pool_count', 0)} 只 ｜ 正常 {payload.get('success_count', 0)} ｜ 行情过期 {payload.get('stale_count', 0)} ｜ 更新失败 {payload.get('failure_count', 0)}")
     if payload.get("stale_count") or payload.get("failure_count"):
@@ -469,7 +472,8 @@ def render_super_trend() -> None:
     st.caption("当日指上述最新已收盘交易日；周末沿用最近交易日。行情过期或获取失败的股票不列入当日触发。")
     rename = {"ticker": "股票", "data_date": "行情日期", "state": "当前信号", "signal": "触发信号",
               "close": "复权收盘价", "supertrend": "ST线", "last_event_date": "最近触发日期",
-              "last_event": "最近触发", "execution_date": "计划执行日", "health": "数据状态"}
+              "last_event": "最近触发", "execution_date": "计划执行日", "health": "数据状态",
+              "data_interval": "数据周期", "daily_bar_count": "日K数量"}
     triggered = pd.DataFrame(payload.get("triggers", []))
     if triggered.empty:
         st.info("该交易日无有效买入／卖出触发。")
@@ -477,7 +481,7 @@ def render_super_trend() -> None:
         columns = ["ticker", "signal", "data_date", "close", "supertrend", "execution_date"]
         st.dataframe(triggered.reindex(columns=columns).rename(columns=rename), use_container_width=True, hide_index=True)
     st.subheader("股票池当前信号")
-    columns = ["ticker", "state", "data_date", "close", "supertrend", "last_event_date", "last_event", "health"]
+    columns = ["ticker", "state", "data_date", "close", "supertrend", "last_event_date", "last_event", "data_interval", "daily_bar_count", "health"]
     rows = pd.DataFrame(payload.get("records", [])).reindex(columns=columns)
     for state in ("持有", "观望"):
         group = rows[rows["state"] == state]

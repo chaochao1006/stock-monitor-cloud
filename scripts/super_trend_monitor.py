@@ -12,6 +12,7 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 import pandas_market_calendars as mcal
+import requests
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
@@ -21,6 +22,58 @@ from boll_percentile_rank import STOCK_POOL
 
 OUTPUT = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parents[1] / "data")) / "super-trend"
 LENGTH, MULTIPLIER = 10, 3.0
+SCHEMA_VERSION = 2
+
+
+def validate_daily(frame):
+    """Reject weekly/monthly/quarterly series, including a final daily quote."""
+    if frame.empty:
+        raise ValueError("行情为空")
+    if not frame.index.is_unique or not frame.index.is_monotonic_increasing:
+        raise ValueError("行情日期重复或未排序")
+    gaps = frame.index.to_series().diff().dt.total_seconds().dropna() / 86400
+    if not gaps.empty and (gaps.median() > 4 or (gaps <= 4).mean() < 0.8):
+        raise ValueError("数据周期异常：日期间隔不符合日线，拒绝计算")
+
+
+def decode_daily(payload):
+    chart = payload.get("chart", {})
+    if chart.get("error") or not chart.get("result"):
+        raise ValueError(str(chart.get("error") or "Yahoo返回空数据"))
+    block = chart["result"][0]
+    granularity = block.get("meta", {}).get("dataGranularity")
+    if granularity != "1d":
+        raise ValueError(f"数据周期异常：请求1d，实际返回{granularity}")
+    timestamps = block.get("timestamp") or []
+    quote = (block.get("indicators", {}).get("quote") or [{}])[0]
+    adjusted = (block.get("indicators", {}).get("adjclose") or [{}])[0].get("adjclose")
+    if not timestamps or adjusted is None:
+        raise ValueError("缺少时间戳或复权收盘价")
+    frame = pd.DataFrame(quote, index=pd.to_datetime(timestamps, unit="s", utc=True)
+                         .tz_convert("America/New_York").tz_localize(None).normalize())
+    frame = frame.rename(columns=str.capitalize)
+    frame["Adjusted Close"] = adjusted
+    frame = frame[["Open", "High", "Low", "Close", "Adjusted Close", "Volume"]].apply(pd.to_numeric, errors="coerce")
+    frame = frame.dropna(subset=["Open", "High", "Low", "Close", "Adjusted Close"]).sort_index()
+    validate_daily(frame)
+    return frame
+
+
+def fetch_daily(symbol):
+    # Explicit timestamps prevent Yahoo's range=max automatic quarterly aggregation.
+    params = {"period1": int(pd.Timestamp("2016-01-01", tz="America/New_York").timestamp()),
+              "period2": int(pd.Timestamp.now(tz="UTC").timestamp()),
+              "interval": "1d", "events": "history", "includeAdjustedClose": "true"}
+    errors = []
+    for host in ("query1.finance.yahoo.com", "query2.finance.yahoo.com"):
+        try:
+            response = requests.get(f"https://{host}/v8/finance/chart/{symbol}", params=params,
+                                    headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+            response.raise_for_status()
+            return decode_daily(response.json()), f"Yahoo Chart API {host} (verified 1d)", ""
+        except Exception as exc:
+            errors.append(f"{host}: {exc}")
+    return pd.DataFrame(), "", "; ".join(errors)
 
 
 def session_dates(now=None):
@@ -67,17 +120,15 @@ def calculate_supertrend(frame, length=LENGTH, multiplier=MULTIPLIER):
 
 
 def analyze(symbol, expected, schedule):
-    df, source, error = market.fetch_ohlcv(symbol)
+    df, source, error = fetch_daily(symbol)
     if df.empty:
         raise ValueError(error or "行情为空")
-    if df.index.max().strftime("%Y-%m-%d") < expected and source != "yfinance":
-        alternative, _ = market.fetch_yfinance(symbol)
-        if not alternative.empty and alternative.index.max() > df.index.max():
-            df, source = alternative, "yfinance"
     # The fetcher normalizes dates to New York dates. Exclude live and future bars.
     df = df.loc["2016-01-01":expected].copy()
     if df.empty:
         raise ValueError("没有已收盘行情")
+    validate_daily(df)
+    daily_bar_count = len(df)
     factor = df["Adjusted Close"] / df.Close
     if factor.isna().any() or not np.isfinite(factor).all() or (factor <= 0).any():
         raise ValueError("缺少可靠复权因子，无法计算")
@@ -103,6 +154,7 @@ def analyze(symbol, expected, schedule):
         "last_event": events[-1]["signal"] if events else "",
         "execution_date": future[0].strftime("%Y-%m-%d") if len(future) else "",
         "data_source": source, "health": "正常" if data_date == expected else "行情过期",
+        "data_interval": "1d", "daily_bar_count": daily_bar_count,
         "history_start": df.index[0].strftime("%Y-%m-%d"),
     }, events
 
@@ -110,8 +162,6 @@ def analyze(symbol, expected, schedule):
 def build_snapshot(symbols=None):
     symbols = list(dict.fromkeys(symbols if symbols is not None else STOCK_POOL))
     expected, schedule = session_dates()
-    # Fixed start after fetching full history avoids rolling-window ATR reseeding.
-    market.LOOKBACK_PERIOD = "max"
     records, events, failures = [], [], []
     def worker(symbol):
         try:
@@ -127,7 +177,7 @@ def build_snapshot(symbols=None):
                 failures.append(failure)
     today = [dict(row, signal=row["event"]) for row in records
              if row.get("health") == "正常" and row.get("event") in ("买入", "卖出")]
-    return {"module": "super-trend", "latest_date": expected,
+    return {"module": "super-trend", "schema_version": SCHEMA_VERSION, "data_interval": "1d", "latest_date": expected,
             "generated_at_cn": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(timespec="seconds"),
             "atr_length": LENGTH, "multiplier": MULTIPLIER, "stock_pool_count": len(symbols),
             "price_basis": "Yahoo adjusted OHLC; fixed calculation start 2016-01-01 or listing",

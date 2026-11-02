@@ -55,21 +55,47 @@ class MonitorTests(unittest.TestCase):
         data = self.prices()
         expected = data.index[-2].strftime("%Y-%m-%d")
         _, schedule = monitor.session_dates("2026-11-02T15:00:00Z")
-        with patch.object(monitor.market, "fetch_ohlcv", return_value=(data, "fixture", "")):
+        with patch.object(monitor, "fetch_daily", return_value=(data, "fixture", "")):
             row, _ = monitor.analyze("TEST", expected, schedule)
             self.assertEqual(row["data_date"], expected)  # excludes future/live row
             self.assertEqual(row["health"], "正常")
         with patch.object(monitor, "session_dates", return_value=("2026-10-30", schedule)), \
-             patch.object(monitor.market, "fetch_yfinance", return_value=(pd.DataFrame(), "offline")), \
-             patch.object(monitor.market, "fetch_ohlcv", return_value=(data, "fixture", "")):
+             patch.object(monitor, "fetch_daily", return_value=(data, "fixture", "")):
             snapshot = monitor.build_snapshot(["TEST"])
             self.assertEqual(snapshot["stale_count"], 1)
             self.assertEqual(snapshot["triggers"], [])
-        with patch.object(monitor.market, "fetch_ohlcv", return_value=(pd.DataFrame(), "", "offline")):
+        with patch.object(monitor, "fetch_daily", return_value=(pd.DataFrame(), "", "offline")):
             snapshot = monitor.build_snapshot(["TEST"])
             self.assertIsNone(snapshot["records"][0]["state"])
             self.assertEqual(snapshot["failure_count"], 1)
             json.dumps(snapshot, allow_nan=False)
+
+    def test_quarterly_with_daily_tail_rejected(self):
+        frame = self.prices().iloc[:12].copy()
+        frame.index = pd.date_range("2020-01-01", periods=12, freq="QS")
+        extra = frame.iloc[[-1]].copy()
+        extra.index = pd.to_datetime(["2022-10-31"])
+        with self.assertRaisesRegex(ValueError, "数据周期异常"):
+            monitor.validate_daily(pd.concat([frame, extra]))
+        with self.assertRaisesRegex(ValueError, "实际返回3mo"):
+            monitor.decode_daily({"chart": {"result": [{"meta": {"dataGranularity": "3mo"}}]}})
+
+    def test_request_explicit_dates_and_verified_daily_response(self):
+        times = pd.date_range("2026-10-01", periods=15, freq="B", tz="America/New_York")
+        payload = {"chart": {"result": [{"meta": {"dataGranularity": "1d"},
+                   "timestamp": [int(t.timestamp()) for t in times],
+                   "indicators": {"quote": [{"open": [100]*15, "high": [102]*15,
+                   "low": [99]*15, "close": [101]*15, "volume": [1000]*15}],
+                   "adjclose": [{"adjclose": [101]*15}]}}]}}
+        with patch.object(monitor.requests, "get") as get:
+            get.return_value.json.return_value = payload
+            frame, _, error = monitor.fetch_daily("TEST")
+            self.assertEqual(len(frame), 15)
+            self.assertEqual(error, "")
+            params = get.call_args.kwargs["params"]
+            self.assertNotIn("range", params)
+            self.assertIn("period1", params)
+            self.assertEqual(params["interval"], "1d")
 
     def test_repeated_run_no_duplicate_and_state(self):
         expected, schedule = monitor.session_dates("2026-11-02T15:00:00Z")
