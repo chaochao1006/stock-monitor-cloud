@@ -692,3 +692,14 @@
 2026-11-02 18:20:03,872 [INFO] [8/8] 分析 ONDS
 2026-11-02 18:20:04,455 [INFO] 本交易日无新增短线风险触发记录。
 2026-11-02 18:20:04,455 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/short-risk/美股短线反弹风险监控_2026-10-30.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/short-risk/RISK.txt
+2026-11-02 18:46:03,791 [INFO] 开始短线反弹风险监控，共8只股票；目标交易日：2026-10-30。
+2026-11-02 18:46:03,791 [INFO] [1/8] 分析 OPTX
+2026-11-02 18:46:04,432 [INFO] [2/8] 分析 ASTS
+2026-11-02 18:46:04,871 [INFO] [3/8] 分析 CRWV
+2026-11-02 18:46:05,314 [INFO] [4/8] 分析 FLY
+2026-11-02 18:46:05,747 [INFO] [5/8] 分析 AAOI
+2026-11-02 18:46:06,180 [INFO] [6/8] 分析 LUNR
+2026-11-02 18:46:06,618 [INFO] [7/8] 分析 CRCL
+2026-11-02 18:46:07,059 [INFO] [8/8] 分析 ONDS
+2026-11-02 18:46:07,566 [INFO] 本交易日无新增短线风险触发记录。
+2026-11-02 18:46:07,566 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/short-risk/美股短线反弹风险监控_2026-10-30.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/short-risk/RISK.txt
