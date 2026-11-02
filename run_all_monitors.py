@@ -17,6 +17,7 @@ STATUS_PATH = DATA_DIR / "last_run_status.json"
 BEIJING_TZ = ZoneInfo("Asia/Shanghai")
 
 MONITORS = [
+    ("super-trend", SCRIPTS_DIR / "super_trend_monitor.py", DATA_DIR / "super-trend" / "signals.json"),
     ("BOLL", SCRIPTS_DIR / "us_stock_boll_monitor.py", DATA_DIR / "BOLL" / "BOLL.txt"),
     ("BOLL分位排名", SCRIPTS_DIR / "boll_percentile_rank.py", DATA_DIR / "BOLL" / "BOLL_percentile_rank.json"),
     ("CROSS", SCRIPTS_DIR / "cross_monitor.py", DATA_DIR / "CROSS" / "CROSS.txt"),

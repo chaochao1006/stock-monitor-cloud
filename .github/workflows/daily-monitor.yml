@@ -3,8 +3,8 @@ name: Daily Stock Monitors
 on:
   workflow_dispatch:
   schedule:
-    # UTC 周日到周四 23:17 = 北京时间周一到周五 07:17。避开整点高峰，GitHub 定时任务仍可能有几分钟延迟。
-    - cron: "17 23 * * 0-4"
+    # UTC 周一到周五 23:17 = 北京时间周二到周六 07:17，覆盖美股周一至周五收盘。
+    - cron: "17 23 * * 1-5"
 
 permissions:
   contents: write

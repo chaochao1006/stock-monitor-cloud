@@ -22,6 +22,7 @@ except Exception:  # pragma: no cover - optional local dependency
 BASE_DIR = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parent / "data"))
 RUN_STATUS_PATH = BASE_DIR / "last_run_status.json"
 BOLL_PERCENTILE_RANK_PATH = BASE_DIR / "BOLL" / "BOLL_percentile_rank.json"
+SUPER_TREND_PATH = BASE_DIR / "super-trend" / "signals.json"
 
 
 @dataclass(frozen=True)
@@ -441,6 +442,58 @@ def render_boll_percentile_rank(meta: dict, ranking: pd.DataFrame, failures: pd.
             st.dataframe(failures, use_container_width=True, hide_index=True)
 
 
+def render_super_trend() -> None:
+    st.header("super-trend")
+    st.caption("日线 Supertrend · Wilder ATR(10) × 3 · 收盘确认翻转，计划下一交易日开盘执行。持有表示多头趋势，不代表实际账户持仓。")
+    if not SUPER_TREND_PATH.exists():
+        st.info("尚无监控数据，请运行 scripts/super_trend_monitor.py 或等待云端每日更新。")
+        return
+    try:
+        payload = json.loads(SUPER_TREND_PATH.read_text(encoding="utf-8"))
+    except Exception as exc:
+        st.error(f"读取 super-trend 失败：{exc}")
+        return
+    st.caption(f"信号交易日：{payload.get('latest_date', 'N/A')} ｜ 最近计算：{payload.get('generated_at_cn', 'N/A')}")
+    st.caption(f"股票池 {payload.get('stock_pool_count', 0)} 只 ｜ 正常 {payload.get('success_count', 0)} ｜ 行情过期 {payload.get('stale_count', 0)} ｜ 更新失败 {payload.get('failure_count', 0)}")
+    if payload.get("stale_count") or payload.get("failure_count"):
+        st.warning("部分股票行情过期或更新失败，请以当前信号表中的行情日期和数据状态为准。")
+    # Calendar freshness is checked locally, without making market-data requests.
+    try:
+        from scripts.super_trend_monitor import session_dates
+        expected, _ = session_dates()
+        if payload.get("latest_date", "") < expected:
+            st.warning(f"当前整份快照已过期，最新应有交易日为 {expected}。以下为历史快照，请等待更新。")
+    except Exception:
+        st.caption("未能校验快照时效，请核对信号交易日。")
+    st.subheader("当日触发记录")
+    st.caption("当日指上述最新已收盘交易日；周末沿用最近交易日。行情过期或获取失败的股票不列入当日触发。")
+    rename = {"ticker": "股票", "data_date": "行情日期", "state": "当前信号", "signal": "触发信号",
+              "close": "复权收盘价", "supertrend": "ST线", "last_event_date": "最近触发日期",
+              "last_event": "最近触发", "execution_date": "计划执行日", "health": "数据状态"}
+    triggered = pd.DataFrame(payload.get("triggers", []))
+    if triggered.empty:
+        st.info("该交易日无有效买入／卖出触发。")
+    else:
+        columns = ["ticker", "signal", "data_date", "close", "supertrend", "execution_date"]
+        st.dataframe(triggered.reindex(columns=columns).rename(columns=rename), use_container_width=True, hide_index=True)
+    st.subheader("股票池当前信号")
+    rows = pd.DataFrame(payload.get("records", []))
+    if not rows.empty:
+        state_filter = st.selectbox("当前信号筛选", ["全部", "持有", "观望"], key="st_state_filter")
+        if state_filter != "全部":
+            rows = rows[rows["state"] == state_filter]
+        columns = ["ticker", "state", "data_date", "close", "supertrend", "last_event_date", "last_event", "health"]
+        st.dataframe(rows.reindex(columns=columns).rename(columns=rename), use_container_width=True, hide_index=True)
+    st.caption("价格采用Yahoo复权口径，与原AkShare回测或TradingView设置不同可能产生差异。数据状态异常时勿将其当作当天确认信号。")
+    if payload.get("failures"):
+        with st.expander("获取失败详情"):
+            st.dataframe(pd.DataFrame(payload["failures"]), use_container_width=True, hide_index=True)
+    with st.expander("历史买卖触发"):
+        history = pd.DataFrame(payload.get("history", []))
+        if not history.empty:
+            st.dataframe(history.sort_values(["data_date", "ticker"], ascending=[False, True]).rename(columns=rename), use_container_width=True, hide_index=True)
+
+
 def render_reports_section(reports: pd.DataFrame) -> None:
     st.subheader("Word 报告")
     if reports.empty:
@@ -485,7 +538,7 @@ def main() -> None:
     selected_modules = st.sidebar.multiselect("模块筛选", module_labels, default=module_labels)
     page = st.sidebar.radio(
         "页面",
-        ["总览", "BOLL", "BOLL分位排名", "CROSS", "短线风险", "中长期风险", "报告中心", "数据诊断"],
+        ["总览", "super-trend", "BOLL", "BOLL分位排名", "CROSS", "短线风险", "中长期风险", "报告中心", "数据诊断"],
     )
     st.sidebar.caption(f"数据目录：{BASE_DIR}")
     if run_status:
@@ -515,6 +568,9 @@ def main() -> None:
                 st.info("暂无报告。")
             else:
                 st.dataframe(filtered_reports.head(12)[["报告日期", "模块", "文件名"]], use_container_width=True, hide_index=True)
+
+    elif page == "super-trend":
+        render_super_trend()
 
     elif page == "BOLL":
         modules = ["BOLL 布林线"]
