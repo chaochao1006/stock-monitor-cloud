@@ -477,13 +477,18 @@ def render_super_trend() -> None:
         columns = ["ticker", "signal", "data_date", "close", "supertrend", "execution_date"]
         st.dataframe(triggered.reindex(columns=columns).rename(columns=rename), use_container_width=True, hide_index=True)
     st.subheader("股票池当前信号")
-    rows = pd.DataFrame(payload.get("records", []))
-    if not rows.empty:
-        state_filter = st.selectbox("当前信号筛选", ["全部", "持有", "观望"], key="st_state_filter")
-        if state_filter != "全部":
-            rows = rows[rows["state"] == state_filter]
-        columns = ["ticker", "state", "data_date", "close", "supertrend", "last_event_date", "last_event", "health"]
-        st.dataframe(rows.reindex(columns=columns).rename(columns=rename), use_container_width=True, hide_index=True)
+    columns = ["ticker", "state", "data_date", "close", "supertrend", "last_event_date", "last_event", "health"]
+    rows = pd.DataFrame(payload.get("records", [])).reindex(columns=columns)
+    for state in ("持有", "观望"):
+        group = rows[rows["state"] == state]
+        st.subheader(f"{state}（{len(group)}只）")
+        st.dataframe(group.rename(columns=rename), use_container_width=True, hide_index=True)
+        if group.empty:
+            st.caption(f"当前没有{state}状态的股票。")
+    unknown = rows[~rows["state"].isin(["持有", "观望"])]
+    if not unknown.empty:
+        with st.expander(f"信号暂不可用（{len(unknown)}只）"):
+            st.dataframe(unknown.rename(columns=rename), use_container_width=True, hide_index=True)
     st.caption("价格采用Yahoo复权口径，与原AkShare回测或TradingView设置不同可能产生差异。数据状态异常时勿将其当作当天确认信号。")
     if payload.get("failures"):
         with st.expander("获取失败详情"):
