@@ -1,10 +1,11 @@
 {
   "module": "BOLL分位排名",
-  "generated_at_cn": "2026-11-02 18:45:49",
+  "generated_at_cn": "2026-11-03 10:24:30",
   "ranking_date": "2026-10-30",
-  "latest_data_date": "2026-10-30",
+  "latest_data_date": "2026-11-02",
   "data_date_counts": {
-    "2026-10-30": 54
+    "2026-10-30": 53,
+    "2026-11-02": 1
   },
   "stock_pool_count": 54,
   "success_count": 54,
@@ -256,6 +257,22 @@
     },
     {
       "rank": 16,
+      "ticker": "SIVEF",
+      "company_name": "Sivers Semiconductors",
+      "data_date": "2026-11-02",
+      "close": 1.9,
+      "upper_band": 3.3676,
+      "middle_band": 2.4883,
+      "lower_band": 1.6089,
+      "bandwidth": 0.706772,
+      "history_percentile": 0.522059,
+      "percent_b": 0.165504,
+      "bandwidth_20d_change": 1.438109,
+      "data_source": "Yahoo Chart API",
+      "status": "OK"
+    },
+    {
+      "rank": 17,
       "ticker": "LUNR",
       "company_name": "Intuitive Machines",
       "data_date": "2026-10-30",
@@ -271,7 +288,7 @@
       "status": "OK"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "ticker": "SPCX",
       "company_name": "Space Exploration Technologies",
       "data_date": "2026-10-30",
@@ -287,7 +304,7 @@
       "status": "OK"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "ticker": "NVTS",
       "company_name": "Navitas Semiconductor",
       "data_date": "2026-10-30",
@@ -299,22 +316,6 @@
       "history_percentile": 0.553571,
       "percent_b": 0.259899,
       "bandwidth_20d_change": 1.805124,
-      "data_source": "Yahoo Chart API",
-      "status": "OK"
-    },
-    {
-      "rank": 19,
-      "ticker": "SIVEF",
-      "company_name": "Sivers Semiconductors",
-      "data_date": "2026-10-30",
-      "close": 2.04,
-      "upper_band": 3.4934,
-      "middle_band": 2.5653,
-      "lower_band": 1.6371,
-      "bandwidth": 0.72362,
-      "history_percentile": 0.555556,
-      "percent_b": 0.217037,
-      "bandwidth_20d_change": 1.507807,
       "data_source": "Yahoo Chart API",
       "status": "OK"
     },
