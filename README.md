@@ -3,6 +3,7 @@
 这个目录是云端部署版本，包含以下监控模块：
 
 - 短线风险：`scripts/short-risk.py`
+- SMC：`scripts/smc_monitor.py`，使用独立的 51 只美股股票池。
 - super-trend：`scripts/super_trend_monitor.py`，日线 Wilder ATR(10) × 3，股票池配置在 `scripts/super_trend_stock_pool.py`。
 
 ## super-trend
@@ -18,6 +19,12 @@ Yahoo复权OHLC从2016年或上市后开始计算，与旧AkShare数据口径可
 输出：`data/super-trend/signals.json`；支持 `REPORT_BASE_DIR`。
 单独更新：`python scripts/super_trend_monitor.py`。全量更新：`python run_all_monitors.py`。
 本地改动需提交推送至部署仓库后，GitHub Actions和Streamlit Cloud才会生效。
+
+## SMC
+
+使用 Yahoo 复权日线，沿用本地 SMC 回测的 Swing 长度 50。已收盘的日线确认绿色 Swing BOS 或 Swing CHoCH 后，显示在当日触发记录。页面也展示历史触发和各股票的数据状态。行情过期、日线不足或取数失败的股票不参与当日触发。
+
+单独更新可运行 `python scripts/smc_monitor.py`，结果写入 `data/smc/signals.json`。定时任务会一起更新 SMC。
 
 ## 运行逻辑
 
@@ -41,7 +48,7 @@ Streamlit Cloud 读取 `data/` 并展示网页仪表盘。
 data/last_run_status.json
 ```
 
-网页首页会显示最近云端运行时间、2 个模块是否成功、每个模块的记录数量。这样即使当天没有新触发，也能确认系统是否正常运行过。
+网页首页会显示最近云端运行时间、3 个模块是否成功、每个模块的记录数量。这样即使当天没有新触发，也能确认系统是否正常运行过。
 
 ## 自动清理规则
 

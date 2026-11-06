@@ -20,6 +20,7 @@ except Exception:  # pragma: no cover - optional local dependency
 BASE_DIR = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parent / "data"))
 RUN_STATUS_PATH = BASE_DIR / "last_run_status.json"
 SUPER_TREND_PATH = BASE_DIR / "super-trend" / "signals.json"
+SMC_PATH = BASE_DIR / "smc" / "signals.json"
 
 
 @dataclass(frozen=True)
@@ -80,7 +81,7 @@ def load_run_status() -> dict:
         return {}
     try:
         status = json.loads(RUN_STATUS_PATH.read_text(encoding="utf-8"))
-        active_labels = {"super-trend", *(module.label for module in MODULES)}
+        active_labels = {"super-trend", "SMC", *(module.label for module in MODULES)}
         modules = [item for item in status.get("模块", []) if item.get("模块") in active_labels]
         succeeded = sum(item.get("退出码") == 0 for item in modules)
         if modules:
@@ -278,6 +279,56 @@ def render_super_trend() -> None:
             st.dataframe(history.sort_values(["data_date", "ticker"], ascending=[False, True]).rename(columns=rename), use_container_width=True, hide_index=True)
 
 
+def render_smc() -> None:
+    st.header("SMC")
+    st.caption("日线 · Swing 长度 50 · 收盘确认绿色 Swing BOS 或 Swing CHoCH。")
+    if not SMC_PATH.exists():
+        st.info("等待首次 SMC 更新。可运行 scripts/smc_monitor.py 或等待定时任务。")
+        return
+    try:
+        payload = json.loads(SMC_PATH.read_text(encoding="utf-8"))
+        if payload.get("module") != "smc" or payload.get("data_interval") != "1d":
+            raise ValueError("快照格式不符合日线 SMC")
+    except (OSError, ValueError) as exc:
+        st.error(f"读取 SMC 失败：{exc}")
+        return
+
+    latest = payload["latest_date"]
+    records = payload["records"]
+    fresh = sum(row["health"] == "正常" for row in records)
+    st.caption(f"信号交易日 {latest} ｜ 股票池 {len(records)} 只 ｜ 正常 {fresh} 只 ｜ 更新于 {payload['generated_at_cn']}")
+    try:
+        from scripts.super_trend_monitor import session_dates
+
+        expected, _ = session_dates()
+        if latest < expected:
+            st.warning(f"快照已过期，以下信号属于 {latest}，最新应有交易日为 {expected}。")
+    except Exception:
+        st.caption("未能校验快照时效，请核对信号交易日。")
+
+    labels = {"ticker": "股票", "signal": "触发信号", "data_date": "行情日期",
+              "close": "复权收盘价", "level": "突破结构价位", "health": "数据状态",
+              "last_event": "最近触发", "last_event_date": "最近触发日期", "error": "错误详情"}
+    st.subheader("当日触发记录")
+    if payload["triggers"]:
+        st.dataframe(pd.DataFrame(payload["triggers"]).rename(columns=labels), width="stretch", hide_index=True)
+    elif fresh:
+        st.info("行情正常的股票中，当日没有绿色 Swing BOS 或 CHoCH。")
+    else:
+        st.warning("本次没有可确认的日线行情。")
+    st.caption("突破结构价位按复权日线计算，供核对触发位置。")
+    with st.expander("股票池与数据状态"):
+        columns = ["ticker", "health", "data_date", "last_event", "last_event_date", "error"]
+        st.dataframe(pd.DataFrame(records).reindex(columns=columns).rename(columns=labels),
+                     width="stretch", hide_index=True)
+    with st.expander("历史触发"):
+        if payload["history"]:
+            history = pd.DataFrame(payload["history"]).sort_values(["data_date", "ticker"], ascending=[False, True])
+            st.dataframe(history.rename(columns=labels), width="stretch", hide_index=True)
+        else:
+            st.info("暂无历史触发。")
+
+
 def render_reports_section(reports: pd.DataFrame) -> None:
     st.subheader("Word 报告")
     if reports.empty:
@@ -318,7 +369,7 @@ def main() -> None:
     selected_modules = st.sidebar.multiselect("模块筛选", module_labels, default=module_labels)
     page = st.sidebar.radio(
         "页面",
-        ["总览", "super-trend", "短线风险", "报告中心", "数据诊断"],
+        ["总览", "super-trend", "SMC", "短线风险", "报告中心", "数据诊断"],
     )
     st.sidebar.caption(f"数据目录：{BASE_DIR}")
     if run_status:
@@ -346,6 +397,9 @@ def main() -> None:
 
     elif page == "super-trend":
         render_super_trend()
+
+    elif page == "SMC":
+        render_smc()
 
     elif page == "短线风险":
         render_single_module_page("短线风险", triggers, reports)

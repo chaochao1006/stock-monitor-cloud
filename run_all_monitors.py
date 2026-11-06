@@ -18,6 +18,7 @@ BEIJING_TZ = ZoneInfo("Asia/Shanghai")
 
 MONITORS = [
     ("super-trend", SCRIPTS_DIR / "super_trend_monitor.py", DATA_DIR / "super-trend" / "signals.json"),
+    ("SMC", SCRIPTS_DIR / "smc_monitor.py", DATA_DIR / "smc" / "signals.json"),
     ("短线风险", SCRIPTS_DIR / "short-risk.py", DATA_DIR / "drop" / "short-risk" / "RISK.txt"),
 ]
 
@@ -34,7 +35,7 @@ def read_trigger_lines(path: Path) -> list[str]:
     if path.suffix.lower() == ".json":
         try:
             payload = json.loads(path.read_text(encoding="utf-8"))
-            records = payload.get("records", [])
+            records = payload.get("history" if payload.get("module") == "smc" else "records", [])
             if isinstance(records, list):
                 return [json.dumps(item, ensure_ascii=False) for item in records]
         except Exception:
