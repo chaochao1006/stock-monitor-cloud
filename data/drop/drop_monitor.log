@@ -703,3 +703,80 @@
 2026-11-02 18:46:11,584 [INFO] [8/8] 分析 ONDS
 2026-11-02 18:46:12,112 [INFO] 本交易日无新增触发记录，或 drop.txt 已存在对应记录。
 2026-11-02 18:46:12,112 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-10-30.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
+2026-11-03 10:25:17,453 [INFO] 开始美股技术风险监控，共 8 只股票；目标交易日：2026-11-02。
+2026-11-03 10:25:17,453 [INFO] [1/8] 分析 OPTX
+2026-11-03 10:25:18,003 [INFO] [2/8] 分析 ASTS
+2026-11-03 10:25:18,409 [INFO] [3/8] 分析 CRWV
+2026-11-03 10:25:18,852 [INFO] [4/8] 分析 FLY
+2026-11-03 10:25:19,280 [INFO] [5/8] 分析 AAOI
+2026-11-03 10:25:19,688 [INFO] [6/8] 分析 LUNR
+2026-11-03 10:25:20,142 [INFO] [7/8] 分析 CRCL
+2026-11-03 10:25:20,629 [INFO] [8/8] 分析 ONDS
+2026-11-03 10:25:21,087 [INFO] 本交易日无新增触发记录，或 drop.txt 已存在对应记录。
+2026-11-03 10:25:21,087 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-10-30.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
+2026-11-03 11:57:16,742 [INFO] 开始美股技术风险监控，共 8 只股票；目标交易日：2026-11-02。
+2026-11-03 11:57:16,742 [INFO] [1/8] 分析 OPTX
+2026-11-03 11:57:17,321 [INFO] [2/8] 分析 ASTS
+2026-11-03 11:57:17,755 [INFO] [3/8] 分析 CRWV
+2026-11-03 11:57:18,398 [INFO] [4/8] 分析 FLY
+2026-11-03 11:57:18,830 [INFO] [5/8] 分析 AAOI
+2026-11-03 11:57:19,264 [INFO] [6/8] 分析 LUNR
+2026-11-03 11:57:19,695 [INFO] [7/8] 分析 CRCL
+2026-11-03 11:57:20,136 [INFO] [8/8] 分析 ONDS
+2026-11-03 11:57:20,630 [INFO] 本交易日无新增触发记录，或 drop.txt 已存在对应记录。
+2026-11-03 11:57:20,630 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-11-02.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
+2026-11-04 09:30:49,088 [INFO] 开始美股技术风险监控，共 8 只股票；目标交易日：2026-11-03。
+2026-11-04 09:30:49,089 [INFO] [1/8] 分析 OPTX
+2026-11-04 09:30:49,696 [INFO] [2/8] 分析 ASTS
+2026-11-04 09:30:50,121 [INFO] [3/8] 分析 CRWV
+2026-11-04 09:30:50,554 [INFO] [4/8] 分析 FLY
+2026-11-04 09:30:50,951 [INFO] [5/8] 分析 AAOI
+2026-11-04 09:30:51,417 [INFO] [6/8] 分析 LUNR
+2026-11-04 09:30:51,860 [INFO] [7/8] 分析 CRCL
+2026-11-04 09:30:52,345 [INFO] [8/8] 分析 ONDS
+2026-11-04 09:30:52,827 [INFO] 本交易日无新增触发记录，或 drop.txt 已存在对应记录。
+2026-11-04 09:30:52,827 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-11-02.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
+2026-11-04 11:02:05,410 [INFO] 开始美股技术风险监控，共 8 只股票；目标交易日：2026-11-03。
+2026-11-04 11:02:05,410 [INFO] [1/8] 分析 OPTX
+2026-11-04 11:02:05,992 [INFO] [2/8] 分析 ASTS
+2026-11-04 11:02:06,452 [INFO] [3/8] 分析 CRWV
+2026-11-04 11:02:07,121 [INFO] [4/8] 分析 FLY
+2026-11-04 11:02:07,623 [INFO] [5/8] 分析 AAOI
+2026-11-04 11:02:08,058 [INFO] [6/8] 分析 LUNR
+2026-11-04 11:02:08,500 [INFO] [7/8] 分析 CRCL
+2026-11-04 11:02:08,936 [INFO] [8/8] 分析 ONDS
+2026-11-04 11:02:09,432 [INFO] 本交易日无新增触发记录，或 drop.txt 已存在对应记录。
+2026-11-04 11:02:09,432 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-11-03.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
+2026-11-04 11:22:41,038 [INFO] 开始美股技术风险监控，共 8 只股票；目标交易日：2026-11-03。
+2026-11-04 11:22:41,039 [INFO] [1/8] 分析 OPTX
+2026-11-04 11:22:41,863 [INFO] [2/8] 分析 ASTS
+2026-11-04 11:22:42,350 [INFO] [3/8] 分析 CRWV
+2026-11-04 11:22:42,833 [INFO] [4/8] 分析 FLY
+2026-11-04 11:22:43,329 [INFO] [5/8] 分析 AAOI
+2026-11-04 11:22:43,825 [INFO] [6/8] 分析 LUNR
+2026-11-04 11:22:44,327 [INFO] [7/8] 分析 CRCL
+2026-11-04 11:22:44,828 [INFO] [8/8] 分析 ONDS
+2026-11-04 11:22:45,371 [INFO] 本交易日无新增触发记录，或 drop.txt 已存在对应记录。
+2026-11-04 11:22:45,371 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-11-03.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
+2026-11-05 11:30:49,701 [INFO] 开始美股技术风险监控，共 8 只股票；目标交易日：2026-11-04。
+2026-11-05 11:30:49,701 [INFO] [1/8] 分析 OPTX
+2026-11-05 11:30:50,363 [INFO] [2/8] 分析 ASTS
+2026-11-05 11:30:50,825 [INFO] [3/8] 分析 CRWV
+2026-11-05 11:30:51,368 [INFO] [4/8] 分析 FLY
+2026-11-05 11:30:51,860 [INFO] [5/8] 分析 AAOI
+2026-11-05 11:30:52,336 [INFO] [6/8] 分析 LUNR
+2026-11-05 11:30:52,902 [INFO] [7/8] 分析 CRCL
+2026-11-05 11:30:53,375 [INFO] [8/8] 分析 ONDS
+2026-11-05 11:30:53,922 [INFO] 本交易日无新增触发记录，或 drop.txt 已存在对应记录。
+2026-11-05 11:30:53,922 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-11-04.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
+2026-11-06 11:28:27,761 [INFO] 开始美股技术风险监控，共 8 只股票；目标交易日：2026-11-05。
+2026-11-06 11:28:27,761 [INFO] [1/8] 分析 OPTX
+2026-11-06 11:28:28,317 [INFO] [2/8] 分析 ASTS
+2026-11-06 11:28:28,816 [INFO] [3/8] 分析 CRWV
+2026-11-06 11:28:30,298 [INFO] [4/8] 分析 FLY
+2026-11-06 11:28:30,727 [INFO] [5/8] 分析 AAOI
+2026-11-06 11:28:31,161 [INFO] [6/8] 分析 LUNR
+2026-11-06 11:28:31,596 [INFO] [7/8] 分析 CRCL
+2026-11-06 11:28:32,032 [INFO] [8/8] 分析 ONDS
+2026-11-06 11:28:32,504 [INFO] 本交易日无新增触发记录，或 drop.txt 已存在对应记录。
+2026-11-06 11:28:32,505 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/美股技术风险监控_2026-11-05.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/drop.txt
