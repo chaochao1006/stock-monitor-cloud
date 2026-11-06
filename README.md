@@ -3,7 +3,7 @@
 这个目录是云端部署版本，包含以下监控模块：
 
 - 短线风险：`scripts/short-risk.py`
-- SMC：`scripts/smc_monitor.py`，使用独立的 51 只美股股票池。
+- SMC：`scripts/smc_monitor.py`，合并 SMC 专属股票与 Supertrend 股票池，重复代码只监控一次。
 - super-trend：`scripts/super_trend_monitor.py`，日线 Wilder ATR(10) × 3，股票池配置在 `scripts/super_trend_stock_pool.py`。
 
 ## super-trend

@@ -16,14 +16,17 @@ import numpy as np
 
 if __package__:
     from .super_trend_monitor import fetch_daily, session_dates, validate_daily
+    from .super_trend_stock_pool import STOCK_POOL as SUPERTREND_STOCK_POOL
 else:
     from super_trend_monitor import fetch_daily, session_dates, validate_daily
+    from super_trend_stock_pool import STOCK_POOL as SUPERTREND_STOCK_POOL
 
-STOCK_POOL = """
+SMC_STOCK_POOL = """
 SMR XE NNE OKLO BE IONQ QBTS INSP BWAY MANE CRSP MRNA TEM QSI ABCL IBRX TWST
 RKLB ASTS LUNR FLY ERAS VST CORZ VRT IREN AAOI SPCX ORCL CRCL NOK CBRS POET
 GLW AMAT NVTS MRVL SHAZ CRWV NBIS COHR FLNC MXL AXTI APP AVGO ALAB ARM INTC FORM LITE
 """.split()
+STOCK_POOL = list(dict.fromkeys(SMC_STOCK_POOL + SUPERTREND_STOCK_POOL))
 SWING_LENGTH = 50
 OUTPUT = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parents[1] / "data")) / "smc"
 
