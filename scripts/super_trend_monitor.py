@@ -17,8 +17,7 @@ import requests
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
-import us_stock_boll_monitor as market
-from boll_percentile_rank import STOCK_POOL
+from super_trend_stock_pool import STOCK_POOL
 
 OUTPUT = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parents[1] / "data")) / "super-trend"
 LENGTH, MULTIPLIER = 10, 3.0

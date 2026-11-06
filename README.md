@@ -2,12 +2,8 @@
 
 这个目录是云端部署版本，包含以下监控模块：
 
-- BOLL：`scripts/us_stock_boll_monitor.py`
-- CROSS：`scripts/cross_monitor.py`
 - 短线风险：`scripts/short-risk.py`
-- 中长期风险：`scripts/drop_monitor.py`
-- BOLL分位排名：`scripts/boll_percentile_rank.py`
-- super-trend：`scripts/super_trend_monitor.py`，日线 Wilder ATR(10) × 3，与 BOLL 分位排名共用股票池。
+- super-trend：`scripts/super_trend_monitor.py`，日线 Wilder ATR(10) × 3，股票池配置在 `scripts/super_trend_stock_pool.py`。
 
 ## super-trend
 
@@ -45,7 +41,7 @@ Streamlit Cloud 读取 `data/` 并展示网页仪表盘。
 data/last_run_status.json
 ```
 
-网页首页会显示最近云端运行时间、6 个模块是否成功、每个模块的记录数量。这样即使当天没有新触发，也能确认系统是否正常运行过。
+网页首页会显示最近云端运行时间、2 个模块是否成功、每个模块的记录数量。这样即使当天没有新触发，也能确认系统是否正常运行过。
 
 ## 自动清理规则
 

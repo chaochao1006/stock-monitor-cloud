@@ -18,11 +18,7 @@ BEIJING_TZ = ZoneInfo("Asia/Shanghai")
 
 MONITORS = [
     ("super-trend", SCRIPTS_DIR / "super_trend_monitor.py", DATA_DIR / "super-trend" / "signals.json"),
-    ("BOLL", SCRIPTS_DIR / "us_stock_boll_monitor.py", DATA_DIR / "BOLL" / "BOLL.txt"),
-    ("BOLL分位排名", SCRIPTS_DIR / "boll_percentile_rank.py", DATA_DIR / "BOLL" / "BOLL_percentile_rank.json"),
-    ("CROSS", SCRIPTS_DIR / "cross_monitor.py", DATA_DIR / "CROSS" / "CROSS.txt"),
     ("短线风险", SCRIPTS_DIR / "short-risk.py", DATA_DIR / "drop" / "short-risk" / "RISK.txt"),
-    ("中长期风险", SCRIPTS_DIR / "drop_monitor.py", DATA_DIR / "drop" / "drop.txt"),
 ]
 
 
@@ -32,7 +28,7 @@ def now_bj() -> datetime:
 
 
 def read_trigger_lines(path: Path) -> list[str]:
-    """读取触发记录行；JSON排名文件按 records 数组计数。"""
+    """读取触发记录行；JSON信号文件按 records 数组计数。"""
     if not path.exists():
         return []
     if path.suffix.lower() == ".json":
@@ -65,11 +61,11 @@ def latest_trigger_date(lines: list[str]) -> str:
 
 
 def latest_output_date(path: Path, lines: list[str]) -> str:
-    """获取文本触发文件或JSON排名文件的最新日期。"""
+    """获取文本触发文件或JSON信号文件的最新日期。"""
     if path.exists() and path.suffix.lower() == ".json":
         try:
             payload = json.loads(path.read_text(encoding="utf-8"))
-            return str(payload.get("ranking_date") or payload.get("latest_date") or "")
+            return str(payload.get("latest_date") or "")
         except Exception:
             return ""
     return latest_trigger_date(lines)
