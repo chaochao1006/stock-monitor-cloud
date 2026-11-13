@@ -2,476 +2,302 @@
   "module": "smc",
   "data_interval": "1d",
   "swing_length": 50,
-  "latest_date": "2026-11-11",
-  "generated_at_cn": "2026-11-12T11:48:58+08:00",
+  "latest_date": "2026-11-12",
+  "generated_at_cn": "2026-11-13T09:18:10+08:00",
   "records": [
     {
       "ticker": "SMR",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-05-27"
+      "health": "行情过期"
     },
     {
       "ticker": "XE",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": null,
-      "last_event_date": null
+      "health": "行情过期"
     },
     {
       "ticker": "NNE",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-10-06"
+      "health": "行情过期"
     },
     {
       "ticker": "OKLO",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-06-11"
+      "health": "行情过期"
     },
     {
       "ticker": "BE",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-07-24"
+      "health": "行情过期"
     },
     {
       "ticker": "IONQ",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-09-12"
+      "health": "行情过期"
     },
     {
       "ticker": "QBTS",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-05-16"
+      "health": "行情过期"
     },
     {
       "ticker": "INSP",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2023-05-08"
+      "health": "行情过期"
     },
     {
       "ticker": "BWAY",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-06-24"
+      "health": "行情过期"
     },
     {
       "ticker": "MANE",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-10-21"
+      "health": "行情过期"
     },
     {
       "ticker": "CRSP",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-07-02"
+      "health": "行情过期"
     },
     {
       "ticker": "MRNA",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-06-17"
+      "health": "行情过期"
     },
     {
       "ticker": "TEM",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-10-03"
+      "health": "行情过期"
     },
     {
       "ticker": "QSI",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-10-01"
+      "health": "行情过期"
     },
     {
       "ticker": "ABCL",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-10-01"
+      "health": "行情过期"
     },
     {
       "ticker": "IBRX",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-10-02"
+      "health": "行情过期"
     },
     {
       "ticker": "TWST",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-04-14"
+      "health": "行情过期"
     },
     {
       "ticker": "RKLB",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-05-08"
+      "health": "行情过期"
     },
     {
       "ticker": "ASTS",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-05-28"
+      "health": "行情过期"
     },
     {
       "ticker": "LUNR",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-10-14"
+      "health": "行情过期"
     },
     {
       "ticker": "FLY",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-04-06"
+      "health": "行情过期"
     },
     {
       "ticker": "ERAS",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2025-12-08"
+      "health": "行情过期"
     },
     {
       "ticker": "VST",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-07-23"
+      "health": "行情过期"
     },
     {
       "ticker": "CORZ",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-04-21"
+      "health": "行情过期"
     },
     {
       "ticker": "VRT",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-02-11"
+      "health": "行情过期"
     },
     {
       "ticker": "IREN",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-05-27"
+      "health": "行情过期"
     },
     {
       "ticker": "AAOI",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-10-06"
+      "health": "行情过期"
     },
     {
       "ticker": "SPCX",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": null,
-      "last_event_date": null
+      "health": "行情过期"
     },
     {
       "ticker": "ORCL",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-06-12"
+      "health": "行情过期"
     },
     {
       "ticker": "CRCL",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": null,
-      "last_event_date": null
+      "health": "行情过期"
     },
     {
       "ticker": "NOK",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-03-02"
+      "health": "行情过期"
     },
     {
       "ticker": "CBRS",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": null,
-      "last_event_date": null
+      "health": "行情过期"
     },
     {
       "ticker": "POET",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-04-21"
+      "health": "行情过期"
     },
     {
       "ticker": "GLW",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2025-07-23"
+      "health": "行情过期"
     },
     {
       "ticker": "AMAT",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2025-10-01"
+      "health": "行情过期"
     },
     {
       "ticker": "NVTS",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-04-22"
+      "health": "行情过期"
     },
     {
       "ticker": "MRVL",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-04-01"
+      "health": "行情过期"
     },
     {
       "ticker": "SHAZ",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": null,
-      "last_event_date": null
+      "health": "行情过期"
     },
     {
       "ticker": "CRWV",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-04-14"
+      "health": "行情过期"
     },
     {
       "ticker": "NBIS",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-04-10"
+      "health": "行情过期"
     },
     {
       "ticker": "COHR",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-08-07"
+      "health": "行情过期"
     },
     {
       "ticker": "FLNC",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2025-12-11"
+      "health": "行情过期"
     },
     {
       "ticker": "MXL",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-04-13"
+      "health": "行情过期"
     },
     {
       "ticker": "AXTI",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2025-08-22"
+      "health": "行情过期"
     },
     {
       "ticker": "APP",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-05-27"
+      "health": "行情过期"
     },
     {
       "ticker": "AVGO",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-04-22"
+      "health": "行情过期"
     },
     {
       "ticker": "ALAB",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-05-20"
+      "health": "行情过期"
     },
     {
       "ticker": "ARM",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-04-22"
+      "health": "行情过期"
     },
     {
       "ticker": "INTC",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-04-08"
+      "health": "行情过期"
     },
     {
       "ticker": "FORM",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2025-09-22"
+      "health": "行情过期"
     },
     {
       "ticker": "LITE",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-10-05"
+      "health": "行情过期"
     },
     {
       "ticker": "OPTX",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-10-20"
+      "health": "行情过期"
     },
     {
       "ticker": "DELL",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-03-24"
+      "health": "行情过期"
     },
     {
       "ticker": "BB",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-04-20"
+      "health": "行情过期"
     },
     {
       "ticker": "ONDS",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-01-05"
+      "health": "行情过期"
     },
     {
       "ticker": "NVDA",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-10-05"
+      "health": "行情过期"
     },
     {
       "ticker": "AMZN",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-08-03"
+      "health": "行情过期"
     },
     {
       "ticker": "AMD",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-09-21"
+      "health": "行情过期"
     },
     {
       "ticker": "SIVEF",
-      "data_date": "2026-11-11",
+      "data_date": "2026-11-12",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": null,
@@ -480,3056 +306,69 @@
     {
       "ticker": "RDW",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-05-20"
+      "health": "行情过期"
     },
     {
       "ticker": "QCOM",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-05-08"
+      "health": "行情过期"
     },
     {
       "ticker": "COIN",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-06-25"
+      "health": "行情过期"
     },
     {
       "ticker": "VELO",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-05-26"
+      "health": "行情过期"
     },
     {
       "ticker": "MSFT",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-11-04"
+      "health": "行情过期"
     },
     {
       "ticker": "GOOG",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2026-04-30"
+      "health": "行情过期"
     },
     {
       "ticker": "AMKR",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2025-09-18"
+      "health": "行情过期"
     },
     {
       "ticker": "LRCX",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2025-06-12"
+      "health": "行情过期"
     },
     {
       "ticker": "SNDK",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": null,
-      "last_event_date": null
+      "health": "行情过期"
     },
     {
       "ticker": "MU",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2025-06-09"
+      "health": "行情过期"
     },
     {
       "ticker": "TSLA",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing BOS",
-      "last_event_date": "2025-09-11"
+      "health": "行情过期"
     },
     {
       "ticker": "PLTR",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-10-09"
+      "health": "行情过期"
     },
     {
       "ticker": "IBM",
       "data_date": "2026-11-11",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": "Swing CHoCH",
-      "last_event_date": "2026-05-28"
+      "health": "行情过期"
     }
   ],
-  "history": [
-    {
-      "ticker": "SMR",
-      "data_date": "2024-03-04",
-      "signal": "Swing CHoCH",
-      "close": 3.9,
-      "level": 3.76
-    },
-    {
-      "ticker": "SMR",
-      "data_date": "2024-06-26",
-      "signal": "Swing BOS",
-      "close": 11.52,
-      "level": 11.21
-    },
-    {
-      "ticker": "SMR",
-      "data_date": "2024-10-16",
-      "signal": "Swing BOS",
-      "close": 19.07,
-      "level": 16.91
-    },
-    {
-      "ticker": "SMR",
-      "data_date": "2025-05-27",
-      "signal": "Swing BOS",
-      "close": 35.52,
-      "level": 32.3
-    },
-    {
-      "ticker": "NNE",
-      "data_date": "2025-01-23",
-      "signal": "Swing BOS",
-      "close": 42.74,
-      "level": 37.51
-    },
-    {
-      "ticker": "NNE",
-      "data_date": "2025-10-06",
-      "signal": "Swing BOS",
-      "close": 53.63,
-      "level": 48.05
-    },
-    {
-      "ticker": "OKLO",
-      "data_date": "2022-12-06",
-      "signal": "Swing BOS",
-      "close": 9.93,
-      "level": 9.89
-    },
-    {
-      "ticker": "OKLO",
-      "data_date": "2024-01-23",
-      "signal": "Swing BOS",
-      "close": 10.78,
-      "level": 10.77
-    },
-    {
-      "ticker": "OKLO",
-      "data_date": "2024-10-21",
-      "signal": "Swing CHoCH",
-      "close": 22.31,
-      "level": 18.8
-    },
-    {
-      "ticker": "OKLO",
-      "data_date": "2025-06-11",
-      "signal": "Swing BOS",
-      "close": 68.03,
-      "level": 59.14
-    },
-    {
-      "ticker": "BE",
-      "data_date": "2020-07-15",
-      "signal": "Swing CHoCH",
-      "close": 17.65,
-      "level": 14.51
-    },
-    {
-      "ticker": "BE",
-      "data_date": "2020-10-07",
-      "signal": "Swing BOS",
-      "close": 21.63,
-      "level": 19.67
-    },
-    {
-      "ticker": "BE",
-      "data_date": "2021-10-28",
-      "signal": "Swing CHoCH",
-      "close": 29.25,
-      "level": 28.99
-    },
-    {
-      "ticker": "BE",
-      "data_date": "2022-08-10",
-      "signal": "Swing CHoCH",
-      "close": 29.3,
-      "level": 27.059
-    },
-    {
-      "ticker": "BE",
-      "data_date": "2024-05-22",
-      "signal": "Swing CHoCH",
-      "close": 17.0,
-      "level": 15.73
-    },
-    {
-      "ticker": "BE",
-      "data_date": "2024-11-15",
-      "signal": "Swing BOS",
-      "close": 21.14,
-      "level": 18.14
-    },
-    {
-      "ticker": "BE",
-      "data_date": "2025-07-24",
-      "signal": "Swing BOS",
-      "close": 33.06,
-      "level": 29.825
-    },
-    {
-      "ticker": "IONQ",
-      "data_date": "2021-09-24",
-      "signal": "Swing CHoCH",
-      "close": 11.3,
-      "level": 10.89
-    },
-    {
-      "ticker": "IONQ",
-      "data_date": "2022-08-05",
-      "signal": "Swing CHoCH",
-      "close": 6.42,
-      "level": 6.34
-    },
-    {
-      "ticker": "IONQ",
-      "data_date": "2023-05-17",
-      "signal": "Swing CHoCH",
-      "close": 8.96,
-      "level": 8.61
-    },
-    {
-      "ticker": "IONQ",
-      "data_date": "2024-10-24",
-      "signal": "Swing CHoCH",
-      "close": 15.71,
-      "level": 15.495
-    },
-    {
-      "ticker": "IONQ",
-      "data_date": "2025-09-12",
-      "signal": "Swing BOS",
-      "close": 55.61,
-      "level": 48.94
-    },
-    {
-      "ticker": "QBTS",
-      "data_date": "2022-08-09",
-      "signal": "Swing CHoCH",
-      "close": 12.4,
-      "level": 10.33
-    },
-    {
-      "ticker": "QBTS",
-      "data_date": "2024-11-22",
-      "signal": "Swing BOS",
-      "close": 2.93,
-      "level": 2.44
-    },
-    {
-      "ticker": "QBTS",
-      "data_date": "2025-05-16",
-      "signal": "Swing BOS",
-      "close": 12.25,
-      "level": 11.41
-    },
-    {
-      "ticker": "INSP",
-      "data_date": "2019-02-12",
-      "signal": "Swing BOS",
-      "close": 57.93,
-      "level": 57.874
-    },
-    {
-      "ticker": "INSP",
-      "data_date": "2019-07-08",
-      "signal": "Swing BOS",
-      "close": 66.6,
-      "level": 64.34
-    },
-    {
-      "ticker": "INSP",
-      "data_date": "2019-12-03",
-      "signal": "Swing BOS",
-      "close": 72.22,
-      "level": 71.71
-    },
-    {
-      "ticker": "INSP",
-      "data_date": "2020-06-19",
-      "signal": "Swing CHoCH",
-      "close": 96.02,
-      "level": 95.0
-    },
-    {
-      "ticker": "INSP",
-      "data_date": "2021-09-21",
-      "signal": "Swing BOS",
-      "close": 258.58,
-      "level": 252.25
-    },
-    {
-      "ticker": "INSP",
-      "data_date": "2022-11-30",
-      "signal": "Swing CHoCH",
-      "close": 241.57,
-      "level": 231.41
-    },
-    {
-      "ticker": "INSP",
-      "data_date": "2023-05-08",
-      "signal": "Swing BOS",
-      "close": 282.32,
-      "level": 282.31
-    },
-    {
-      "ticker": "BWAY",
-      "data_date": "2020-01-16",
-      "signal": "Swing BOS",
-      "close": 5.86,
-      "level": 5.5
-    },
-    {
-      "ticker": "BWAY",
-      "data_date": "2021-01-07",
-      "signal": "Swing CHoCH",
-      "close": 4.22,
-      "level": 4.2
-    },
-    {
-      "ticker": "BWAY",
-      "data_date": "2021-05-24",
-      "signal": "Swing BOS",
-      "close": 5.345,
-      "level": 5.2865
-    },
-    {
-      "ticker": "BWAY",
-      "data_date": "2023-08-10",
-      "signal": "Swing CHoCH",
-      "close": 1.35,
-      "level": 1.305
-    },
-    {
-      "ticker": "BWAY",
-      "data_date": "2024-07-25",
-      "signal": "Swing BOS",
-      "close": 3.825,
-      "level": 3.8075
-    },
-    {
-      "ticker": "BWAY",
-      "data_date": "2025-06-24",
-      "signal": "Swing BOS",
-      "close": 6.13,
-      "level": 5.895
-    },
-    {
-      "ticker": "MANE",
-      "data_date": "2026-10-21",
-      "signal": "Swing BOS",
-      "close": 136.66,
-      "level": 131.24
-    },
-    {
-      "ticker": "CRSP",
-      "data_date": "2017-12-29",
-      "signal": "Swing BOS",
-      "close": 23.48,
-      "level": 21.322
-    },
-    {
-      "ticker": "CRSP",
-      "data_date": "2019-11-13",
-      "signal": "Swing BOS",
-      "close": 55.0,
-      "level": 53.9
-    },
-    {
-      "ticker": "CRSP",
-      "data_date": "2020-06-23",
-      "signal": "Swing CHoCH",
-      "close": 75.37,
-      "level": 74.0
-    },
-    {
-      "ticker": "CRSP",
-      "data_date": "2023-05-09",
-      "signal": "Swing CHoCH",
-      "close": 63.42,
-      "level": 58.5
-    },
-    {
-      "ticker": "CRSP",
-      "data_date": "2023-11-20",
-      "signal": "Swing CHoCH",
-      "close": 72.18,
-      "level": 72.0
-    },
-    {
-      "ticker": "CRSP",
-      "data_date": "2025-07-09",
-      "signal": "Swing CHoCH",
-      "close": 60.08,
-      "level": 55.88
-    },
-    {
-      "ticker": "CRSP",
-      "data_date": "2025-10-02",
-      "signal": "Swing BOS",
-      "close": 72.82,
-      "level": 71.13
-    },
-    {
-      "ticker": "CRSP",
-      "data_date": "2026-07-02",
-      "signal": "Swing CHoCH",
-      "close": 60.08,
-      "level": 59.39
-    },
-    {
-      "ticker": "MRNA",
-      "data_date": "2020-03-02",
-      "signal": "Swing CHoCH",
-      "close": 29.88,
-      "level": 29.79
-    },
-    {
-      "ticker": "MRNA",
-      "data_date": "2020-11-16",
-      "signal": "Swing BOS",
-      "close": 97.95,
-      "level": 95.21
-    },
-    {
-      "ticker": "MRNA",
-      "data_date": "2021-06-02",
-      "signal": "Swing BOS",
-      "close": 191.6,
-      "level": 189.26
-    },
-    {
-      "ticker": "MRNA",
-      "data_date": "2022-12-13",
-      "signal": "Swing CHoCH",
-      "close": 197.54,
-      "level": 197.44
-    },
-    {
-      "ticker": "MRNA",
-      "data_date": "2024-05-02",
-      "signal": "Swing CHoCH",
-      "close": 125.59,
-      "level": 115.97
-    },
-    {
-      "ticker": "MRNA",
-      "data_date": "2026-01-06",
-      "signal": "Swing CHoCH",
-      "close": 35.66,
-      "level": 35.59
-    },
-    {
-      "ticker": "MRNA",
-      "data_date": "2026-06-17",
-      "signal": "Swing BOS",
-      "close": 61.8,
-      "level": 59.55
-    },
-    {
-      "ticker": "TEM",
-      "data_date": "2024-11-11",
-      "signal": "Swing BOS",
-      "close": 77.62,
-      "level": 77.0
-    },
-    {
-      "ticker": "TEM",
-      "data_date": "2025-10-03",
-      "signal": "Swing BOS",
-      "close": 91.66,
-      "level": 91.45
-    },
-    {
-      "ticker": "QSI",
-      "data_date": "2021-02-18",
-      "signal": "Swing BOS",
-      "close": 22.41,
-      "level": 11.88
-    },
-    {
-      "ticker": "QSI",
-      "data_date": "2024-11-20",
-      "signal": "Swing CHoCH",
-      "close": 1.39,
-      "level": 1.26
-    },
-    {
-      "ticker": "QSI",
-      "data_date": "2025-10-15",
-      "signal": "Swing CHoCH",
-      "close": 2.63,
-      "level": 2.18
-    },
-    {
-      "ticker": "QSI",
-      "data_date": "2026-10-01",
-      "signal": "Swing CHoCH",
-      "close": 1.43,
-      "level": 1.3
-    },
-    {
-      "ticker": "ABCL",
-      "data_date": "2022-11-16",
-      "signal": "Swing CHoCH",
-      "close": 14.52,
-      "level": 14.5
-    },
-    {
-      "ticker": "ABCL",
-      "data_date": "2025-06-25",
-      "signal": "Swing CHoCH",
-      "close": 3.8,
-      "level": 3.68
-    },
-    {
-      "ticker": "ABCL",
-      "data_date": "2025-10-01",
-      "signal": "Swing BOS",
-      "close": 5.96,
-      "level": 5.82
-    },
-    {
-      "ticker": "IBRX",
-      "data_date": "2019-11-29",
-      "signal": "Swing CHoCH",
-      "close": 1.72,
-      "level": 1.55
-    },
-    {
-      "ticker": "IBRX",
-      "data_date": "2020-06-22",
-      "signal": "Swing BOS",
-      "close": 11.13,
-      "level": 9.9
-    },
-    {
-      "ticker": "IBRX",
-      "data_date": "2020-12-21",
-      "signal": "Swing BOS",
-      "close": 16.02,
-      "level": 15.7
-    },
-    {
-      "ticker": "IBRX",
-      "data_date": "2023-11-03",
-      "signal": "Swing CHoCH",
-      "close": 3.75,
-      "level": 3.72
-    },
-    {
-      "ticker": "IBRX",
-      "data_date": "2026-01-14",
-      "signal": "Swing CHoCH",
-      "close": 3.02,
-      "level": 2.97
-    },
-    {
-      "ticker": "IBRX",
-      "data_date": "2026-10-02",
-      "signal": "Swing BOS",
-      "close": 10.285,
-      "level": 9.6
-    },
-    {
-      "ticker": "TWST",
-      "data_date": "2019-04-18",
-      "signal": "Swing BOS",
-      "close": 29.85,
-      "level": 28.85
-    },
-    {
-      "ticker": "TWST",
-      "data_date": "2020-05-06",
-      "signal": "Swing CHoCH",
-      "close": 37.22,
-      "level": 35.95
-    },
-    {
-      "ticker": "TWST",
-      "data_date": "2023-12-11",
-      "signal": "Swing CHoCH",
-      "close": 27.9,
-      "level": 27.36
-    },
-    {
-      "ticker": "TWST",
-      "data_date": "2024-05-06",
-      "signal": "Swing BOS",
-      "close": 44.67,
-      "level": 43.21
-    },
-    {
-      "ticker": "TWST",
-      "data_date": "2024-12-02",
-      "signal": "Swing BOS",
-      "close": 50.3,
-      "level": 49.64
-    },
-    {
-      "ticker": "TWST",
-      "data_date": "2026-04-14",
-      "signal": "Swing CHoCH",
-      "close": 57.41,
-      "level": 55.33
-    },
-    {
-      "ticker": "RKLB",
-      "data_date": "2021-03-01",
-      "signal": "Swing BOS",
-      "close": 13.95,
-      "level": 11.39
-    },
-    {
-      "ticker": "RKLB",
-      "data_date": "2021-09-09",
-      "signal": "Swing CHoCH",
-      "close": 20.72,
-      "level": 15.15
-    },
-    {
-      "ticker": "RKLB",
-      "data_date": "2023-06-13",
-      "signal": "Swing CHoCH",
-      "close": 5.94,
-      "level": 5.68
-    },
-    {
-      "ticker": "RKLB",
-      "data_date": "2024-08-16",
-      "signal": "Swing CHoCH",
-      "close": 6.56,
-      "level": 6.14
-    },
-    {
-      "ticker": "RKLB",
-      "data_date": "2025-06-24",
-      "signal": "Swing BOS",
-      "close": 33.46,
-      "level": 33.34
-    },
-    {
-      "ticker": "RKLB",
-      "data_date": "2026-05-08",
-      "signal": "Swing BOS",
-      "close": 105.47,
-      "level": 99.58
-    },
-    {
-      "ticker": "ASTS",
-      "data_date": "2020-06-29",
-      "signal": "Swing CHoCH",
-      "close": 10.15,
-      "level": 10.1
-    },
-    {
-      "ticker": "ASTS",
-      "data_date": "2020-12-10",
-      "signal": "Swing CHoCH",
-      "close": 10.38,
-      "level": 10.3
-    },
-    {
-      "ticker": "ASTS",
-      "data_date": "2022-08-12",
-      "signal": "Swing CHoCH",
-      "close": 11.63,
-      "level": 11.48
-    },
-    {
-      "ticker": "ASTS",
-      "data_date": "2024-05-29",
-      "signal": "Swing CHoCH",
-      "close": 9.02,
-      "level": 6.71
-    },
-    {
-      "ticker": "ASTS",
-      "data_date": "2025-06-10",
-      "signal": "Swing BOS",
-      "close": 35.71,
-      "level": 35.49
-    },
-    {
-      "ticker": "ASTS",
-      "data_date": "2025-10-02",
-      "signal": "Swing BOS",
-      "close": 66.16,
-      "level": 60.95
-    },
-    {
-      "ticker": "ASTS",
-      "data_date": "2026-01-16",
-      "signal": "Swing BOS",
-      "close": 115.77,
-      "level": 102.79
-    },
-    {
-      "ticker": "ASTS",
-      "data_date": "2026-05-28",
-      "signal": "Swing BOS",
-      "close": 133.09,
-      "level": 129.89
-    },
-    {
-      "ticker": "LUNR",
-      "data_date": "2024-02-20",
-      "signal": "Swing CHoCH",
-      "close": 10.99,
-      "level": 10.69
-    },
-    {
-      "ticker": "LUNR",
-      "data_date": "2024-09-18",
-      "signal": "Swing CHoCH",
-      "close": 7.47,
-      "level": 7.31
-    },
-    {
-      "ticker": "LUNR",
-      "data_date": "2025-10-14",
-      "signal": "Swing BOS",
-      "close": 13.85,
-      "level": 13.7
-    },
-    {
-      "ticker": "FLY",
-      "data_date": "2026-04-06",
-      "signal": "Swing BOS",
-      "close": 34.85,
-      "level": 34.37
-    },
-    {
-      "ticker": "ERAS",
-      "data_date": "2024-07-09",
-      "signal": "Swing CHoCH",
-      "close": 2.71,
-      "level": 2.655
-    },
-    {
-      "ticker": "ERAS",
-      "data_date": "2025-12-08",
-      "signal": "Swing CHoCH",
-      "close": 3.34,
-      "level": 3.305
-    },
-    {
-      "ticker": "VST",
-      "data_date": "2017-09-18",
-      "signal": "Swing BOS",
-      "close": 15.3208,
-      "level": 15.2867
-    },
-    {
-      "ticker": "VST",
-      "data_date": "2018-04-10",
-      "signal": "Swing BOS",
-      "close": 18.1567,
-      "level": 18.0545
-    },
-    {
-      "ticker": "VST",
-      "data_date": "2018-09-28",
-      "signal": "Swing BOS",
-      "close": 21.1885,
-      "level": 21.1288
-    },
-    {
-      "ticker": "VST",
-      "data_date": "2021-01-12",
-      "signal": "Swing CHoCH",
-      "close": 19.304,
-      "level": 19.2949
-    },
-    {
-      "ticker": "VST",
-      "data_date": "2021-10-13",
-      "signal": "Swing CHoCH",
-      "close": 18.1799,
-      "level": 17.8373
-    },
-    {
-      "ticker": "VST",
-      "data_date": "2023-03-07",
-      "signal": "Swing BOS",
-      "close": 25.2721,
-      "level": 23.6699
-    },
-    {
-      "ticker": "VST",
-      "data_date": "2023-07-06",
-      "signal": "Swing BOS",
-      "close": 26.1084,
-      "level": 26.0157
-    },
-    {
-      "ticker": "VST",
-      "data_date": "2024-09-20",
-      "signal": "Swing BOS",
-      "close": 106.6485,
-      "level": 105.49
-    },
-    {
-      "ticker": "VST",
-      "data_date": "2025-07-23",
-      "signal": "Swing BOS",
-      "close": 198.7502,
-      "level": 197.879
-    },
-    {
-      "ticker": "CORZ",
-      "data_date": "2024-05-24",
-      "signal": "Swing BOS",
-      "close": 4.82,
-      "level": 4.29
-    },
-    {
-      "ticker": "CORZ",
-      "data_date": "2025-10-10",
-      "signal": "Swing BOS",
-      "close": 18.52,
-      "level": 18.21
-    },
-    {
-      "ticker": "CORZ",
-      "data_date": "2026-04-21",
-      "signal": "Swing BOS",
-      "close": 20.77,
-      "level": 20.06
-    },
-    {
-      "ticker": "VRT",
-      "data_date": "2019-04-15",
-      "signal": "Swing BOS",
-      "close": 10.0143,
-      "level": 10.0043
-    },
-    {
-      "ticker": "VRT",
-      "data_date": "2019-12-06",
-      "signal": "Swing BOS",
-      "close": 10.3325,
-      "level": 10.3325
-    },
-    {
-      "ticker": "VRT",
-      "data_date": "2020-06-03",
-      "signal": "Swing CHoCH",
-      "close": 13.843,
-      "level": 13.6739
-    },
-    {
-      "ticker": "VRT",
-      "data_date": "2022-11-10",
-      "signal": "Swing CHoCH",
-      "close": 15.2094,
-      "level": 15.1248
-    },
-    {
-      "ticker": "VRT",
-      "data_date": "2023-02-15",
-      "signal": "Swing BOS",
-      "close": 16.008,
-      "level": 15.9908
-    },
-    {
-      "ticker": "VRT",
-      "data_date": "2023-05-25",
-      "signal": "Swing CHoCH",
-      "close": 18.4386,
-      "level": 17.811
-    },
-    {
-      "ticker": "VRT",
-      "data_date": "2024-10-11",
-      "signal": "Swing BOS",
-      "close": 111.5703,
-      "level": 108.9464
-    },
-    {
-      "ticker": "VRT",
-      "data_date": "2025-10-01",
-      "signal": "Swing CHoCH",
-      "close": 161.4181,
-      "level": 155.5107
-    },
-    {
-      "ticker": "VRT",
-      "data_date": "2026-02-11",
-      "signal": "Swing BOS",
-      "close": 248.3383,
-      "level": 202.2347
-    },
-    {
-      "ticker": "IREN",
-      "data_date": "2023-07-03",
-      "signal": "Swing CHoCH",
-      "close": 5.66,
-      "level": 5.07
-    },
-    {
-      "ticker": "IREN",
-      "data_date": "2023-12-22",
-      "signal": "Swing CHoCH",
-      "close": 8.37,
-      "level": 8.06
-    },
-    {
-      "ticker": "IREN",
-      "data_date": "2024-06-04",
-      "signal": "Swing BOS",
-      "close": 8.89,
-      "level": 8.694
-    },
-    {
-      "ticker": "IREN",
-      "data_date": "2025-07-03",
-      "signal": "Swing CHoCH",
-      "close": 16.82,
-      "level": 15.92
-    },
-    {
-      "ticker": "IREN",
-      "data_date": "2026-05-27",
-      "signal": "Swing CHoCH",
-      "close": 67.84,
-      "level": 63.59
-    },
-    {
-      "ticker": "AAOI",
-      "data_date": "2016-09-07",
-      "signal": "Swing CHoCH",
-      "close": 19.85,
-      "level": 18.96
-    },
-    {
-      "ticker": "AAOI",
-      "data_date": "2019-09-10",
-      "signal": "Swing CHoCH",
-      "close": 11.44,
-      "level": 11.4
-    },
-    {
-      "ticker": "AAOI",
-      "data_date": "2020-07-21",
-      "signal": "Swing CHoCH",
-      "close": 13.925,
-      "level": 12.563
-    },
-    {
-      "ticker": "AAOI",
-      "data_date": "2023-06-08",
-      "signal": "Swing CHoCH",
-      "close": 3.12,
-      "level": 3.06
-    },
-    {
-      "ticker": "AAOI",
-      "data_date": "2023-12-01",
-      "signal": "Swing BOS",
-      "close": 16.45,
-      "level": 16.26
-    },
-    {
-      "ticker": "AAOI",
-      "data_date": "2024-11-08",
-      "signal": "Swing BOS",
-      "close": 27.76,
-      "level": 24.75
-    },
-    {
-      "ticker": "AAOI",
-      "data_date": "2025-10-06",
-      "signal": "Swing BOS",
-      "close": 33.79,
-      "level": 31.58
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2016-07-15",
-      "signal": "Swing BOS",
-      "close": 35.8444,
-      "level": 35.7763
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2017-02-16",
-      "signal": "Swing BOS",
-      "close": 35.9685,
-      "level": 35.9645
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2017-06-22",
-      "signal": "Swing BOS",
-      "close": 43.6887,
-      "level": 40.6386
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2017-09-07",
-      "signal": "Swing BOS",
-      "close": 45.1002,
-      "level": 45.0349
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2018-01-23",
-      "signal": "Swing CHoCH",
-      "close": 44.9184,
-      "level": 44.8842
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2019-02-15",
-      "signal": "Swing CHoCH",
-      "close": 46.1793,
-      "level": 46.1582
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2020-07-09",
-      "signal": "Swing CHoCH",
-      "close": 52.5168,
-      "level": 51.856
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2020-12-16",
-      "signal": "Swing BOS",
-      "close": 57.7846,
-      "level": 57.3866
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2022-11-16",
-      "signal": "Swing CHoCH",
-      "close": 75.9618,
-      "level": 75.5638
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2024-03-12",
-      "signal": "Swing BOS",
-      "close": 123.5881,
-      "level": 122.2333
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2024-06-12",
-      "signal": "Swing BOS",
-      "close": 136.4693,
-      "level": 128.6561
-    },
-    {
-      "ticker": "ORCL",
-      "data_date": "2025-06-12",
-      "signal": "Swing BOS",
-      "close": 196.4621,
-      "level": 193.7644
-    },
-    {
-      "ticker": "NOK",
-      "data_date": "2017-05-04",
-      "signal": "Swing CHoCH",
-      "close": 4.9532,
-      "level": 4.9203
-    },
-    {
-      "ticker": "NOK",
-      "data_date": "2019-01-09",
-      "signal": "Swing BOS",
-      "close": 5.463,
-      "level": 5.416
-    },
-    {
-      "ticker": "NOK",
-      "data_date": "2020-07-06",
-      "signal": "Swing CHoCH",
-      "close": 4.132,
-      "level": 4.0692
-    },
-    {
-      "ticker": "NOK",
-      "data_date": "2021-01-27",
-      "signal": "Swing BOS",
-      "close": 5.8837,
-      "level": 4.6171
-    },
-    {
-      "ticker": "NOK",
-      "data_date": "2021-12-27",
-      "signal": "Swing BOS",
-      "close": 5.695,
-      "level": 5.6501
-    },
-    {
-      "ticker": "NOK",
-      "data_date": "2024-05-14",
-      "signal": "Swing CHoCH",
-      "close": 3.7666,
-      "level": 3.6543
-    },
-    {
-      "ticker": "NOK",
-      "data_date": "2025-02-12",
-      "signal": "Swing BOS",
-      "close": 4.9097,
-      "level": 4.8183
-    },
-    {
-      "ticker": "NOK",
-      "data_date": "2025-10-14",
-      "signal": "Swing BOS",
-      "close": 5.47,
-      "level": 5.4096
-    },
-    {
-      "ticker": "NOK",
-      "data_date": "2026-03-02",
-      "signal": "Swing BOS",
-      "close": 8.26,
-      "level": 8.19
-    },
-    {
-      "ticker": "POET",
-      "data_date": "2018-02-16",
-      "signal": "Swing CHoCH",
-      "close": 4.2,
-      "level": 3.4
-    },
-    {
-      "ticker": "POET",
-      "data_date": "2019-07-05",
-      "signal": "Swing BOS",
-      "close": 3.5,
-      "level": 3.4
-    },
-    {
-      "ticker": "POET",
-      "data_date": "2020-02-14",
-      "signal": "Swing BOS",
-      "close": 3.4,
-      "level": 3.3
-    },
-    {
-      "ticker": "POET",
-      "data_date": "2020-12-21",
-      "signal": "Swing CHoCH",
-      "close": 5.6,
-      "level": 5.3
-    },
-    {
-      "ticker": "POET",
-      "data_date": "2024-12-26",
-      "signal": "Swing CHoCH",
-      "close": 7.59,
-      "level": 5.88
-    },
-    {
-      "ticker": "POET",
-      "data_date": "2025-10-07",
-      "signal": "Swing BOS",
-      "close": 7.88,
-      "level": 7.61
-    },
-    {
-      "ticker": "POET",
-      "data_date": "2026-04-21",
-      "signal": "Swing CHoCH",
-      "close": 10.25,
-      "level": 9.14
-    },
-    {
-      "ticker": "GLW",
-      "data_date": "2017-11-07",
-      "signal": "Swing BOS",
-      "close": 25.6392,
-      "level": 25.4378
-    },
-    {
-      "ticker": "GLW",
-      "data_date": "2018-09-13",
-      "signal": "Swing CHoCH",
-      "close": 28.523,
-      "level": 28.0421
-    },
-    {
-      "ticker": "GLW",
-      "data_date": "2020-07-27",
-      "signal": "Swing CHoCH",
-      "close": 26.216,
-      "level": 25.9592
-    },
-    {
-      "ticker": "GLW",
-      "data_date": "2022-01-28",
-      "signal": "Swing CHoCH",
-      "close": 37.4016,
-      "level": 37.3338
-    },
-    {
-      "ticker": "GLW",
-      "data_date": "2024-05-03",
-      "signal": "Swing CHoCH",
-      "close": 32.256,
-      "level": 32.1197
-    },
-    {
-      "ticker": "GLW",
-      "data_date": "2024-10-09",
-      "signal": "Swing BOS",
-      "close": 45.3456,
-      "level": 44.7146
-    },
-    {
-      "ticker": "GLW",
-      "data_date": "2025-01-21",
-      "signal": "Swing BOS",
-      "close": 50.3223,
-      "level": 49.5182
-    },
-    {
-      "ticker": "GLW",
-      "data_date": "2025-07-23",
-      "signal": "Swing CHoCH",
-      "close": 55.0929,
-      "level": 54.0123
-    },
-    {
-      "ticker": "AMAT",
-      "data_date": "2017-09-18",
-      "signal": "Swing BOS",
-      "close": 43.6477,
-      "level": 43.3747
-    },
-    {
-      "ticker": "AMAT",
-      "data_date": "2018-03-09",
-      "signal": "Swing BOS",
-      "close": 56.1627,
-      "level": 55.3113
-    },
-    {
-      "ticker": "AMAT",
-      "data_date": "2019-11-15",
-      "signal": "Swing CHoCH",
-      "close": 58.2308,
-      "level": 56.8829
-    },
-    {
-      "ticker": "AMAT",
-      "data_date": "2020-11-05",
-      "signal": "Swing BOS",
-      "close": 66.5519,
-      "level": 66.2841
-    },
-    {
-      "ticker": "AMAT",
-      "data_date": "2021-11-04",
-      "signal": "Swing BOS",
-      "close": 144.0466,
-      "level": 139.1098
-    },
-    {
-      "ticker": "AMAT",
-      "data_date": "2022-12-13",
-      "signal": "Swing CHoCH",
-      "close": 108.507,
-      "level": 107.7551
-    },
-    {
-      "ticker": "AMAT",
-      "data_date": "2025-10-01",
-      "signal": "Swing CHoCH",
-      "close": 216.5423,
-      "level": 212.3045
-    },
-    {
-      "ticker": "NVTS",
-      "data_date": "2023-05-17",
-      "signal": "Swing CHoCH",
-      "close": 8.33,
-      "level": 8.1
-    },
-    {
-      "ticker": "NVTS",
-      "data_date": "2025-05-22",
-      "signal": "Swing CHoCH",
-      "close": 5.05,
-      "level": 4.656
-    },
-    {
-      "ticker": "NVTS",
-      "data_date": "2025-10-13",
-      "signal": "Swing BOS",
-      "close": 9.97,
-      "level": 9.48
-    },
-    {
-      "ticker": "NVTS",
-      "data_date": "2026-04-22",
-      "signal": "Swing BOS",
-      "close": 18.47,
-      "level": 17.79
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2016-07-20",
-      "signal": "Swing BOS",
-      "close": 10.4441,
-      "level": 10.1614
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2017-09-14",
-      "signal": "Swing BOS",
-      "close": 17.2656,
-      "level": 17.1099
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2019-04-12",
-      "signal": "Swing CHoCH",
-      "close": 22.9155,
-      "level": 21.9012
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2019-07-15",
-      "signal": "Swing BOS",
-      "close": 25.1668,
-      "level": 24.846
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2019-11-12",
-      "signal": "Swing BOS",
-      "close": 27.2312,
-      "level": 26.744
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2020-05-20",
-      "signal": "Swing CHoCH",
-      "close": 28.2367,
-      "level": 28.0612
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2021-06-24",
-      "signal": "Swing BOS",
-      "close": 55.0368,
-      "level": 54.5404
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2023-05-25",
-      "signal": "Swing CHoCH",
-      "close": 48.9535,
-      "level": 48.9007
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2024-01-18",
-      "signal": "Swing BOS",
-      "close": 67.7134,
-      "level": 67.2802
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2024-10-15",
-      "signal": "Swing CHoCH",
-      "close": 79.0291,
-      "level": 77.9344
-    },
-    {
-      "ticker": "MRVL",
-      "data_date": "2026-04-01",
-      "signal": "Swing CHoCH",
-      "close": 106.607,
-      "level": 102.597
-    },
-    {
-      "ticker": "CRWV",
-      "data_date": "2026-04-14",
-      "signal": "Swing BOS",
-      "close": 117.2,
-      "level": 114.45
-    },
-    {
-      "ticker": "NBIS",
-      "data_date": "2025-06-09",
-      "signal": "Swing BOS",
-      "close": 52.58,
-      "level": 50.87
-    },
-    {
-      "ticker": "NBIS",
-      "data_date": "2026-04-10",
-      "signal": "Swing BOS",
-      "close": 144.97,
-      "level": 141.1
-    },
-    {
-      "ticker": "COHR",
-      "data_date": "2016-09-21",
-      "signal": "Swing BOS",
-      "close": 23.47,
-      "level": 23.39
-    },
-    {
-      "ticker": "COHR",
-      "data_date": "2017-09-28",
-      "signal": "Swing BOS",
-      "close": 41.3,
-      "level": 41.1
-    },
-    {
-      "ticker": "COHR",
-      "data_date": "2018-08-28",
-      "signal": "Swing BOS",
-      "close": 49.9,
-      "level": 49.3
-    },
-    {
-      "ticker": "COHR",
-      "data_date": "2020-05-12",
-      "signal": "Swing CHoCH",
-      "close": 43.85,
-      "level": 38.95
-    },
-    {
-      "ticker": "COHR",
-      "data_date": "2020-11-05",
-      "signal": "Swing BOS",
-      "close": 56.21,
-      "level": 52.97
-    },
-    {
-      "ticker": "COHR",
-      "data_date": "2023-06-14",
-      "signal": "Swing CHoCH",
-      "close": 48.91,
-      "level": 47.0
-    },
-    {
-      "ticker": "COHR",
-      "data_date": "2024-02-07",
-      "signal": "Swing BOS",
-      "close": 61.89,
-      "level": 60.46
-    },
-    {
-      "ticker": "COHR",
-      "data_date": "2024-06-03",
-      "signal": "Swing BOS",
-      "close": 70.1,
-      "level": 67.94
-    },
-    {
-      "ticker": "COHR",
-      "data_date": "2025-08-07",
-      "signal": "Swing BOS",
-      "close": 113.82,
-      "level": 113.6
-    },
-    {
-      "ticker": "FLNC",
-      "data_date": "2022-12-13",
-      "signal": "Swing BOS",
-      "close": 21.73,
-      "level": 21.09
-    },
-    {
-      "ticker": "FLNC",
-      "data_date": "2023-06-06",
-      "signal": "Swing BOS",
-      "close": 26.87,
-      "level": 26.78
-    },
-    {
-      "ticker": "FLNC",
-      "data_date": "2025-12-11",
-      "signal": "Swing CHoCH",
-      "close": 25.79,
-      "level": 24.0
-    },
-    {
-      "ticker": "MXL",
-      "data_date": "2016-12-21",
-      "signal": "Swing BOS",
-      "close": 22.55,
-      "level": 22.5
-    },
-    {
-      "ticker": "MXL",
-      "data_date": "2019-04-24",
-      "signal": "Swing CHoCH",
-      "close": 28.61,
-      "level": 28.06
-    },
-    {
-      "ticker": "MXL",
-      "data_date": "2020-06-25",
-      "signal": "Swing CHoCH",
-      "close": 21.92,
-      "level": 21.89
-    },
-    {
-      "ticker": "MXL",
-      "data_date": "2020-11-04",
-      "signal": "Swing BOS",
-      "close": 28.87,
-      "level": 28.36
-    },
-    {
-      "ticker": "MXL",
-      "data_date": "2021-07-29",
-      "signal": "Swing BOS",
-      "close": 48.15,
-      "level": 44.05
-    },
-    {
-      "ticker": "MXL",
-      "data_date": "2023-02-01",
-      "signal": "Swing CHoCH",
-      "close": 43.24,
-      "level": 42.82
-    },
-    {
-      "ticker": "MXL",
-      "data_date": "2024-07-17",
-      "signal": "Swing CHoCH",
-      "close": 25.38,
-      "level": 24.99
-    },
-    {
-      "ticker": "MXL",
-      "data_date": "2026-04-13",
-      "signal": "Swing CHoCH",
-      "close": 21.31,
-      "level": 20.82
-    },
-    {
-      "ticker": "AXTI",
-      "data_date": "2016-05-03",
-      "signal": "Swing BOS",
-      "close": 3.0,
-      "level": 2.97
-    },
-    {
-      "ticker": "AXTI",
-      "data_date": "2016-08-08",
-      "signal": "Swing BOS",
-      "close": 3.99,
-      "level": 3.92
-    },
-    {
-      "ticker": "AXTI",
-      "data_date": "2017-01-13",
-      "signal": "Swing BOS",
-      "close": 6.0,
-      "level": 5.97
-    },
-    {
-      "ticker": "AXTI",
-      "data_date": "2017-07-27",
-      "signal": "Swing BOS",
-      "close": 8.8,
-      "level": 8.65
-    },
-    {
-      "ticker": "AXTI",
-      "data_date": "2020-04-28",
-      "signal": "Swing CHoCH",
-      "close": 5.15,
-      "level": 4.92
-    },
-    {
-      "ticker": "AXTI",
-      "data_date": "2020-09-01",
-      "signal": "Swing BOS",
-      "close": 6.05,
-      "level": 5.99
-    },
-    {
-      "ticker": "AXTI",
-      "data_date": "2022-08-10",
-      "signal": "Swing CHoCH",
-      "close": 9.74,
-      "level": 9.6
-    },
-    {
-      "ticker": "AXTI",
-      "data_date": "2024-02-26",
-      "signal": "Swing CHoCH",
-      "close": 4.53,
-      "level": 4.01
-    },
-    {
-      "ticker": "AXTI",
-      "data_date": "2025-08-22",
-      "signal": "Swing CHoCH",
-      "close": 2.82,
-      "level": 2.62
-    },
-    {
-      "ticker": "APP",
-      "data_date": "2021-10-14",
-      "signal": "Swing BOS",
-      "close": 90.79,
-      "level": 90.03
-    },
-    {
-      "ticker": "APP",
-      "data_date": "2023-05-08",
-      "signal": "Swing CHoCH",
-      "close": 17.62,
-      "level": 17.38
-    },
-    {
-      "ticker": "APP",
-      "data_date": "2025-09-08",
-      "signal": "Swing BOS",
-      "close": 547.04,
-      "level": 525.15
-    },
-    {
-      "ticker": "APP",
-      "data_date": "2026-05-27",
-      "signal": "Swing BOS",
-      "close": 567.83,
-      "level": 520.36
-    },
-    {
-      "ticker": "AVGO",
-      "data_date": "2016-12-09",
-      "signal": "Swing BOS",
-      "close": 13.7451,
-      "level": 13.729
-    },
-    {
-      "ticker": "AVGO",
-      "data_date": "2018-06-15",
-      "signal": "Swing BOS",
-      "close": 21.5801,
-      "level": 21.5534
-    },
-    {
-      "ticker": "AVGO",
-      "data_date": "2019-11-04",
-      "signal": "Swing CHoCH",
-      "close": 25.834,
-      "level": 25.6614
-    },
-    {
-      "ticker": "AVGO",
-      "data_date": "2020-08-04",
-      "signal": "Swing CHoCH",
-      "close": 28.8689,
-      "level": 28.3698
-    },
-    {
-      "ticker": "AVGO",
-      "data_date": "2021-08-03",
-      "signal": "Swing BOS",
-      "close": 44.236,
-      "level": 44.1494
-    },
-    {
-      "ticker": "AVGO",
-      "data_date": "2022-12-12",
-      "signal": "Swing CHoCH",
-      "close": 52.4904,
-      "level": 52.4215
-    },
-    {
-      "ticker": "AVGO",
-      "data_date": "2024-05-15",
-      "signal": "Swing BOS",
-      "close": 140.2643,
-      "level": 139.864
-    },
-    {
-      "ticker": "AVGO",
-      "data_date": "2024-10-09",
-      "signal": "Swing BOS",
-      "close": 182.7849,
-      "level": 180.8394
-    },
-    {
-      "ticker": "AVGO",
-      "data_date": "2025-06-03",
-      "signal": "Swing BOS",
-      "close": 253.9206,
-      "level": 247.5927
-    },
-    {
-      "ticker": "AVGO",
-      "data_date": "2026-04-22",
-      "signal": "Swing BOS",
-      "close": 421.2151,
-      "level": 411.55
-    },
-    {
-      "ticker": "ALAB",
-      "data_date": "2024-11-05",
-      "signal": "Swing CHoCH",
-      "close": 95.91,
-      "level": 95.21
-    },
-    {
-      "ticker": "ALAB",
-      "data_date": "2025-08-06",
-      "signal": "Swing BOS",
-      "close": 174.39,
-      "level": 147.39
-    },
-    {
-      "ticker": "ALAB",
-      "data_date": "2026-05-20",
-      "signal": "Swing CHoCH",
-      "close": 287.48,
-      "level": 262.9
-    },
-    {
-      "ticker": "ARM",
-      "data_date": "2024-06-18",
-      "signal": "Swing BOS",
-      "close": 174.13,
-      "level": 164.0
-    },
-    {
-      "ticker": "ARM",
-      "data_date": "2025-01-22",
-      "signal": "Swing BOS",
-      "close": 179.93,
-      "level": 164.16
-    },
-    {
-      "ticker": "ARM",
-      "data_date": "2025-10-09",
-      "signal": "Swing CHoCH",
-      "close": 170.66,
-      "level": 168.31
-    },
-    {
-      "ticker": "ARM",
-      "data_date": "2026-04-22",
-      "signal": "Swing CHoCH",
-      "close": 196.57,
-      "level": 183.16
-    },
-    {
-      "ticker": "INTC",
-      "data_date": "2016-06-23",
-      "signal": "Swing BOS",
-      "close": 26.5291,
-      "level": 26.1106
-    },
-    {
-      "ticker": "INTC",
-      "data_date": "2017-09-15",
-      "signal": "Swing CHoCH",
-      "close": 30.8784,
-      "level": 30.8331
-    },
-    {
-      "ticker": "INTC",
-      "data_date": "2019-04-16",
-      "signal": "Swing BOS",
-      "close": 49.1152,
-      "level": 48.964
-    },
-    {
-      "ticker": "INTC",
-      "data_date": "2019-11-25",
-      "signal": "Swing BOS",
-      "close": 51.8758,
-      "level": 51.6095
-    },
-    {
-      "ticker": "INTC",
-      "data_date": "2021-01-13",
-      "signal": "Swing CHoCH",
-      "close": 51.4842,
-      "level": 50.4663
-    },
-    {
-      "ticker": "INTC",
-      "data_date": "2023-03-29",
-      "signal": "Swing CHoCH",
-      "close": 30.7644,
-      "level": 30.2205
-    },
-    {
-      "ticker": "INTC",
-      "data_date": "2025-02-18",
-      "signal": "Swing CHoCH",
-      "close": 27.39,
-      "level": 26.43
-    },
-    {
-      "ticker": "INTC",
-      "data_date": "2025-09-18",
-      "signal": "Swing CHoCH",
-      "close": 30.57,
-      "level": 27.55
-    },
-    {
-      "ticker": "INTC",
-      "data_date": "2026-04-08",
-      "signal": "Swing BOS",
-      "close": 58.95,
-      "level": 54.6
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2016-11-17",
-      "signal": "Swing BOS",
-      "close": 11.25,
-      "level": 11.19
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2017-05-04",
-      "signal": "Swing BOS",
-      "close": 13.75,
-      "level": 13.15
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2017-09-14",
-      "signal": "Swing BOS",
-      "close": 15.75,
-      "level": 15.58
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2018-08-30",
-      "signal": "Swing BOS",
-      "close": 15.9,
-      "level": 15.65
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2019-04-01",
-      "signal": "Swing BOS",
-      "close": 16.92,
-      "level": 16.83
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2019-09-18",
-      "signal": "Swing BOS",
-      "close": 19.56,
-      "level": 19.27
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2020-06-16",
-      "signal": "Swing BOS",
-      "close": 29.19,
-      "level": 28.58
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2020-11-05",
-      "signal": "Swing BOS",
-      "close": 33.56,
-      "level": 33.07
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2023-07-13",
-      "signal": "Swing CHoCH",
-      "close": 36.14,
-      "level": 34.86
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2023-11-14",
-      "signal": "Swing BOS",
-      "close": 38.98,
-      "level": 37.74
-    },
-    {
-      "ticker": "FORM",
-      "data_date": "2025-09-22",
-      "signal": "Swing CHoCH",
-      "close": 37.7,
-      "level": 36.74
-    },
-    {
-      "ticker": "LITE",
-      "data_date": "2016-07-25",
-      "signal": "Swing BOS",
-      "close": 30.48,
-      "level": 27.91
-    },
-    {
-      "ticker": "LITE",
-      "data_date": "2017-02-08",
-      "signal": "Swing BOS",
-      "close": 45.85,
-      "level": 45.25
-    },
-    {
-      "ticker": "LITE",
-      "data_date": "2018-03-09",
-      "signal": "Swing CHoCH",
-      "close": 68.975,
-      "level": 66.7
-    },
-    {
-      "ticker": "LITE",
-      "data_date": "2018-08-28",
-      "signal": "Swing BOS",
-      "close": 68.15,
-      "level": 67.35
-    },
-    {
-      "ticker": "LITE",
-      "data_date": "2019-11-01",
-      "signal": "Swing CHoCH",
-      "close": 65.165,
-      "level": 63.94
-    },
-    {
-      "ticker": "LITE",
-      "data_date": "2020-08-03",
-      "signal": "Swing BOS",
-      "close": 94.58,
-      "level": 93.23
-    },
-    {
-      "ticker": "LITE",
-      "data_date": "2020-12-22",
-      "signal": "Swing BOS",
-      "close": 97.75,
-      "level": 96.735
-    },
-    {
-      "ticker": "LITE",
-      "data_date": "2024-09-19",
-      "signal": "Swing CHoCH",
-      "close": 61.14,
-      "level": 60.99
-    },
-    {
-      "ticker": "LITE",
-      "data_date": "2025-07-25",
-      "signal": "Swing BOS",
-      "close": 104.52,
-      "level": 104.0
-    },
-    {
-      "ticker": "LITE",
-      "data_date": "2026-10-05",
-      "signal": "Swing BOS",
-      "close": 1091.67,
-      "level": 1085.6801
-    },
-    {
-      "ticker": "OPTX",
-      "data_date": "2022-04-26",
-      "signal": "Swing BOS",
-      "close": 10.01,
-      "level": 10.0
-    },
-    {
-      "ticker": "OPTX",
-      "data_date": "2023-08-02",
-      "signal": "Swing CHoCH",
-      "close": 10.6,
-      "level": 10.5
-    },
-    {
-      "ticker": "OPTX",
-      "data_date": "2023-10-30",
-      "signal": "Swing BOS",
-      "close": 12.22,
-      "level": 10.75
-    },
-    {
-      "ticker": "OPTX",
-      "data_date": "2024-12-17",
-      "signal": "Swing CHoCH",
-      "close": 3.53,
-      "level": 2.02
-    },
-    {
-      "ticker": "OPTX",
-      "data_date": "2025-10-20",
-      "signal": "Swing BOS",
-      "close": 2.79,
-      "level": 2.5
-    },
-    {
-      "ticker": "DELL",
-      "data_date": "2017-08-24",
-      "signal": "Swing BOS",
-      "close": 17.8007,
-      "level": 17.7498
-    },
-    {
-      "ticker": "DELL",
-      "data_date": "2018-07-03",
-      "signal": "Swing BOS",
-      "close": 24.1425,
-      "level": 23.5239
-    },
-    {
-      "ticker": "DELL",
-      "data_date": "2019-03-15",
-      "signal": "Swing BOS",
-      "close": 27.6928,
-      "level": 27.2968
-    },
-    {
-      "ticker": "DELL",
-      "data_date": "2020-06-29",
-      "signal": "Swing CHoCH",
-      "close": 24.718,
-      "level": 24.6399
-    },
-    {
-      "ticker": "DELL",
-      "data_date": "2021-09-27",
-      "signal": "Swing BOS",
-      "close": 48.2176,
-      "level": 48.1027
-    },
-    {
-      "ticker": "DELL",
-      "data_date": "2023-04-18",
-      "signal": "Swing CHoCH",
-      "close": 42.6346,
-      "level": 42.1616
-    },
-    {
-      "ticker": "DELL",
-      "data_date": "2025-10-01",
-      "signal": "Swing CHoCH",
-      "close": 147.5922,
-      "level": 143.5088
-    },
-    {
-      "ticker": "DELL",
-      "data_date": "2026-03-24",
-      "signal": "Swing BOS",
-      "close": 175.8298,
-      "level": 166.3261
-    },
-    {
-      "ticker": "BB",
-      "data_date": "2017-04-12",
-      "signal": "Swing CHoCH",
-      "close": 8.93,
-      "level": 8.46
-    },
-    {
-      "ticker": "BB",
-      "data_date": "2017-12-20",
-      "signal": "Swing BOS",
-      "close": 12.17,
-      "level": 11.74
-    },
-    {
-      "ticker": "BB",
-      "data_date": "2020-11-20",
-      "signal": "Swing CHoCH",
-      "close": 5.76,
-      "level": 5.66
-    },
-    {
-      "ticker": "BB",
-      "data_date": "2023-05-08",
-      "signal": "Swing CHoCH",
-      "close": 4.98,
-      "level": 4.78
-    },
-    {
-      "ticker": "BB",
-      "data_date": "2024-12-24",
-      "signal": "Swing CHoCH",
-      "close": 3.96,
-      "level": 3.85
-    },
-    {
-      "ticker": "BB",
-      "data_date": "2026-04-20",
-      "signal": "Swing CHoCH",
-      "close": 5.5,
-      "level": 5.09
-    },
-    {
-      "ticker": "ONDS",
-      "data_date": "2021-09-28",
-      "signal": "Swing BOS",
-      "close": 9.62,
-      "level": 9.5
-    },
-    {
-      "ticker": "ONDS",
-      "data_date": "2024-12-24",
-      "signal": "Swing CHoCH",
-      "close": 2.02,
-      "level": 1.985
-    },
-    {
-      "ticker": "ONDS",
-      "data_date": "2025-08-08",
-      "signal": "Swing BOS",
-      "close": 3.55,
-      "level": 3.4
-    },
-    {
-      "ticker": "ONDS",
-      "data_date": "2026-01-05",
-      "signal": "Swing BOS",
-      "close": 12.53,
-      "level": 11.7
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2017-05-10",
-      "signal": "Swing BOS",
-      "close": 2.9838,
-      "level": 2.971
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2019-10-15",
-      "signal": "Swing BOS",
-      "close": 4.8724,
-      "level": 4.7902
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2020-05-11",
-      "signal": "Swing BOS",
-      "close": 8.0157,
-      "level": 7.8545
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2021-02-10",
-      "signal": "Swing BOS",
-      "close": 14.6885,
-      "level": 14.6118
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2023-05-25",
-      "signal": "Swing CHoCH",
-      "close": 37.8599,
-      "level": 34.4951
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2023-11-20",
-      "signal": "Swing BOS",
-      "close": 50.2589,
-      "level": 50.1122
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2024-05-23",
-      "signal": "Swing BOS",
-      "close": 103.5039,
-      "level": 97.1231
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2024-10-21",
-      "signal": "Swing BOS",
-      "close": 143.3254,
-      "level": 140.3713
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2025-06-25",
-      "signal": "Swing BOS",
-      "close": 153.9325,
-      "level": 152.7307
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2026-04-27",
-      "signal": "Swing CHoCH",
-      "close": 216.116,
-      "level": 211.6829
-    },
-    {
-      "ticker": "NVDA",
-      "data_date": "2026-10-05",
-      "signal": "Swing BOS",
-      "close": 238.9,
-      "level": 236.0006
-    },
-    {
-      "ticker": "AMZN",
-      "data_date": "2017-02-21",
-      "signal": "Swing BOS",
-      "close": 42.822,
-      "level": 42.3605
-    },
-    {
-      "ticker": "AMZN",
-      "data_date": "2017-10-27",
-      "signal": "Swing BOS",
-      "close": 55.0475,
-      "level": 54.1655
-    },
-    {
-      "ticker": "AMZN",
-      "data_date": "2020-02-04",
-      "signal": "Swing BOS",
-      "close": 102.4835,
-      "level": 101.79
-    },
-    {
-      "ticker": "AMZN",
-      "data_date": "2021-02-02",
-      "signal": "Swing CHoCH",
-      "close": 169.0,
-      "level": 168.34
-    },
-    {
-      "ticker": "AMZN",
-      "data_date": "2021-04-28",
-      "signal": "Swing CHoCH",
-      "close": 172.925,
-      "level": 171.7
-    },
-    {
-      "ticker": "AMZN",
-      "data_date": "2023-05-17",
-      "signal": "Swing CHoCH",
-      "close": 115.5,
-      "level": 114.0
-    },
-    {
-      "ticker": "AMZN",
-      "data_date": "2024-11-06",
-      "signal": "Swing BOS",
-      "close": 207.09,
-      "level": 201.2
-    },
-    {
-      "ticker": "AMZN",
-      "data_date": "2025-10-31",
-      "signal": "Swing BOS",
-      "close": 244.22,
-      "level": 242.52
-    },
-    {
-      "ticker": "AMZN",
-      "data_date": "2026-04-14",
-      "signal": "Swing CHoCH",
-      "close": 249.02,
-      "level": 248.94
-    },
-    {
-      "ticker": "AMZN",
-      "data_date": "2026-08-03",
-      "signal": "Swing BOS",
-      "close": 284.02,
-      "level": 278.56
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2016-11-17",
-      "signal": "Swing BOS",
-      "close": 8.46,
-      "level": 8.0
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2018-06-01",
-      "signal": "Swing CHoCH",
-      "close": 14.4,
-      "level": 13.85
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2019-07-15",
-      "signal": "Swing BOS",
-      "close": 34.39,
-      "level": 34.14
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2019-11-04",
-      "signal": "Swing BOS",
-      "close": 36.29,
-      "level": 35.55
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2020-07-22",
-      "signal": "Swing BOS",
-      "close": 61.79,
-      "level": 59.27
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2020-12-14",
-      "signal": "Swing BOS",
-      "close": 94.78,
-      "level": 94.28
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2021-07-29",
-      "signal": "Swing CHoCH",
-      "close": 102.95,
-      "level": 99.23
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2021-10-26",
-      "signal": "Swing BOS",
-      "close": 122.93,
-      "level": 122.49
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2023-05-18",
-      "signal": "Swing CHoCH",
-      "close": 107.93,
-      "level": 104.59
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2023-12-11",
-      "signal": "Swing BOS",
-      "close": 134.41,
-      "level": 132.83
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2025-07-29",
-      "signal": "Swing CHoCH",
-      "close": 177.44,
-      "level": 174.05
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2026-04-16",
-      "signal": "Swing BOS",
-      "close": 278.26,
-      "level": 267.08
-    },
-    {
-      "ticker": "AMD",
-      "data_date": "2026-09-21",
-      "signal": "Swing BOS",
-      "close": 615.52,
-      "level": 584.73
-    },
-    {
-      "ticker": "RDW",
-      "data_date": "2021-09-03",
-      "signal": "Swing BOS",
-      "close": 12.24,
-      "level": 11.39
-    },
-    {
-      "ticker": "RDW",
-      "data_date": "2024-03-22",
-      "signal": "Swing CHoCH",
-      "close": 4.48,
-      "level": 4.27
-    },
-    {
-      "ticker": "RDW",
-      "data_date": "2024-10-16",
-      "signal": "Swing BOS",
-      "close": 8.39,
-      "level": 8.23
-    },
-    {
-      "ticker": "RDW",
-      "data_date": "2026-05-20",
-      "signal": "Swing CHoCH",
-      "close": 14.77,
-      "level": 14.55
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2016-05-20",
-      "signal": "Swing BOS",
-      "close": 40.8807,
-      "level": 40.1308
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2017-11-03",
-      "signal": "Swing CHoCH",
-      "close": 49.0124,
-      "level": 46.5116
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2018-08-28",
-      "signal": "Swing BOS",
-      "close": 56.866,
-      "level": 55.0953
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2019-04-17",
-      "signal": "Swing BOS",
-      "close": 66.502,
-      "level": 62.9099
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2019-10-25",
-      "signal": "Swing BOS",
-      "close": 68.575,
-      "level": 68.5356
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2020-07-30",
-      "signal": "Swing CHoCH",
-      "close": 93.854,
-      "level": 82.8988
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2021-07-23",
-      "signal": "Swing BOS",
-      "close": 129.3517,
-      "level": 129.0681
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2021-11-04",
-      "signal": "Swing BOS",
-      "close": 140.0272,
-      "level": 135.9586
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2023-12-07",
-      "signal": "Swing CHoCH",
-      "close": 125.5517,
-      "level": 123.909
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2025-10-27",
-      "signal": "Swing CHoCH",
-      "close": 183.8513,
-      "level": 170.4594
-    },
-    {
-      "ticker": "QCOM",
-      "data_date": "2026-05-08",
-      "signal": "Swing BOS",
-      "close": 217.1022,
-      "level": 201.7486
-    },
-    {
-      "ticker": "COIN",
-      "data_date": "2023-07-11",
-      "signal": "Swing CHoCH",
-      "close": 89.15,
-      "level": 87.63
-    },
-    {
-      "ticker": "COIN",
-      "data_date": "2023-11-24",
-      "signal": "Swing BOS",
-      "close": 115.54,
-      "level": 114.43
-    },
-    {
-      "ticker": "COIN",
-      "data_date": "2024-11-11",
-      "signal": "Swing CHoCH",
-      "close": 324.24,
-      "level": 272.55
-    },
-    {
-      "ticker": "COIN",
-      "data_date": "2025-06-25",
-      "signal": "Swing BOS",
-      "close": 355.37,
-      "level": 349.75
-    },
-    {
-      "ticker": "VELO",
-      "data_date": "2021-10-27",
-      "signal": "Swing CHoCH",
-      "close": 5481.0,
-      "level": 5323.5
-    },
-    {
-      "ticker": "VELO",
-      "data_date": "2025-12-11",
-      "signal": "Swing CHoCH",
-      "close": 13.38,
-      "level": 9.225
-    },
-    {
-      "ticker": "VELO",
-      "data_date": "2026-05-26",
-      "signal": "Swing BOS",
-      "close": 25.08,
-      "level": 23.84
-    },
-    {
-      "ticker": "MSFT",
-      "data_date": "2016-07-22",
-      "signal": "Swing BOS",
-      "close": 49.9212,
-      "level": 49.7497
-    },
-    {
-      "ticker": "MSFT",
-      "data_date": "2019-03-15",
-      "signal": "Swing BOS",
-      "close": 108.2274,
-      "level": 107.5535
-    },
-    {
-      "ticker": "MSFT",
-      "data_date": "2020-06-09",
-      "signal": "Swing BOS",
-      "close": 180.0647,
-      "level": 179.9246
-    },
-    {
-      "ticker": "MSFT",
-      "data_date": "2021-01-26",
-      "signal": "Swing BOS",
-      "close": 221.5245,
-      "level": 221.4501
-    },
-    {
-      "ticker": "MSFT",
-      "data_date": "2023-04-26",
-      "signal": "Swing CHoCH",
-      "close": 287.3723,
-      "level": 284.0941
-    },
-    {
-      "ticker": "MSFT",
-      "data_date": "2023-11-10",
-      "signal": "Swing BOS",
-      "close": 361.2099,
-      "level": 357.6288
-    },
-    {
-      "ticker": "MSFT",
-      "data_date": "2024-12-05",
-      "signal": "Swing BOS",
-      "close": 436.6089,
-      "level": 434.9786
-    },
-    {
-      "ticker": "MSFT",
-      "data_date": "2025-05-19",
-      "signal": "Swing CHoCH",
-      "close": 454.3784,
-      "level": 449.965
-    },
-    {
-      "ticker": "MSFT",
-      "data_date": "2026-11-04",
-      "signal": "Swing CHoCH",
-      "close": 555.8,
-      "level": 549.2013
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2016-08-01",
-      "signal": "Swing BOS",
-      "close": 38.2814,
-      "level": 38.1338
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2017-01-23",
-      "signal": "Swing BOS",
-      "close": 40.5811,
-      "level": 40.4509
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2017-10-11",
-      "signal": "Swing BOS",
-      "close": 48.9984,
-      "level": 48.8473
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2018-07-13",
-      "signal": "Swing BOS",
-      "close": 58.8833,
-      "level": 58.7877
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2019-04-29",
-      "signal": "Swing CHoCH",
-      "close": 63.7749,
-      "level": 63.0969
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2019-10-28",
-      "signal": "Swing BOS",
-      "close": 63.8948,
-      "level": 62.6838
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2020-07-10",
-      "signal": "Swing CHoCH",
-      "close": 76.3637,
-      "level": 75.8865
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2023-05-18",
-      "signal": "Swing CHoCH",
-      "close": 122.3611,
-      "level": 122.1035
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2024-12-11",
-      "signal": "Swing BOS",
-      "close": 195.5645,
-      "level": 191.7141
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2025-08-25",
-      "signal": "Swing CHoCH",
-      "close": 208.4291,
-      "level": 207.4847
-    },
-    {
-      "ticker": "GOOG",
-      "data_date": "2026-04-30",
-      "signal": "Swing BOS",
-      "close": 381.4626,
-      "level": 349.4662
-    },
-    {
-      "ticker": "AMKR",
-      "data_date": "2019-02-15",
-      "signal": "Swing CHoCH",
-      "close": 8.7915,
-      "level": 8.7822
-    },
-    {
-      "ticker": "AMKR",
-      "data_date": "2019-07-30",
-      "signal": "Swing BOS",
-      "close": 9.0697,
-      "level": 9.0326
-    },
-    {
-      "ticker": "AMKR",
-      "data_date": "2021-01-06",
-      "signal": "Swing CHoCH",
-      "close": 14.9044,
-      "level": 14.6525
-    },
-    {
-      "ticker": "AMKR",
-      "data_date": "2021-08-06",
-      "signal": "Swing BOS",
-      "close": 25.6135,
-      "level": 25.6122
-    },
-    {
-      "ticker": "AMKR",
-      "data_date": "2022-11-10",
-      "signal": "Swing CHoCH",
-      "close": 22.6936,
-      "level": 21.7984
-    },
-    {
-      "ticker": "AMKR",
-      "data_date": "2023-12-12",
-      "signal": "Swing BOS",
-      "close": 29.4421,
-      "level": 28.7774
-    },
-    {
-      "ticker": "AMKR",
-      "data_date": "2024-06-18",
-      "signal": "Swing BOS",
-      "close": 38.5286,
-      "level": 35.3917
-    },
-    {
-      "ticker": "AMKR",
-      "data_date": "2025-09-18",
-      "signal": "Swing CHoCH",
-      "close": 28.9582,
-      "level": 27.3885
-    },
-    {
-      "ticker": "LRCX",
-      "data_date": "2018-03-09",
-      "signal": "Swing BOS",
-      "close": 20.0658,
-      "level": 19.4941
-    },
-    {
-      "ticker": "LRCX",
-      "data_date": "2019-07-23",
-      "signal": "Swing CHoCH",
-      "close": 19.3011,
-      "level": 19.1663
-    },
-    {
-      "ticker": "LRCX",
-      "data_date": "2020-07-14",
-      "signal": "Swing BOS",
-      "close": 32.4617,
-      "level": 31.9791
-    },
-    {
-      "ticker": "LRCX",
-      "data_date": "2020-11-05",
-      "signal": "Swing BOS",
-      "close": 37.6396,
-      "level": 36.3677
-    },
-    {
-      "ticker": "LRCX",
-      "data_date": "2021-11-29",
-      "signal": "Swing BOS",
-      "close": 64.6923,
-      "level": 63.767
-    },
-    {
-      "ticker": "LRCX",
-      "data_date": "2023-02-01",
-      "signal": "Swing CHoCH",
-      "close": 51.2372,
-      "level": 48.5718
-    },
-    {
-      "ticker": "LRCX",
-      "data_date": "2023-05-15",
-      "signal": "Swing BOS",
-      "close": 53.5576,
-      "level": 53.0335
-    },
-    {
-      "ticker": "LRCX",
-      "data_date": "2023-12-11",
-      "signal": "Swing BOS",
-      "close": 71.7483,
-      "level": 70.651
-    },
-    {
-      "ticker": "LRCX",
-      "data_date": "2024-06-12",
-      "signal": "Swing BOS",
-      "close": 101.7032,
-      "level": 98.5272
-    },
-    {
-      "ticker": "LRCX",
-      "data_date": "2025-06-12",
-      "signal": "Swing CHoCH",
-      "close": 90.8327,
-      "level": 90.6187
-    },
-    {
-      "ticker": "MU",
-      "data_date": "2017-09-11",
-      "signal": "Swing BOS",
-      "close": 32.6034,
-      "level": 32.1355
-    },
-    {
-      "ticker": "MU",
-      "data_date": "2018-03-05",
-      "signal": "Swing BOS",
-      "close": 50.7284,
-      "level": 48.6419
-    },
-    {
-      "ticker": "MU",
-      "data_date": "2019-07-19",
-      "signal": "Swing CHoCH",
-      "close": 44.3813,
-      "level": 43.728
-    },
-    {
-      "ticker": "MU",
-      "data_date": "2019-12-16",
-      "signal": "Swing BOS",
-      "close": 51.6156,
-      "level": 50.1044
-    },
-    {
-      "ticker": "MU",
-      "data_date": "2020-11-06",
-      "signal": "Swing CHoCH",
-      "close": 53.7801,
-      "level": 53.4486
-    },
-    {
-      "ticker": "MU",
-      "data_date": "2022-01-14",
-      "signal": "Swing BOS",
-      "close": 95.1585,
-      "level": 94.5344
-    },
-    {
-      "ticker": "MU",
-      "data_date": "2023-05-18",
-      "signal": "Swing CHoCH",
-      "close": 66.6872,
-      "level": 64.1534
-    },
-    {
-      "ticker": "MU",
-      "data_date": "2023-11-03",
-      "signal": "Swing BOS",
-      "close": 71.8863,
-      "level": 71.5292
-    },
-    {
-      "ticker": "MU",
-      "data_date": "2025-06-09",
-      "signal": "Swing CHoCH",
-      "close": 110.6506,
-      "level": 110.2279
-    },
-    {
-      "ticker": "TSLA",
-      "data_date": "2017-01-13",
-      "signal": "Swing CHoCH",
-      "close": 15.85,
-      "level": 15.7753
-    },
-    {
-      "ticker": "TSLA",
-      "data_date": "2018-06-18",
-      "signal": "Swing CHoCH",
-      "close": 24.722,
-      "level": 24.0333
-    },
-    {
-      "ticker": "TSLA",
-      "data_date": "2019-10-24",
-      "signal": "Swing CHoCH",
-      "close": 19.9787,
-      "level": 17.738
-    },
-    {
-      "ticker": "TSLA",
-      "data_date": "2020-06-10",
-      "signal": "Swing BOS",
-      "close": 68.3367,
-      "level": 64.5993
-    },
-    {
-      "ticker": "TSLA",
-      "data_date": "2020-11-23",
-      "signal": "Swing BOS",
-      "close": 173.95,
-      "level": 167.4967
-    },
-    {
-      "ticker": "TSLA",
-      "data_date": "2021-09-27",
-      "signal": "Swing BOS",
-      "close": 263.7867,
-      "level": 260.2633
-    },
-    {
-      "ticker": "TSLA",
-      "data_date": "2023-06-06",
-      "signal": "Swing CHoCH",
-      "close": 221.31,
-      "level": 217.65
-    },
-    {
-      "ticker": "TSLA",
-      "data_date": "2024-11-06",
-      "signal": "Swing CHoCH",
-      "close": 288.53,
-      "level": 271.0
-    },
-    {
-      "ticker": "TSLA",
-      "data_date": "2025-09-11",
-      "signal": "Swing BOS",
-      "close": 368.81,
-      "level": 357.54
-    },
-    {
-      "ticker": "PLTR",
-      "data_date": "2021-09-16",
-      "signal": "Swing BOS",
-      "close": 28.63,
-      "level": 27.5
-    },
-    {
-      "ticker": "PLTR",
-      "data_date": "2023-05-18",
-      "signal": "Swing CHoCH",
-      "close": 11.74,
-      "level": 10.31
-    },
-    {
-      "ticker": "PLTR",
-      "data_date": "2023-11-17",
-      "signal": "Swing BOS",
-      "close": 20.49,
-      "level": 20.24
-    },
-    {
-      "ticker": "PLTR",
-      "data_date": "2024-02-06",
-      "signal": "Swing BOS",
-      "close": 21.87,
-      "level": 21.85
-    },
-    {
-      "ticker": "PLTR",
-      "data_date": "2024-07-08",
-      "signal": "Swing BOS",
-      "close": 27.7,
-      "level": 27.5
-    },
-    {
-      "ticker": "PLTR",
-      "data_date": "2025-05-13",
-      "signal": "Swing BOS",
-      "close": 128.1,
-      "level": 125.41
-    },
-    {
-      "ticker": "PLTR",
-      "data_date": "2025-10-29",
-      "signal": "Swing BOS",
-      "close": 198.81,
-      "level": 190.0
-    },
-    {
-      "ticker": "PLTR",
-      "data_date": "2026-10-09",
-      "signal": "Swing CHoCH",
-      "close": 209.05,
-      "level": 207.52
-    },
-    {
-      "ticker": "IBM",
-      "data_date": "2019-07-18",
-      "signal": "Swing CHoCH",
-      "close": 105.0651,
-      "level": 100.8895
-    },
-    {
-      "ticker": "IBM",
-      "data_date": "2020-02-03",
-      "signal": "Swing BOS",
-      "close": 105.1433,
-      "level": 104.6832
-    },
-    {
-      "ticker": "IBM",
-      "data_date": "2021-03-25",
-      "signal": "Swing CHoCH",
-      "close": 102.0165,
-      "level": 101.0444
-    },
-    {
-      "ticker": "IBM",
-      "data_date": "2022-05-27",
-      "signal": "Swing BOS",
-      "close": 118.5687,
-      "level": 118.1886
-    },
-    {
-      "ticker": "IBM",
-      "data_date": "2022-11-11",
-      "signal": "Swing BOS",
-      "close": 124.8963,
-      "level": 123.2171
-    },
-    {
-      "ticker": "IBM",
-      "data_date": "2023-09-01",
-      "signal": "Swing BOS",
-      "close": 133.948,
-      "level": 133.6548
-    },
-    {
-      "ticker": "IBM",
-      "data_date": "2024-08-20",
-      "signal": "Swing BOS",
-      "close": 184.5373,
-      "level": 184.0498
-    },
-    {
-      "ticker": "IBM",
-      "data_date": "2025-10-24",
-      "signal": "Swing BOS",
-      "close": 297.6117,
-      "level": 284.7484
-    },
-    {
-      "ticker": "IBM",
-      "data_date": "2026-05-28",
-      "signal": "Swing CHoCH",
-      "close": 260.5367,
-      "level": 254.8744
-    }
-  ],
+  "history": [],
   "triggers": []
 }
