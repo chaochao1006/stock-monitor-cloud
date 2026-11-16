@@ -120,6 +120,11 @@ def calculate_supertrend(frame, length=LENGTH, multiplier=MULTIPLIER):
 
 def analyze(symbol, expected, schedule):
     df, source, error = fetch_daily(symbol)
+    return analyze_prices(symbol, expected, schedule, df, source, error)
+
+
+def analyze_prices(symbol, expected, schedule, df, source, error=""):
+    """Same monitor rule, accepting already fetched prices for shared scans."""
     if df.empty:
         raise ValueError(error or "行情为空")
     # The fetcher normalizes dates to New York dates. Exclude live and future bars.

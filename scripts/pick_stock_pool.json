@@ -1,0 +1,2813 @@
+{
+  "schema_version": 1,
+  "source_file": "标普500与纳指100_细分行业市值排序_20261116.xlsx",
+  "source_sha256": "a08368c3a507db969305901c268941e2f8a832c299e925b08ffd8c7b2ef296ff",
+  "imported_at_cn": "2026-11-16T18:33:28+08:00",
+  "sheet_counts": {
+    "标普500": 235,
+    "纳指100": 99
+  },
+  "stock_pool_count": 274,
+  "stocks": [
+    {
+      "ticker": "AAPL",
+      "display_ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "sector": "信息技术",
+      "industry": "计算机硬件、存储与外设",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "DELL",
+      "display_ticker": "DELL",
+      "company_name": "Dell Technologies Inc.",
+      "sector": "信息技术",
+      "industry": "计算机硬件、存储与外设",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "display_ticker": "SNDK",
+      "company_name": "Sandisk Corporation",
+      "sector": "信息技术",
+      "industry": "计算机硬件、存储与外设",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "STX",
+      "display_ticker": "STX",
+      "company_name": "Seagate Technology Holdings plc",
+      "sector": "信息技术",
+      "industry": "计算机硬件、存储与外设",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "WDC",
+      "display_ticker": "WDC",
+      "company_name": "Western Digital Corporation",
+      "sector": "信息技术",
+      "industry": "计算机硬件、存储与外设",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "HPE",
+      "display_ticker": "HPE",
+      "company_name": "Hewlett Packard Enterprise Company",
+      "sector": "信息技术",
+      "industry": "计算机硬件、存储与外设",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "P",
+      "display_ticker": "P",
+      "company_name": "Everpure, Inc.",
+      "sector": "信息技术",
+      "industry": "计算机硬件、存储与外设",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "NTAP",
+      "display_ticker": "NTAP",
+      "company_name": "NetApp, Inc.",
+      "sector": "信息技术",
+      "industry": "计算机硬件、存储与外设",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "HPQ",
+      "display_ticker": "HPQ",
+      "company_name": "HP Inc.",
+      "sector": "信息技术",
+      "industry": "计算机硬件、存储与外设",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "SMCI",
+      "display_ticker": "SMCI",
+      "company_name": "Super Micro Computer, Inc.",
+      "sector": "信息技术",
+      "industry": "计算机硬件、存储与外设",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "display_ticker": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "display_ticker": "AVGO",
+      "company_name": "Broadcom Inc.",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MU",
+      "display_ticker": "MU",
+      "company_name": "Micron Technology, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "display_ticker": "AMD",
+      "company_name": "Advanced Micro Devices, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "display_ticker": "INTC",
+      "company_name": "Intel Corporation",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "TXN",
+      "display_ticker": "TXN",
+      "company_name": "Texas Instruments Incorporated",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ADI",
+      "display_ticker": "ADI",
+      "company_name": "Analog Devices, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "QCOM",
+      "display_ticker": "QCOM",
+      "company_name": "QUALCOMM Incorporated",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "display_ticker": "MRVL",
+      "company_name": "Marvell Technology, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MPWR",
+      "display_ticker": "MPWR",
+      "company_name": "Monolithic Power Systems, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "NXPI",
+      "display_ticker": "NXPI",
+      "company_name": "NXP Semiconductors N.V.",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MCHP",
+      "display_ticker": "MCHP",
+      "company_name": "Microchip Technology Incorporated",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ON",
+      "display_ticker": "ON",
+      "company_name": "ON Semiconductor Corporation",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "SWKS",
+      "display_ticker": "SWKS",
+      "company_name": "Skyworks Solutions, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "FSLR",
+      "display_ticker": "FSLR",
+      "company_name": "First Solar, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "display_ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "sector": "信息技术",
+      "industry": "系统软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "PANW",
+      "display_ticker": "PANW",
+      "company_name": "Palo Alto Networks, Inc.",
+      "sector": "信息技术",
+      "industry": "系统软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "CRWD",
+      "display_ticker": "CRWD",
+      "company_name": "CrowdStrike Holdings, Inc.",
+      "sector": "信息技术",
+      "industry": "系统软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "NOW",
+      "display_ticker": "NOW",
+      "company_name": "ServiceNow, Inc.",
+      "sector": "信息技术",
+      "industry": "系统软件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "FTNT",
+      "display_ticker": "FTNT",
+      "company_name": "Fortinet, Inc.",
+      "sector": "信息技术",
+      "industry": "系统软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "TWLO",
+      "display_ticker": "TWLO",
+      "company_name": "Twilio Inc.",
+      "sector": "信息技术",
+      "industry": "系统软件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GEN",
+      "display_ticker": "GEN",
+      "company_name": "Gen Digital Inc.",
+      "sector": "信息技术",
+      "industry": "系统软件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PLTR",
+      "display_ticker": "PLTR",
+      "company_name": "Palantir Technologies Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ORCL",
+      "display_ticker": "ORCL",
+      "company_name": "Oracle Corporation",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CRM",
+      "display_ticker": "CRM",
+      "company_name": "Salesforce, Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ADBE",
+      "display_ticker": "ADBE",
+      "company_name": "Adobe Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "INTU",
+      "display_ticker": "INTU",
+      "company_name": "Intuit Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "CDNS",
+      "display_ticker": "CDNS",
+      "company_name": "Cadence Design Systems, Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "SNPS",
+      "display_ticker": "SNPS",
+      "company_name": "Synopsys, Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "DDOG",
+      "display_ticker": "DDOG",
+      "company_name": "Datadog, Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ADSK",
+      "display_ticker": "ADSK",
+      "company_name": "Autodesk, Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "WDAY",
+      "display_ticker": "WDAY",
+      "company_name": "Workday, Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "OKTA",
+      "display_ticker": "OKTA",
+      "company_name": "Okta, Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PTC",
+      "display_ticker": "PTC",
+      "company_name": "PTC Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "TYL",
+      "display_ticker": "TYL",
+      "company_name": "Tyler Technologies, Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "FICO",
+      "display_ticker": "FICO",
+      "company_name": "Fair Isaac Corporation",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "TRMB",
+      "display_ticker": "TRMB",
+      "company_name": "Trimble Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CSCO",
+      "display_ticker": "CSCO",
+      "company_name": "Cisco Systems, Inc.",
+      "sector": "信息技术",
+      "industry": "通信设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ANET",
+      "display_ticker": "ANET",
+      "company_name": "Arista Networks, Inc.",
+      "sector": "信息技术",
+      "industry": "通信设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "MSI",
+      "display_ticker": "MSI",
+      "company_name": "Motorola Solutions, Inc.",
+      "sector": "信息技术",
+      "industry": "通信设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "LITE",
+      "display_ticker": "LITE",
+      "company_name": "Lumentum Holdings Inc.",
+      "sector": "信息技术",
+      "industry": "通信设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "CIEN",
+      "display_ticker": "CIEN",
+      "company_name": "Ciena Corporation",
+      "sector": "信息技术",
+      "industry": "通信设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "FFIV",
+      "display_ticker": "FFIV",
+      "company_name": "F5, Inc.",
+      "sector": "信息技术",
+      "industry": "通信设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "AMAT",
+      "display_ticker": "AMAT",
+      "company_name": "Applied Materials, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体材料与设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "LRCX",
+      "display_ticker": "LRCX",
+      "company_name": "Lam Research Corporation",
+      "sector": "信息技术",
+      "industry": "半导体材料与设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "KLAC",
+      "display_ticker": "KLAC",
+      "company_name": "KLA Corporation",
+      "sector": "信息技术",
+      "industry": "半导体材料与设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "TER",
+      "display_ticker": "TER",
+      "company_name": "Teradyne, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体材料与设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "Q",
+      "display_ticker": "Q",
+      "company_name": "Qnity Electronics, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体材料与设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "IBM",
+      "display_ticker": "IBM",
+      "company_name": "International Business Machines Corporation",
+      "sector": "信息技术",
+      "industry": "IT咨询与其他服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ACN",
+      "display_ticker": "ACN",
+      "company_name": "Accenture plc",
+      "sector": "信息技术",
+      "industry": "IT咨询与其他服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CTSH",
+      "display_ticker": "CTSH",
+      "company_name": "Cognizant Technology Solutions Corporation",
+      "sector": "信息技术",
+      "industry": "IT咨询与其他服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "IT",
+      "display_ticker": "IT",
+      "company_name": "Gartner, Inc.",
+      "sector": "信息技术",
+      "industry": "IT咨询与其他服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "APH",
+      "display_ticker": "APH",
+      "company_name": "Amphenol Corporation",
+      "sector": "信息技术",
+      "industry": "电子元件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GLW",
+      "display_ticker": "GLW",
+      "company_name": "Corning Incorporated",
+      "sector": "信息技术",
+      "industry": "电子元件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "COHR",
+      "display_ticker": "COHR",
+      "company_name": "Coherent Corp.",
+      "sector": "信息技术",
+      "industry": "电子元件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "TEL",
+      "display_ticker": "TEL",
+      "company_name": "TE Connectivity plc",
+      "sector": "信息技术",
+      "industry": "电子制造服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "FLEX",
+      "display_ticker": "FLEX",
+      "company_name": "Flex Ltd.",
+      "sector": "信息技术",
+      "industry": "电子制造服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "JBL",
+      "display_ticker": "JBL",
+      "company_name": "Jabil Inc.",
+      "sector": "信息技术",
+      "industry": "电子制造服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "KEYS",
+      "display_ticker": "KEYS",
+      "company_name": "Keysight Technologies, Inc.",
+      "sector": "信息技术",
+      "industry": "电子设备与仪器",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ROP",
+      "display_ticker": "ROP",
+      "company_name": "Roper Technologies, Inc.",
+      "sector": "信息技术",
+      "industry": "电子设备与仪器",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "TDY",
+      "display_ticker": "TDY",
+      "company_name": "Teledyne Technologies Incorporated",
+      "sector": "信息技术",
+      "industry": "电子设备与仪器",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ZBRA",
+      "display_ticker": "ZBRA",
+      "company_name": "Zebra Technologies Corporation",
+      "sector": "信息技术",
+      "industry": "电子设备与仪器",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "VRSN",
+      "display_ticker": "VRSN",
+      "company_name": "VeriSign, Inc.",
+      "sector": "信息技术",
+      "industry": "互联网服务与基础设施",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GDDY",
+      "display_ticker": "GDDY",
+      "company_name": "GoDaddy Inc.",
+      "sector": "信息技术",
+      "industry": "互联网服务与基础设施",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "AKAM",
+      "display_ticker": "AKAM",
+      "company_name": "Akamai Technologies, Inc.",
+      "sector": "信息技术",
+      "industry": "互联网服务与基础设施",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CDW",
+      "display_ticker": "CDW",
+      "company_name": "CDW Corporation",
+      "sector": "信息技术",
+      "industry": "科技产品分销",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "display_ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "sector": "通信服务",
+      "industry": "互动媒体与互联网平台",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "GOOG",
+      "display_ticker": "GOOG",
+      "company_name": "Alphabet Inc.",
+      "sector": "通信服务",
+      "industry": "互动媒体与互联网平台",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "META",
+      "display_ticker": "META",
+      "company_name": "Meta Platforms, Inc.",
+      "sector": "通信服务",
+      "industry": "互动媒体与互联网平台",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "RDDT",
+      "display_ticker": "RDDT",
+      "company_name": "Reddit, Inc.",
+      "sector": "通信服务",
+      "industry": "互动媒体与互联网平台",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "VZ",
+      "display_ticker": "VZ",
+      "company_name": "Verizon Communications Inc.",
+      "sector": "通信服务",
+      "industry": "综合电信服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "T",
+      "display_ticker": "T",
+      "company_name": "AT&T Inc.",
+      "sector": "通信服务",
+      "industry": "综合电信服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "TMUS",
+      "display_ticker": "TMUS",
+      "company_name": "T-Mobile US, Inc.",
+      "sector": "通信服务",
+      "industry": "无线电信服务",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ECHO",
+      "display_ticker": "ECHO",
+      "company_name": "EchoStar Corporation",
+      "sector": "通信服务",
+      "industry": "无线电信服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CMCSA",
+      "display_ticker": "CMCSA",
+      "company_name": "Comcast Corporation",
+      "sector": "通信服务",
+      "industry": "有线电视与卫星媒体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "CHTR",
+      "display_ticker": "CHTR",
+      "company_name": "Charter Communications, Inc.",
+      "sector": "通信服务",
+      "industry": "有线电视与卫星媒体",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "display_ticker": "AMZN",
+      "company_name": "Amazon.com, Inc.",
+      "sector": "可选消费",
+      "industry": "综合零售与电商",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "EBAY",
+      "display_ticker": "EBAY",
+      "company_name": "eBay Inc.",
+      "sector": "可选消费",
+      "industry": "综合零售与电商",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "TSLA",
+      "display_ticker": "TSLA",
+      "company_name": "Tesla, Inc.",
+      "sector": "可选消费",
+      "industry": "整车制造",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "GM",
+      "display_ticker": "GM",
+      "company_name": "General Motors Company",
+      "sector": "可选消费",
+      "industry": "整车制造",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "F",
+      "display_ticker": "F",
+      "company_name": "Ford Motor Company",
+      "sector": "可选消费",
+      "industry": "整车制造",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GRMN",
+      "display_ticker": "GRMN",
+      "company_name": "Garmin Ltd.",
+      "sector": "可选消费",
+      "industry": "消费电子",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "BBY",
+      "display_ticker": "BBY",
+      "company_name": "Best Buy Co., Inc.",
+      "sector": "可选消费",
+      "industry": "计算机与电子产品零售",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "LLY",
+      "display_ticker": "LLY",
+      "company_name": "Eli Lilly and Company",
+      "sector": "医疗保健",
+      "industry": "制药",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "JNJ",
+      "display_ticker": "JNJ",
+      "company_name": "Johnson & Johnson",
+      "sector": "医疗保健",
+      "industry": "制药",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "MRK",
+      "display_ticker": "MRK",
+      "company_name": "Merck & Co., Inc.",
+      "sector": "医疗保健",
+      "industry": "制药",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PFE",
+      "display_ticker": "PFE",
+      "company_name": "Pfizer Inc.",
+      "sector": "医疗保健",
+      "industry": "制药",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "BMY",
+      "display_ticker": "BMY",
+      "company_name": "Bristol-Myers Squibb Company",
+      "sector": "医疗保健",
+      "industry": "制药",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ZTS",
+      "display_ticker": "ZTS",
+      "company_name": "Zoetis Inc.",
+      "sector": "医疗保健",
+      "industry": "制药",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "VTRS",
+      "display_ticker": "VTRS",
+      "company_name": "Viatris Inc.",
+      "sector": "医疗保健",
+      "industry": "制药",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ABBV",
+      "display_ticker": "ABBV",
+      "company_name": "AbbVie Inc.",
+      "sector": "医疗保健",
+      "industry": "生物技术",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "AMGN",
+      "display_ticker": "AMGN",
+      "company_name": "Amgen Inc.",
+      "sector": "医疗保健",
+      "industry": "生物技术",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "GILD",
+      "display_ticker": "GILD",
+      "company_name": "Gilead Sciences, Inc.",
+      "sector": "医疗保健",
+      "industry": "生物技术",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "VRTX",
+      "display_ticker": "VRTX",
+      "company_name": "Vertex Pharmaceuticals Incorporated",
+      "sector": "医疗保健",
+      "industry": "生物技术",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "REGN",
+      "display_ticker": "REGN",
+      "company_name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "医疗保健",
+      "industry": "生物技术",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MRNA",
+      "display_ticker": "MRNA",
+      "company_name": "Moderna, Inc.",
+      "sector": "医疗保健",
+      "industry": "生物技术",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "BIIB",
+      "display_ticker": "BIIB",
+      "company_name": "Biogen Inc.",
+      "sector": "医疗保健",
+      "industry": "生物技术",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "INCY",
+      "display_ticker": "INCY",
+      "company_name": "Incyte Corporation",
+      "sector": "医疗保健",
+      "industry": "生物技术",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "UNH",
+      "display_ticker": "UNH",
+      "company_name": "UnitedHealth Group Incorporated",
+      "sector": "医疗保健",
+      "industry": "管理式医疗与医疗保险",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ELV",
+      "display_ticker": "ELV",
+      "company_name": "Elevance Health, Inc.",
+      "sector": "医疗保健",
+      "industry": "管理式医疗与医疗保险",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "HUM",
+      "display_ticker": "HUM",
+      "company_name": "Humana Inc.",
+      "sector": "医疗保健",
+      "industry": "管理式医疗与医疗保险",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CNC",
+      "display_ticker": "CNC",
+      "company_name": "Centene Corporation",
+      "sector": "医疗保健",
+      "industry": "管理式医疗与医疗保险",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "TMO",
+      "display_ticker": "TMO",
+      "company_name": "Thermo Fisher Scientific Inc.",
+      "sector": "医疗保健",
+      "industry": "生命科学工具与服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "DHR",
+      "display_ticker": "DHR",
+      "company_name": "Danaher Corporation",
+      "sector": "医疗保健",
+      "industry": "生命科学工具与服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "A",
+      "display_ticker": "A",
+      "company_name": "Agilent Technologies, Inc.",
+      "sector": "医疗保健",
+      "industry": "生命科学工具与服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "WAT",
+      "display_ticker": "WAT",
+      "company_name": "Waters Corporation",
+      "sector": "医疗保健",
+      "industry": "生命科学工具与服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "IQV",
+      "display_ticker": "IQV",
+      "company_name": "IQVIA Holdings Inc.",
+      "sector": "医疗保健",
+      "industry": "生命科学工具与服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "MTD",
+      "display_ticker": "MTD",
+      "company_name": "Mettler-Toledo International Inc.",
+      "sector": "医疗保健",
+      "industry": "生命科学工具与服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ILMN",
+      "display_ticker": "ILMN",
+      "company_name": "Illumina, Inc.",
+      "sector": "医疗保健",
+      "industry": "生命科学工具与服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CRL",
+      "display_ticker": "CRL",
+      "company_name": "Charles River Laboratories International, Inc.",
+      "sector": "医疗保健",
+      "industry": "生命科学工具与服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "TECH",
+      "display_ticker": "TECH",
+      "company_name": "Bio-Techne Corporation",
+      "sector": "医疗保健",
+      "industry": "生命科学工具与服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ABT",
+      "display_ticker": "ABT",
+      "company_name": "Abbott Laboratories",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ISRG",
+      "display_ticker": "ISRG",
+      "company_name": "Intuitive Surgical, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MDT",
+      "display_ticker": "MDT",
+      "company_name": "Medtronic plc",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "SYK",
+      "display_ticker": "SYK",
+      "company_name": "Stryker Corporation",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "BSX",
+      "display_ticker": "BSX",
+      "company_name": "Boston Scientific Corporation",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "EW",
+      "display_ticker": "EW",
+      "company_name": "Edwards Lifesciences Corporation",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "BDX",
+      "display_ticker": "BDX",
+      "company_name": "Becton, Dickinson and Company",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "IDXX",
+      "display_ticker": "IDXX",
+      "company_name": "IDEXX Laboratories, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "GEHC",
+      "display_ticker": "GEHC",
+      "company_name": "GE HealthCare Technologies Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "RMD",
+      "display_ticker": "RMD",
+      "company_name": "ResMed Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "DXCM",
+      "display_ticker": "DXCM",
+      "company_name": "DexCom, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "STE",
+      "display_ticker": "STE",
+      "company_name": "STERIS plc",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ZBH",
+      "display_ticker": "ZBH",
+      "company_name": "Zimmer Biomet Holdings, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "RVTY",
+      "display_ticker": "RVTY",
+      "company_name": "Revvity, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "BAX",
+      "display_ticker": "BAX",
+      "company_name": "Baxter International Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PODD",
+      "display_ticker": "PODD",
+      "company_name": "Insulet Corporation",
+      "sector": "医疗保健",
+      "industry": "医疗设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "MCK",
+      "display_ticker": "MCK",
+      "company_name": "McKesson Corporation",
+      "sector": "医疗保健",
+      "industry": "医疗产品分销",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "COR",
+      "display_ticker": "COR",
+      "company_name": "Cencora, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗产品分销",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CAH",
+      "display_ticker": "CAH",
+      "company_name": "Cardinal Health, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗产品分销",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "HSIC",
+      "display_ticker": "HSIC",
+      "company_name": "Henry Schein, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗产品分销",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CVS",
+      "display_ticker": "CVS",
+      "company_name": "CVS Health Corporation",
+      "sector": "医疗保健",
+      "industry": "医疗服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CI",
+      "display_ticker": "CI",
+      "company_name": "The Cigna Group",
+      "sector": "医疗保健",
+      "industry": "医疗服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "LH",
+      "display_ticker": "LH",
+      "company_name": "Labcorp Holdings Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "DGX",
+      "display_ticker": "DGX",
+      "company_name": "Quest Diagnostics Incorporated",
+      "sector": "医疗保健",
+      "industry": "医疗服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "DVA",
+      "display_ticker": "DVA",
+      "company_name": "DaVita Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "HCA",
+      "display_ticker": "HCA",
+      "company_name": "HCA Healthcare, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗机构",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "UHS",
+      "display_ticker": "UHS",
+      "company_name": "Universal Health Services, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗机构",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "VEEV",
+      "display_ticker": "VEEV",
+      "company_name": "Veeva Systems Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗信息技术",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "SOLV",
+      "display_ticker": "SOLV",
+      "company_name": "Solventum Corporation",
+      "sector": "医疗保健",
+      "industry": "医疗信息技术",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "WST",
+      "display_ticker": "WST",
+      "company_name": "West Pharmaceutical Services, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗耗材",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "COO",
+      "display_ticker": "COO",
+      "company_name": "The Cooper Companies, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗耗材",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ALGN",
+      "display_ticker": "ALGN",
+      "company_name": "Align Technology, Inc.",
+      "sector": "医疗保健",
+      "industry": "医疗耗材",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "BRK-B",
+      "display_ticker": "BRK.B",
+      "company_name": "Berkshire Hathaway Inc.",
+      "sector": "金融",
+      "industry": "多元化投资控股",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "V",
+      "display_ticker": "V",
+      "company_name": "Visa Inc.",
+      "sector": "金融",
+      "industry": "交易与支付处理服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "MA",
+      "display_ticker": "MA",
+      "company_name": "Mastercard Incorporated",
+      "sector": "金融",
+      "industry": "交易与支付处理服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "XYZ",
+      "display_ticker": "XYZ",
+      "company_name": "Block, Inc.",
+      "sector": "金融",
+      "industry": "交易与支付处理服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PYPL",
+      "display_ticker": "PYPL",
+      "company_name": "PayPal Holdings, Inc.",
+      "sector": "金融",
+      "industry": "交易与支付处理服务",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "FISV",
+      "display_ticker": "FISV",
+      "company_name": "Fiserv, Inc.",
+      "sector": "金融",
+      "industry": "交易与支付处理服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CPAY",
+      "display_ticker": "CPAY",
+      "company_name": "Corpay, Inc.",
+      "sector": "金融",
+      "industry": "交易与支付处理服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GPN",
+      "display_ticker": "GPN",
+      "company_name": "Global Payments Inc.",
+      "sector": "金融",
+      "industry": "交易与支付处理服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "FIS",
+      "display_ticker": "FIS",
+      "company_name": "Fidelity National Information Services, Inc.",
+      "sector": "金融",
+      "industry": "交易与支付处理服务",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "EG",
+      "display_ticker": "EG",
+      "company_name": "Everest Group, Ltd.",
+      "sector": "金融",
+      "industry": "再保险",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GE",
+      "display_ticker": "GE",
+      "company_name": "GE Aerospace",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "RTX",
+      "display_ticker": "RTX",
+      "company_name": "RTX Corporation",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "LMT",
+      "display_ticker": "LMT",
+      "company_name": "Lockheed Martin Corporation",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "BA",
+      "display_ticker": "BA",
+      "company_name": "The Boeing Company",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GD",
+      "display_ticker": "GD",
+      "company_name": "General Dynamics Corporation",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "HWM",
+      "display_ticker": "HWM",
+      "company_name": "Howmet Aerospace Inc.",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "NOC",
+      "display_ticker": "NOC",
+      "company_name": "Northrop Grumman Corporation",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "TDG",
+      "display_ticker": "TDG",
+      "company_name": "TransDigm Group Incorporated",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "HONA",
+      "display_ticker": "HONA",
+      "company_name": "Honeywell Aerospace Inc.",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "LHX",
+      "display_ticker": "LHX",
+      "company_name": "L3Harris Technologies, Inc.",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "AXON",
+      "display_ticker": "AXON",
+      "company_name": "Axon Enterprise, Inc.",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "TXT",
+      "display_ticker": "TXT",
+      "company_name": "Textron Inc.",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "HII",
+      "display_ticker": "HII",
+      "company_name": "Huntington Ingalls Industries, Inc.",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CAT",
+      "display_ticker": "CAT",
+      "company_name": "Caterpillar Inc.",
+      "sector": "工业",
+      "industry": "工程机械与重型运输设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CMI",
+      "display_ticker": "CMI",
+      "company_name": "Cummins Inc.",
+      "sector": "工业",
+      "industry": "工程机械与重型运输设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PCAR",
+      "display_ticker": "PCAR",
+      "company_name": "PACCAR Inc",
+      "sector": "工业",
+      "industry": "工程机械与重型运输设备",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "WAB",
+      "display_ticker": "WAB",
+      "company_name": "Westinghouse Air Brake Technologies Corporation",
+      "sector": "工业",
+      "industry": "工程机械与重型运输设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GEV",
+      "display_ticker": "GEV",
+      "company_name": "GE Vernova Inc.",
+      "sector": "工业",
+      "industry": "重型电气设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GNRC",
+      "display_ticker": "GNRC",
+      "company_name": "Generac Holdings Inc.",
+      "sector": "工业",
+      "industry": "重型电气设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "UBER",
+      "display_ticker": "UBER",
+      "company_name": "Uber Technologies, Inc.",
+      "sector": "工业",
+      "industry": "陆路客运",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ETN",
+      "display_ticker": "ETN",
+      "company_name": "Eaton Corporation plc",
+      "sector": "工业",
+      "industry": "电气元件与设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "EMR",
+      "display_ticker": "EMR",
+      "company_name": "Emerson Electric Co.",
+      "sector": "工业",
+      "industry": "电气元件与设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "VRT",
+      "display_ticker": "VRT",
+      "company_name": "Vertiv Holdings Co",
+      "sector": "工业",
+      "industry": "电气元件与设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "BE",
+      "display_ticker": "BE",
+      "company_name": "Bloom Energy Corporation",
+      "sector": "工业",
+      "industry": "电气元件与设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "AME",
+      "display_ticker": "AME",
+      "company_name": "AMETEK, Inc.",
+      "sector": "工业",
+      "industry": "电气元件与设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ROK",
+      "display_ticker": "ROK",
+      "company_name": "Rockwell Automation, Inc.",
+      "sector": "工业",
+      "industry": "电气元件与设备",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PH",
+      "display_ticker": "PH",
+      "company_name": "Parker-Hannifin Corporation",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ITW",
+      "display_ticker": "ITW",
+      "company_name": "Illinois Tool Works Inc.",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "GWW",
+      "display_ticker": "GWW",
+      "company_name": "W.W. Grainger, Inc.",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "IR",
+      "display_ticker": "IR",
+      "company_name": "Ingersoll Rand Inc.",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "OTIS",
+      "display_ticker": "OTIS",
+      "company_name": "Otis Worldwide Corporation",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "DOV",
+      "display_ticker": "DOV",
+      "company_name": "Dover Corporation",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "HUBB",
+      "display_ticker": "HUBB",
+      "company_name": "Hubbell Incorporated",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "XYL",
+      "display_ticker": "XYL",
+      "company_name": "Xylem Inc.",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "FTV",
+      "display_ticker": "FTV",
+      "company_name": "Fortive Corporation",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "SNA",
+      "display_ticker": "SNA",
+      "company_name": "Snap-on Incorporated",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "NDSN",
+      "display_ticker": "NDSN",
+      "company_name": "Nordson Corporation",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "IEX",
+      "display_ticker": "IEX",
+      "company_name": "IDEX Corporation",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "SWK",
+      "display_ticker": "SWK",
+      "company_name": "Stanley Black & Decker, Inc.",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PNR",
+      "display_ticker": "PNR",
+      "company_name": "Pentair plc",
+      "sector": "工业",
+      "industry": "工业机械、配件与零部件",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "NEE",
+      "display_ticker": "NEE",
+      "company_name": "NextEra Energy, Inc.",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "D",
+      "display_ticker": "D",
+      "company_name": "Dominion Energy, Inc.",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "XEL",
+      "display_ticker": "XEL",
+      "company_name": "Xcel Energy Inc.",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "SRE",
+      "display_ticker": "SRE",
+      "company_name": "Sempra",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ED",
+      "display_ticker": "ED",
+      "company_name": "Consolidated Edison, Inc.",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "AEE",
+      "display_ticker": "AEE",
+      "company_name": "Ameren Corporation",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PCG",
+      "display_ticker": "PCG",
+      "company_name": "PG&E Corporation",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "DTE",
+      "display_ticker": "DTE",
+      "company_name": "DTE Energy Company",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CNP",
+      "display_ticker": "CNP",
+      "company_name": "CenterPoint Energy, Inc.",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "NI",
+      "display_ticker": "NI",
+      "company_name": "NiSource Inc.",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CMS",
+      "display_ticker": "CMS",
+      "company_name": "CMS Energy Corporation",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PNW",
+      "display_ticker": "PNW",
+      "company_name": "Pinnacle West Capital Corporation",
+      "sector": "公用事业",
+      "industry": "综合公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "SO",
+      "display_ticker": "SO",
+      "company_name": "The Southern Company",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "DUK",
+      "display_ticker": "DUK",
+      "company_name": "Duke Energy Corporation",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "CEG",
+      "display_ticker": "CEG",
+      "company_name": "Constellation Energy Corporation",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "AEP",
+      "display_ticker": "AEP",
+      "company_name": "American Electric Power Company, Inc.",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ETR",
+      "display_ticker": "ETR",
+      "company_name": "Entergy Corporation",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "EXC",
+      "display_ticker": "EXC",
+      "company_name": "Exelon Corporation",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "VST",
+      "display_ticker": "VST",
+      "company_name": "Vistra Corp.",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "WEC",
+      "display_ticker": "WEC",
+      "company_name": "WEC Energy Group, Inc.",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PEG",
+      "display_ticker": "PEG",
+      "company_name": "Public Service Enterprise Group Incorporated",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "FE",
+      "display_ticker": "FE",
+      "company_name": "FirstEnergy Corp.",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ES",
+      "display_ticker": "ES",
+      "company_name": "Eversource Energy",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "PPL",
+      "display_ticker": "PPL",
+      "company_name": "PPL Corporation",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "EIX",
+      "display_ticker": "EIX",
+      "company_name": "Edison International",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "EVRG",
+      "display_ticker": "EVRG",
+      "company_name": "Evergy, Inc.",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "LNT",
+      "display_ticker": "LNT",
+      "company_name": "Alliant Energy Corporation",
+      "sector": "公用事业",
+      "industry": "电力公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ATO",
+      "display_ticker": "ATO",
+      "company_name": "Atmos Energy Corporation",
+      "sector": "公用事业",
+      "industry": "燃气公用事业",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "LIN",
+      "display_ticker": "LIN",
+      "company_name": "Linde plc",
+      "sector": "原材料",
+      "industry": "工业气体",
+      "indexes": [
+        "标普500",
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "APD",
+      "display_ticker": "APD",
+      "company_name": "Air Products and Chemicals, Inc.",
+      "sector": "原材料",
+      "industry": "工业气体",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "EQIX",
+      "display_ticker": "EQIX",
+      "company_name": "Equinix, Inc.",
+      "sector": "房地产",
+      "industry": "数据中心REIT",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "DLR",
+      "display_ticker": "DLR",
+      "company_name": "Digital Realty Trust, Inc.",
+      "sector": "房地产",
+      "industry": "数据中心REIT",
+      "indexes": [
+        "标普500"
+      ]
+    },
+    {
+      "ticker": "ARM",
+      "display_ticker": "ARM",
+      "company_name": "Arm Holdings plc",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ALAB",
+      "display_ticker": "ALAB",
+      "company_name": "Astera Labs, Inc.",
+      "sector": "信息技术",
+      "industry": "半导体",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ASML",
+      "display_ticker": "ASML",
+      "company_name": "ASML Holding N.V.",
+      "sector": "信息技术",
+      "industry": "半导体材料与设备",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "SHOP",
+      "display_ticker": "SHOP",
+      "company_name": "Shopify Inc.",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MSTR",
+      "display_ticker": "MSTR",
+      "company_name": "Strategy Inc",
+      "sector": "信息技术",
+      "industry": "应用软件",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "NBIS",
+      "display_ticker": "NBIS",
+      "company_name": "Nebius Group N.V.",
+      "sector": "信息技术",
+      "industry": "互联网服务与基础设施",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "display_ticker": "CRWV",
+      "company_name": "CoreWeave, Inc.",
+      "sector": "信息技术",
+      "industry": "互联网服务与基础设施",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "SPCX",
+      "display_ticker": "SPCX",
+      "company_name": "Space Exploration Technologies Corp.",
+      "sector": "通信服务",
+      "industry": "卫星通信与航天服务",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "NFLX",
+      "display_ticker": "NFLX",
+      "company_name": "Netflix, Inc.",
+      "sector": "通信服务",
+      "industry": "影视与娱乐",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "APP",
+      "display_ticker": "APP",
+      "company_name": "AppLovin Corporation",
+      "sector": "通信服务",
+      "industry": "广告",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "TTWO",
+      "display_ticker": "TTWO",
+      "company_name": "Take-Two Interactive Software, Inc.",
+      "sector": "通信服务",
+      "industry": "互动娱乐与电子游戏",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "PDD",
+      "display_ticker": "PDD",
+      "company_name": "PDD Holdings Inc.",
+      "sector": "可选消费",
+      "industry": "综合零售与电商",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MELI",
+      "display_ticker": "MELI",
+      "company_name": "MercadoLibre, Inc.",
+      "sector": "可选消费",
+      "industry": "综合零售与电商",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "SBUX",
+      "display_ticker": "SBUX",
+      "company_name": "Starbucks Corporation",
+      "sector": "可选消费",
+      "industry": "餐饮",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "BKNG",
+      "display_ticker": "BKNG",
+      "company_name": "Booking Holdings Inc.",
+      "sector": "可选消费",
+      "industry": "酒店、度假村与邮轮",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ABNB",
+      "display_ticker": "ABNB",
+      "company_name": "Airbnb, Inc.",
+      "sector": "可选消费",
+      "industry": "酒店、度假村与邮轮",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MAR",
+      "display_ticker": "MAR",
+      "company_name": "Marriott International, Inc.",
+      "sector": "可选消费",
+      "industry": "酒店、度假村与邮轮",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "DASH",
+      "display_ticker": "DASH",
+      "company_name": "DoorDash, Inc.",
+      "sector": "可选消费",
+      "industry": "专业消费者服务",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ROST",
+      "display_ticker": "ROST",
+      "company_name": "Ross Stores, Inc.",
+      "sector": "可选消费",
+      "industry": "服装零售",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ORLY",
+      "display_ticker": "ORLY",
+      "company_name": "O'Reilly Automotive, Inc.",
+      "sector": "可选消费",
+      "industry": "汽车零售",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "WMT",
+      "display_ticker": "WMT",
+      "company_name": "Walmart Inc.",
+      "sector": "必需消费",
+      "industry": "必需消费品综合零售",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "COST",
+      "display_ticker": "COST",
+      "company_name": "Costco Wholesale Corporation",
+      "sector": "必需消费",
+      "industry": "必需消费品综合零售",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "PEP",
+      "display_ticker": "PEP",
+      "company_name": "PepsiCo, Inc.",
+      "sector": "必需消费",
+      "industry": "软饮料与非酒精饮料",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MNST",
+      "display_ticker": "MNST",
+      "company_name": "Monster Beverage Corporation",
+      "sector": "必需消费",
+      "industry": "软饮料与非酒精饮料",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "CCEP",
+      "display_ticker": "CCEP",
+      "company_name": "Coca-Cola Europacific Partners PLC",
+      "sector": "必需消费",
+      "industry": "软饮料与非酒精饮料",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "KDP",
+      "display_ticker": "KDP",
+      "company_name": "Keurig Dr Pepper Inc.",
+      "sector": "必需消费",
+      "industry": "软饮料与非酒精饮料",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "MDLZ",
+      "display_ticker": "MDLZ",
+      "company_name": "Mondelez International, Inc.",
+      "sector": "必需消费",
+      "industry": "包装食品与肉类",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ALNY",
+      "display_ticker": "ALNY",
+      "company_name": "Alnylam Pharmaceuticals, Inc.",
+      "sector": "医疗保健",
+      "industry": "生物技术",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ADP",
+      "display_ticker": "ADP",
+      "company_name": "Automatic Data Processing, Inc.",
+      "sector": "工业",
+      "industry": "人力资源与就业服务",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "PAYX",
+      "display_ticker": "PAYX",
+      "company_name": "Paychex, Inc.",
+      "sector": "工业",
+      "industry": "人力资源与就业服务",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "CTAS",
+      "display_ticker": "CTAS",
+      "company_name": "Cintas Corporation",
+      "sector": "工业",
+      "industry": "综合商业支持服务",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "CPRT",
+      "display_ticker": "CPRT",
+      "company_name": "Copart, Inc.",
+      "sector": "工业",
+      "industry": "综合商业支持服务",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "HON",
+      "display_ticker": "HON",
+      "company_name": "Honeywell International Inc.",
+      "sector": "工业",
+      "industry": "工业综合企业",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "FAST",
+      "display_ticker": "FAST",
+      "company_name": "Fastenal Company",
+      "sector": "工业",
+      "industry": "工业贸易与分销",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "RKLB",
+      "display_ticker": "RKLB",
+      "company_name": "Rocket Lab Corporation",
+      "sector": "工业",
+      "industry": "航空航天与国防",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "TRI",
+      "display_ticker": "TRI",
+      "company_name": "Thomson Reuters Corporation",
+      "sector": "工业",
+      "industry": "研究与咨询服务",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "FER",
+      "display_ticker": "FER",
+      "company_name": "Ferrovial N.V.",
+      "sector": "工业",
+      "industry": "交通基础设施运营",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "ODFL",
+      "display_ticker": "ODFL",
+      "company_name": "Old Dominion Freight Line, Inc.",
+      "sector": "工业",
+      "industry": "陆路货运",
+      "indexes": [
+        "纳指100"
+      ]
+    },
+    {
+      "ticker": "BKR",
+      "display_ticker": "BKR",
+      "company_name": "Baker Hughes Company",
+      "sector": "能源",
+      "industry": "油气设备与服务",
+      "indexes": [
+        "纳指100"
+      ]
+    }
+  ]
+}

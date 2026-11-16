@@ -5,6 +5,8 @@
 - 短线风险：`scripts/short-risk.py`
 - SMC：`scripts/smc_monitor.py`，合并 SMC 专属股票与 Supertrend 股票池，重复代码只监控一次。
 - super-trend：`scripts/super_trend_monitor.py`，日线 Wilder ATR(10) × 3，股票池配置在 `scripts/super_trend_stock_pool.py`。
+- ST-pick：`scripts/st_pick_monitor.py`，沿用super-trend规则，使用选股表导入的独立股票池。
+- SMC-pick：`scripts/smc_pick_monitor.py`，沿用SMC绿色Swing BOS/CHoCH规则，使用同一选股池。
 
 ## super-trend
 
@@ -48,7 +50,23 @@ Streamlit Cloud 读取 `data/` 并展示网页仪表盘。
 data/last_run_status.json
 ```
 
-网页首页会显示最近云端运行时间、3 个模块是否成功、每个模块的记录数量。这样即使当天没有新触发，也能确认系统是否正常运行过。
+网页首页会显示最近云端运行时间、5个模块是否成功、每个模块的记录数量。这样即使当天没有新触发，也能确认系统是否正常运行过。
+
+## ST-pick和SMC-pick
+
+网页侧栏分别选择`ST-pick`和`SMC-pick`。ST-pick展示当日买卖触发、持有表和观望表；SMC-pick展示当日绿色Swing BOS/CHoCH、历史触发和股票数据状态。规则直接调用原模块的计算函数，不采用此前回测里的固定止盈止损规则。
+
+股票池导入自桌面选票表的两个工作表，按实际非空股票代码合并去重：标普页235只、纳指页99只，合并274只。GOOG和GOOGL是不同证券，均保留；BRK.B、BF.B自动转成Yahoo代码BRK-B、BF-B。
+
+云端读取已提交的`scripts/pick_stock_pool.json`，不依赖桌面的Excel路径。以后修改Excel后，可重新导入再提交这个JSON：
+
+```powershell
+python scripts/import_pick_pool.py "C:\Users\81975\Desktop\每日报告\选票\标普500与纳指100_细分行业市值排序_20261116.xlsx"
+```
+
+两个pick模块在同一次全量运行中只下载一次274只股票的行情，分别计算两套信号。后续运行会重新下载，不会因为同一天运行过就沿用失败结果。输出分别保存到`data/st-pick/signals.json`和`data/smc-pick/signals.json`。
+
+单独更新两个pick模块：`python scripts/pick_monitors.py`。全量定时任务会自动运行，无需在云端上传Excel。修改代码与股票池后，需要提交推送到部署仓库才会生效。
 
 ## 自动清理规则
 

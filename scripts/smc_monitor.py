@@ -62,6 +62,11 @@ def swing_events(frame, length=SWING_LENGTH):
 
 def analyze(symbol, expected):
     frame, source, error = fetch_daily(symbol)
+    return analyze_prices(symbol, expected, frame, source, error)
+
+
+def analyze_prices(symbol, expected, frame, source, error=""):
+    """Same SMC rule, accepting the daily prices shared with Supertrend."""
     if frame.empty:
         raise ValueError(error or "行情为空")
     frame = frame.loc["2016-01-01":expected]

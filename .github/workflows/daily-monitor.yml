@@ -9,20 +9,27 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: daily-stock-monitors-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   run-monitors:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 155
     env:
       TZ: Asia/Shanghai
       REPORT_BASE_DIR: ${{ github.workspace }}/data
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
           cache: "pip"
@@ -37,13 +44,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Verify monitor rules and selected pools
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+
       - name: Run all monitors
         run: python run_all_monitors.py
 
       - name: Clean old reports and logs
+        if: ${{ always() && !cancelled() }}
         run: python cleanup_old_outputs.py
 
       - name: Commit generated reports
+        if: ${{ always() && !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -52,5 +64,6 @@ jobs:
             echo "No report changes to commit."
           else
             git commit -m "Update daily stock monitor reports"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
             git push
           fi

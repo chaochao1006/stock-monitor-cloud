@@ -5,6 +5,7 @@ import os
 import re
 import subprocess
 import sys
+import uuid
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -19,6 +20,8 @@ BEIJING_TZ = ZoneInfo("Asia/Shanghai")
 MONITORS = [
     ("super-trend", SCRIPTS_DIR / "super_trend_monitor.py", DATA_DIR / "super-trend" / "signals.json"),
     ("SMC", SCRIPTS_DIR / "smc_monitor.py", DATA_DIR / "smc" / "signals.json"),
+    ("ST-pick", SCRIPTS_DIR / "st_pick_monitor.py", DATA_DIR / "st-pick" / "signals.json"),
+    ("SMC-pick", SCRIPTS_DIR / "smc_pick_monitor.py", DATA_DIR / "smc-pick" / "signals.json"),
     ("短线风险", SCRIPTS_DIR / "short-risk.py", DATA_DIR / "drop" / "short-risk" / "RISK.txt"),
 ]
 
@@ -35,7 +38,7 @@ def read_trigger_lines(path: Path) -> list[str]:
     if path.suffix.lower() == ".json":
         try:
             payload = json.loads(path.read_text(encoding="utf-8"))
-            records = payload.get("history" if payload.get("module") == "smc" else "records", [])
+            records = payload.get("history" if "history" in payload else "records", [])
             if isinstance(records, list):
                 return [json.dumps(item, ensure_ascii=False) for item in records]
         except Exception:
@@ -100,7 +103,7 @@ def run_monitor(label: str, script_path: Path, trigger_file: Path) -> dict:
         text=True,
         encoding="utf-8",
         errors="replace",
-        timeout=60 * 45,
+        timeout=60 * (90 if label in ("ST-pick", "SMC-pick") else 45),
     )
     finished_at = now_bj()
     after_lines = read_trigger_lines(trigger_file)
@@ -136,9 +139,10 @@ def write_status(started_at: datetime, finished_at: datetime, module_results: li
     print(f"已写入运行状态：{STATUS_PATH}")
 
 
-def main() -> None:
+def main() -> int:
     """顺序运行所有监控模块。任何单个模块失败，都不阻断其他模块。"""
     started_at = now_bj()
+    os.environ["PICK_RUN_ID"] = uuid.uuid4().hex
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     results = []
     for label, script_path, trigger_file in MONITORS:
@@ -176,7 +180,8 @@ def main() -> None:
         state = item["状态"] if item["退出码"] == 0 else f"{item['状态']}({item['退出码']})"
         print(f"{item['模块']}: {state}")
     write_status(started_at, now_bj(), results)
+    return int(any(item.get("退出码") != 0 for item in results))
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
