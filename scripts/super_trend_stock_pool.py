@@ -10,4 +10,6 @@ STOCK_POOL = [
     "PLTR", "IBM", "FORM", "MXL", "MRNA", "BE", "NNE", "INSP",
     "BWAY", "MANE", "CRSP", "TEM", "QSI", "ABCL", "IBRX", "TWST",
     "ERAS", "VST", "CORZ", "VRT", "IREN", "FLNC", "AXTI", "APP",
+    "RDNT", "GEHC", "ISRG", "SDGR", "RXRX", "ABSI", "RVMD", "BNTX",
+    "IOVA",
 ]
