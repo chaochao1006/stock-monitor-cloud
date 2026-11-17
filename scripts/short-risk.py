@@ -24,16 +24,12 @@ from docx.shared import Pt
 # 基础配置
 # =========================
 
-TICKERS = [
-    "OPTX",
-    "ASTS",
-    "CRWV",
-    "FLY",
-    "AAOI",
-    "LUNR",
-    "CRCL",
-    "ONDS",
-]
+if __package__:
+    from .super_trend_stock_pool import STOCK_POOL
+else:
+    from super_trend_stock_pool import STOCK_POOL
+
+TICKERS = STOCK_POOL
 
 REPORT_BASE_DIR = Path(os.environ.get("REPORT_BASE_DIR", Path(__file__).resolve().parents[1] / "data"))
 OUTPUT_DIR = REPORT_BASE_DIR / "drop" / "short-risk"

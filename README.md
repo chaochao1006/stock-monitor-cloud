@@ -2,13 +2,13 @@
 
 这个目录是云端部署版本，包含以下监控模块：
 
-- 短线风险：`scripts/short-risk.py`
+- 短线风险：`scripts/short-risk.py`，与super-trend、SMC共用股票池。
 - SMC：`scripts/smc_monitor.py`，与super-trend共用同一份合并去重后的股票池。
 - super-trend：`scripts/super_trend_monitor.py`，日线 Wilder ATR(10) × 3，与SMC共用股票池，统一配置在 `scripts/super_trend_stock_pool.py`。
 - ST-pick：`scripts/st_pick_monitor.py`，沿用super-trend规则，使用选股表导入的独立股票池。
 - SMC-pick：`scripts/smc_pick_monitor.py`，沿用SMC绿色Swing BOS/CHoCH规则，使用同一选股池。
 
-原有super-trend与SMC已统一为81只证券；以后只需修改`scripts/super_trend_stock_pool.py`，两个模块会同时采用新名单。ST-pick与SMC-pick的独立选股池不受影响。
+原有super-trend、SMC与短线风险已统一为81只证券；以后只需修改`scripts/super_trend_stock_pool.py`，三个模块会同时采用新名单。ST-pick与SMC-pick的独立选股池不受影响。
 
 ## super-trend
 

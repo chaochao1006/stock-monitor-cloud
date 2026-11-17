@@ -1,4 +1,4 @@
-"""Shared stock pool for the original Supertrend and SMC monitors."""
+"""Shared stock pool for the original Supertrend, SMC and short-risk monitors."""
 
 STOCK_POOL = [
     "NOK", "XE", "RKLB", "NBIS", "ARM", "OPTX", "GLW", "COHR",
