@@ -58,7 +58,7 @@ data/last_run_status.json
 
 网页侧栏分别选择`ST-pick`和`SMC-pick`。ST-pick展示当日买卖触发、持有表和观望表；SMC-pick展示当日绿色Swing BOS/CHoCH、历史触发和股票数据状态。规则直接调用原模块的计算函数，不采用此前回测里的固定止盈止损规则。
 
-股票池导入自桌面选票表的两个工作表，按实际非空股票代码合并去重：标普页235只、纳指页99只，合并274只。GOOG和GOOGL是不同证券，均保留；BRK.B、BF.B自动转成Yahoo代码BRK-B、BF-B。
+股票池于2026年11月18日重新按桌面最新选票表的两个工作表导入：标普页177只、纳指页67只，原始合并去重192只。再按要求剔除ACN、EBAY、F、VZ、WDAY后，两个pick模块共用187只证券。GOOG和GOOGL是不同证券，均保留；BRK.B、BF.B自动转成Yahoo代码BRK-B、BF-B。
 
 云端读取已提交的`scripts/pick_stock_pool.json`，不依赖桌面的Excel路径。以后修改Excel后，可重新导入再提交这个JSON：
 
@@ -66,7 +66,7 @@ data/last_run_status.json
 python scripts/import_pick_pool.py "C:\Users\81975\Desktop\每日报告\选票\标普500与纳指100_细分行业市值排序_20261116.xlsx"
 ```
 
-两个pick模块在同一次全量运行中只下载一次274只股票的行情，分别计算两套信号。后续运行会重新下载，不会因为同一天运行过就沿用失败结果。输出分别保存到`data/st-pick/signals.json`和`data/smc-pick/signals.json`。
+两个pick模块在同一次全量运行中只下载一次当前选股池的行情，分别计算两套信号。后续运行会重新下载，不会因为同一天运行过就沿用失败结果。输出分别保存到`data/st-pick/signals.json`和`data/smc-pick/signals.json`。
 
 单独更新两个pick模块：`python scripts/pick_monitors.py`。全量定时任务会自动运行，无需在云端上传Excel。修改代码与股票池后，需要提交推送到部署仓库才会生效。
 
