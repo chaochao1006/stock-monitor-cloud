@@ -1,7 +1,7 @@
 {
   "data_interval": "1d",
   "latest_date": "2026-11-17",
-  "generated_at_cn": "2026-11-18T09:23:12+08:00",
+  "generated_at_cn": "2026-11-18T09:29:03+08:00",
   "stock_pool_count": 274,
   "pool_source": "标普500与纳指100_细分行业市值排序_20261116.xlsx",
   "module": "smc-pick",
@@ -3369,5 +3369,5 @@
   ],
   "swing_length": 50,
   "triggers": [],
-  "pick_run_id": "38c220930e6344bb95646f0ac69e26a1"
+  "pick_run_id": "4c8b90fe7efb4d87953f530647a664a3"
 }
