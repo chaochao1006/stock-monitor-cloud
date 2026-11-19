@@ -2,12 +2,12 @@
   "module": "smc",
   "data_interval": "1d",
   "swing_length": 50,
-  "latest_date": "2026-11-17",
-  "generated_at_cn": "2026-11-18T17:17:28+08:00",
+  "latest_date": "2026-11-18",
+  "generated_at_cn": "2026-11-19T10:36:17+08:00",
   "records": [
     {
       "ticker": "NOK",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -15,7 +15,7 @@
     },
     {
       "ticker": "XE",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": null,
@@ -23,7 +23,7 @@
     },
     {
       "ticker": "RKLB",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -31,7 +31,7 @@
     },
     {
       "ticker": "NBIS",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -39,7 +39,7 @@
     },
     {
       "ticker": "ARM",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -47,7 +47,7 @@
     },
     {
       "ticker": "OPTX",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -55,7 +55,7 @@
     },
     {
       "ticker": "GLW",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -63,7 +63,7 @@
     },
     {
       "ticker": "COHR",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -71,7 +71,7 @@
     },
     {
       "ticker": "LITE",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -79,7 +79,7 @@
     },
     {
       "ticker": "MRVL",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -87,7 +87,7 @@
     },
     {
       "ticker": "INTC",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -95,7 +95,7 @@
     },
     {
       "ticker": "ALAB",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -103,7 +103,7 @@
     },
     {
       "ticker": "CRWV",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -111,7 +111,7 @@
     },
     {
       "ticker": "ORCL",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -119,7 +119,7 @@
     },
     {
       "ticker": "NVTS",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -127,7 +127,7 @@
     },
     {
       "ticker": "POET",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -135,7 +135,7 @@
     },
     {
       "ticker": "DELL",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -143,7 +143,7 @@
     },
     {
       "ticker": "BB",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -151,7 +151,7 @@
     },
     {
       "ticker": "ONDS",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -159,7 +159,7 @@
     },
     {
       "ticker": "SMR",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -167,7 +167,7 @@
     },
     {
       "ticker": "OKLO",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -175,7 +175,7 @@
     },
     {
       "ticker": "IONQ",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -183,7 +183,7 @@
     },
     {
       "ticker": "QBTS",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -191,7 +191,7 @@
     },
     {
       "ticker": "NVDA",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -199,7 +199,7 @@
     },
     {
       "ticker": "AMZN",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -207,7 +207,7 @@
     },
     {
       "ticker": "AMD",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -215,7 +215,7 @@
     },
     {
       "ticker": "CRCL",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": null,
@@ -223,7 +223,7 @@
     },
     {
       "ticker": "FLY",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -231,7 +231,7 @@
     },
     {
       "ticker": "CBRS",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": null,
@@ -240,14 +240,11 @@
     {
       "ticker": "SIVEF",
       "data_date": "2026-11-17",
-      "health": "正常",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "last_event": null,
-      "last_event_date": null
+      "health": "行情过期"
     },
     {
       "ticker": "SHAZ",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": null,
@@ -255,7 +252,7 @@
     },
     {
       "ticker": "LUNR",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -263,7 +260,7 @@
     },
     {
       "ticker": "ASTS",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -271,7 +268,7 @@
     },
     {
       "ticker": "AAOI",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -279,7 +276,7 @@
     },
     {
       "ticker": "SPCX",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": null,
@@ -287,7 +284,7 @@
     },
     {
       "ticker": "RDW",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -295,7 +292,7 @@
     },
     {
       "ticker": "QCOM",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -303,7 +300,7 @@
     },
     {
       "ticker": "COIN",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -311,7 +308,7 @@
     },
     {
       "ticker": "VELO",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -319,7 +316,7 @@
     },
     {
       "ticker": "MSFT",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -327,7 +324,7 @@
     },
     {
       "ticker": "GOOG",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -335,7 +332,7 @@
     },
     {
       "ticker": "AVGO",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -343,7 +340,7 @@
     },
     {
       "ticker": "AMAT",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -351,7 +348,7 @@
     },
     {
       "ticker": "AMKR",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -359,7 +356,7 @@
     },
     {
       "ticker": "LRCX",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -367,7 +364,7 @@
     },
     {
       "ticker": "SNDK",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": null,
@@ -375,7 +372,7 @@
     },
     {
       "ticker": "MU",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -383,7 +380,7 @@
     },
     {
       "ticker": "TSLA",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -391,7 +388,7 @@
     },
     {
       "ticker": "PLTR",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -399,7 +396,7 @@
     },
     {
       "ticker": "IBM",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -407,7 +404,7 @@
     },
     {
       "ticker": "FORM",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -415,7 +412,7 @@
     },
     {
       "ticker": "MXL",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -423,7 +420,7 @@
     },
     {
       "ticker": "MRNA",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -431,7 +428,7 @@
     },
     {
       "ticker": "BE",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -439,7 +436,7 @@
     },
     {
       "ticker": "NNE",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -447,7 +444,7 @@
     },
     {
       "ticker": "INSP",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -455,7 +452,7 @@
     },
     {
       "ticker": "BWAY",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -463,7 +460,7 @@
     },
     {
       "ticker": "MANE",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -471,7 +468,7 @@
     },
     {
       "ticker": "CRSP",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -479,7 +476,7 @@
     },
     {
       "ticker": "TEM",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -487,7 +484,7 @@
     },
     {
       "ticker": "QSI",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -495,7 +492,7 @@
     },
     {
       "ticker": "ABCL",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -503,7 +500,7 @@
     },
     {
       "ticker": "IBRX",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -511,7 +508,7 @@
     },
     {
       "ticker": "TWST",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -519,7 +516,7 @@
     },
     {
       "ticker": "ERAS",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -527,7 +524,7 @@
     },
     {
       "ticker": "VST",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -535,7 +532,7 @@
     },
     {
       "ticker": "CORZ",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -543,7 +540,7 @@
     },
     {
       "ticker": "VRT",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -551,7 +548,7 @@
     },
     {
       "ticker": "IREN",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -559,7 +556,7 @@
     },
     {
       "ticker": "FLNC",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -567,7 +564,7 @@
     },
     {
       "ticker": "AXTI",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -575,7 +572,7 @@
     },
     {
       "ticker": "APP",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -583,7 +580,7 @@
     },
     {
       "ticker": "RDNT",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -591,7 +588,7 @@
     },
     {
       "ticker": "GEHC",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -599,7 +596,7 @@
     },
     {
       "ticker": "ISRG",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -607,7 +604,7 @@
     },
     {
       "ticker": "SDGR",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -615,7 +612,7 @@
     },
     {
       "ticker": "RXRX",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -623,7 +620,7 @@
     },
     {
       "ticker": "ABSI",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -631,7 +628,7 @@
     },
     {
       "ticker": "RVMD",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -639,7 +636,7 @@
     },
     {
       "ticker": "BNTX",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing CHoCH",
@@ -647,7 +644,7 @@
     },
     {
       "ticker": "IOVA",
-      "data_date": "2026-11-17",
+      "data_date": "2026-11-18",
       "health": "正常",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
       "last_event": "Swing BOS",
@@ -842,7 +839,7 @@
       "data_date": "2017-11-07",
       "signal": "Swing BOS",
       "close": 25.5791,
-      "level": 25.3782
+      "level": 25.3781
     },
     {
       "ticker": "GLW",
@@ -1031,7 +1028,7 @@
       "data_date": "2016-07-20",
       "signal": "Swing BOS",
       "close": 10.4441,
-      "level": 10.1613
+      "level": 10.1614
     },
     {
       "ticker": "MRVL",
@@ -1212,7 +1209,7 @@
       "ticker": "ORCL",
       "data_date": "2017-06-22",
       "signal": "Swing BOS",
-      "close": 43.6886,
+      "close": 43.6887,
       "level": 40.6386
     },
     {
@@ -1262,13 +1259,13 @@
       "data_date": "2024-03-12",
       "signal": "Swing BOS",
       "close": 123.5881,
-      "level": 122.2332
+      "level": 122.2333
     },
     {
       "ticker": "ORCL",
       "data_date": "2024-06-12",
       "signal": "Swing BOS",
-      "close": 136.4692,
+      "close": 136.4693,
       "level": 128.6561
     },
     {
@@ -1276,7 +1273,7 @@
       "data_date": "2025-06-12",
       "signal": "Swing BOS",
       "close": 196.4621,
-      "level": 193.7644
+      "level": 193.7645
     },
     {
       "ticker": "NVTS",
@@ -1409,7 +1406,7 @@
       "data_date": "2026-03-24",
       "signal": "Swing BOS",
       "close": 175.8298,
-      "level": 166.3261
+      "level": 166.326
     },
     {
       "ticker": "BB",
@@ -1997,7 +1994,7 @@
       "data_date": "2016-05-20",
       "signal": "Swing BOS",
       "close": 40.8807,
-      "level": 40.1309
+      "level": 40.1308
     },
     {
       "ticker": "QCOM",
@@ -2018,7 +2015,7 @@
       "data_date": "2019-04-17",
       "signal": "Swing BOS",
       "close": 66.502,
-      "level": 62.9099
+      "level": 62.91
     },
     {
       "ticker": "QCOM",
@@ -2060,7 +2057,7 @@
       "data_date": "2025-10-27",
       "signal": "Swing CHoCH",
       "close": 183.8513,
-      "level": 170.4594
+      "level": 170.4595
     },
     {
       "ticker": "QCOM",
@@ -2143,15 +2140,15 @@
       "ticker": "MSFT",
       "data_date": "2021-01-26",
       "signal": "Swing BOS",
-      "close": 221.5244,
-      "level": 221.4501
+      "close": 221.5245,
+      "level": 221.45
     },
     {
       "ticker": "MSFT",
       "data_date": "2023-04-26",
       "signal": "Swing CHoCH",
       "close": 287.3723,
-      "level": 284.094
+      "level": 284.0941
     },
     {
       "ticker": "MSFT",
@@ -2172,7 +2169,7 @@
       "data_date": "2025-05-19",
       "signal": "Swing CHoCH",
       "close": 454.3784,
-      "level": 449.9649
+      "level": 449.965
     },
     {
       "ticker": "MSFT",
@@ -2269,7 +2266,7 @@
       "ticker": "AVGO",
       "data_date": "2018-06-15",
       "signal": "Swing BOS",
-      "close": 21.5802,
+      "close": 21.5801,
       "level": 21.5534
     },
     {
@@ -2361,14 +2358,14 @@
       "data_date": "2021-11-04",
       "signal": "Swing BOS",
       "close": 144.0466,
-      "level": 139.1099
+      "level": 139.1098
     },
     {
       "ticker": "AMAT",
       "data_date": "2022-12-13",
       "signal": "Swing CHoCH",
-      "close": 108.507,
-      "level": 107.755
+      "close": 108.5071,
+      "level": 107.7551
     },
     {
       "ticker": "AMAT",
@@ -2487,14 +2484,14 @@
       "data_date": "2023-12-11",
       "signal": "Swing BOS",
       "close": 71.7483,
-      "level": 70.6511
+      "level": 70.651
     },
     {
       "ticker": "LRCX",
       "data_date": "2024-06-12",
       "signal": "Swing BOS",
       "close": 101.7032,
-      "level": 98.5271
+      "level": 98.5272
     },
     {
       "ticker": "LRCX",
@@ -2542,7 +2539,7 @@
       "ticker": "MU",
       "data_date": "2022-01-14",
       "signal": "Swing BOS",
-      "close": 95.1584,
+      "close": 95.1585,
       "level": 94.5344
     },
     {
@@ -2711,7 +2708,7 @@
       "data_date": "2022-05-27",
       "signal": "Swing BOS",
       "close": 118.5687,
-      "level": 118.1886
+      "level": 118.1885
     },
     {
       "ticker": "IBM",
@@ -3327,7 +3324,7 @@
       "data_date": "2018-09-28",
       "signal": "Swing BOS",
       "close": 21.1885,
-      "level": 21.1288
+      "level": 21.1289
     },
     {
       "ticker": "VST",
@@ -3401,9 +3398,9 @@
     },
     {
       "ticker": "VRT",
-      "data_date": "2019-12-09",
+      "data_date": "2019-12-06",
       "signal": "Swing BOS",
-      "close": 10.3922,
+      "close": 10.3325,
       "level": 10.3325
     },
     {
@@ -3669,7 +3666,7 @@
       "ticker": "GEHC",
       "data_date": "2024-02-12",
       "signal": "Swing CHoCH",
-      "close": 82.7633,
+      "close": 82.7632,
       "level": 82.6722
     },
     {
