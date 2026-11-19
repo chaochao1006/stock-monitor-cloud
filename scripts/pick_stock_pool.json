@@ -7,7 +7,7 @@
     "标普500": 177,
     "纳指100": 67
   },
-  "stock_pool_count": 187,
+  "stock_pool_count": 179,
   "stocks": [
     {
       "ticker": "AAPL",
@@ -266,16 +266,6 @@
       ]
     },
     {
-      "ticker": "FSLR",
-      "display_ticker": "FSLR",
-      "company_name": "First Solar, Inc.",
-      "sector": "信息技术",
-      "industry": "半导体",
-      "indexes": [
-        "标普500"
-      ]
-    },
-    {
       "ticker": "MSFT",
       "display_ticker": "MSFT",
       "company_name": "Microsoft Corporation",
@@ -378,28 +368,6 @@
       "industry": "应用软件",
       "indexes": [
         "标普500"
-      ]
-    },
-    {
-      "ticker": "ADBE",
-      "display_ticker": "ADBE",
-      "company_name": "Adobe Inc.",
-      "sector": "信息技术",
-      "industry": "应用软件",
-      "indexes": [
-        "标普500",
-        "纳指100"
-      ]
-    },
-    {
-      "ticker": "INTU",
-      "display_ticker": "INTU",
-      "company_name": "Intuit Inc.",
-      "sector": "信息技术",
-      "industry": "应用软件",
-      "indexes": [
-        "标普500",
-        "纳指100"
       ]
     },
     {
@@ -754,16 +722,6 @@
       ]
     },
     {
-      "ticker": "GDDY",
-      "display_ticker": "GDDY",
-      "company_name": "GoDaddy Inc.",
-      "sector": "信息技术",
-      "industry": "互联网服务与基础设施",
-      "indexes": [
-        "标普500"
-      ]
-    },
-    {
       "ticker": "AKAM",
       "display_ticker": "AKAM",
       "company_name": "Akamai Technologies, Inc.",
@@ -832,16 +790,6 @@
       "company_name": "AT&T Inc.",
       "sector": "通信服务",
       "industry": "综合电信服务",
-      "indexes": [
-        "标普500"
-      ]
-    },
-    {
-      "ticker": "TMUS",
-      "display_ticker": "TMUS",
-      "company_name": "T-Mobile US, Inc.",
-      "sector": "通信服务",
-      "industry": "无线电信服务",
       "indexes": [
         "标普500"
       ]
@@ -1174,16 +1122,6 @@
       ]
     },
     {
-      "ticker": "ABT",
-      "display_ticker": "ABT",
-      "company_name": "Abbott Laboratories",
-      "sector": "医疗保健",
-      "industry": "医疗设备",
-      "indexes": [
-        "标普500"
-      ]
-    },
-    {
       "ticker": "ISRG",
       "display_ticker": "ISRG",
       "company_name": "Intuitive Surgical, Inc.",
@@ -1318,16 +1256,6 @@
       ]
     },
     {
-      "ticker": "BAX",
-      "display_ticker": "BAX",
-      "company_name": "Baxter International Inc.",
-      "sector": "医疗保健",
-      "industry": "医疗设备",
-      "indexes": [
-        "标普500"
-      ]
-    },
-    {
       "ticker": "PODD",
       "display_ticker": "PODD",
       "company_name": "Insulet Corporation",
@@ -1381,16 +1309,6 @@
       "ticker": "CVS",
       "display_ticker": "CVS",
       "company_name": "CVS Health Corporation",
-      "sector": "医疗保健",
-      "industry": "医疗服务",
-      "indexes": [
-        "标普500"
-      ]
-    },
-    {
-      "ticker": "CI",
-      "display_ticker": "CI",
-      "company_name": "The Cigna Group",
       "sector": "医疗保健",
       "industry": "医疗服务",
       "indexes": [
@@ -1936,6 +1854,14 @@
     "EBAY",
     "F",
     "VZ",
-    "WDAY"
+    "WDAY",
+    "BAX",
+    "CI",
+    "GDDY",
+    "INTU",
+    "ABT",
+    "FSLR",
+    "TMUS",
+    "ADBE"
   ]
 }

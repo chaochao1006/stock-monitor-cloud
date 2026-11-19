@@ -58,7 +58,7 @@ data/last_run_status.json
 
 网页侧栏分别选择`ST-pick`和`SMC-pick`。ST-pick展示当日买卖触发、持有表和观望表；SMC-pick展示当日绿色Swing BOS/CHoCH、历史触发和股票数据状态。规则直接调用原模块的计算函数，不采用此前回测里的固定止盈止损规则。
 
-股票池于2026年11月18日重新按桌面最新选票表的两个工作表导入：标普页177只、纳指页67只，原始合并去重192只。再按要求剔除ACN、EBAY、F、VZ、WDAY后，两个pick模块共用187只证券。GOOG和GOOGL是不同证券，均保留；BRK.B、BF.B自动转成Yahoo代码BRK-B、BF-B。
+股票池于2026年11月18日重新按桌面最新选票表的两个工作表导入：标普页177只、纳指页67只，原始合并去重192只。按要求剔除ACN、EBAY、F、VZ、WDAY，并于11月19日剔除BAX、CI、GDDY、INTU、ABT、FSLR、TMUS、ADBE后，两个pick模块共用179只证券。GOOG和GOOGL是不同证券，均保留；BRK.B、BF.B自动转成Yahoo代码BRK-B、BF-B。
 
 云端读取已提交的`scripts/pick_stock_pool.json`，不依赖桌面的Excel路径。以后修改Excel后，可重新导入再提交这个JSON：
 
