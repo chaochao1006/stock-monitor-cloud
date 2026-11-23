@@ -11,5 +11,5 @@ STOCK_POOL = [
     "BWAY", "MANE", "CRSP", "TEM", "QSI", "ABCL", "IBRX", "TWST",
     "ERAS", "VST", "CORZ", "VRT", "IREN", "FLNC", "AXTI", "APP",
     "RDNT", "GEHC", "ISRG", "SDGR", "RXRX", "ABSI", "RVMD", "BNTX",
-    "IOVA", "META", "MSTR", "SMCI",
+    "IOVA", "META", "MSTR", "SMCI", "APLD", "BMNR", "SKHY", "RGTI",
 ]
