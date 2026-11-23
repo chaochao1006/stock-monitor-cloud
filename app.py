@@ -23,6 +23,7 @@ SUPER_TREND_PATH = BASE_DIR / "super-trend" / "signals.json"
 SMC_PATH = BASE_DIR / "smc" / "signals.json"
 ST_PICK_PATH = BASE_DIR / "st-pick" / "signals.json"
 SMC_PICK_PATH = BASE_DIR / "smc-pick" / "signals.json"
+ST_DIP_PATH = BASE_DIR / "st-dip" / "signals.json"
 
 
 @dataclass(frozen=True)
@@ -83,7 +84,7 @@ def load_run_status() -> dict:
         return {}
     try:
         status = json.loads(RUN_STATUS_PATH.read_text(encoding="utf-8"))
-        active_labels = {"super-trend", "SMC", "ST-pick", "SMC-pick", *(module.label for module in MODULES)}
+        active_labels = {"super-trend", "ST-dip", "SMC", "ST-pick", "SMC-pick", *(module.label for module in MODULES)}
         modules = [item for item in status.get("模块", []) if item.get("模块") in active_labels]
         succeeded = sum(item.get("退出码") == 0 for item in modules)
         if modules:
@@ -288,6 +289,60 @@ def render_super_trend(path=None, label="super-trend") -> None:
             st.dataframe(history.sort_values(["data_date", "ticker"], ascending=[False, True]).rename(columns=rename), use_container_width=True, hide_index=True)
 
 
+def render_st_dip() -> None:
+    st.header('ST-dip')
+    st.caption('日线 Supertrend · Wilder ATR(10) × 3 · 只监控多头转空头的卖出信号；收盘确认，计划下一交易日开盘执行。')
+    st.caption('独立股票池为29只原股票。持续空头不会每天重复触发。')
+    if not ST_DIP_PATH.exists():
+        st.info('等待首次 ST-dip 云端更新。')
+        return
+    try:
+        payload = json.loads(ST_DIP_PATH.read_text(encoding='utf-8'))
+        if (payload.get('module') != 'st-dip' or payload.get('schema_version', 0) < 2
+                or payload.get('data_interval') != '1d' or payload.get('signal_filter') != 'sell_only'):
+            raise ValueError('快照不符合ST-dip日线卖出监控格式')
+    except (OSError, ValueError) as exc:
+        st.error(f'读取 ST-dip 失败：{exc}')
+        return
+    st.caption(f"信号交易日：{payload.get('latest_date', '')} ｜ 最近计算：{payload.get('generated_at_cn', '')}")
+    st.caption(f"股票池 {payload.get('stock_pool_count', 0)} 只 ｜ 正常 {payload.get('success_count', 0)} ｜ "
+               f"行情过期 {payload.get('stale_count', 0)} ｜ 更新失败 {payload.get('failure_count', 0)}")
+    if payload.get('stale_count') or payload.get('failure_count'):
+        st.warning('行情过期或更新失败的股票不参与当日触发。')
+    try:
+        from scripts.super_trend_monitor import session_dates
+        expected, _ = session_dates()
+        if payload.get('latest_date', '') < expected:
+            st.warning(f'当前为历史快照，最新应有交易日为 {expected}，请等待更新。')
+    except Exception:
+        st.caption('请核对快照交易日。')
+    rename = {'ticker':'股票', 'signal':'触发信号', 'data_date':'行情日期', 'close':'复权收盘价',
+              'supertrend':'ST线', 'execution_date':'计划执行日', 'health':'数据状态',
+              'last_event_date':'最近卖出触发日', 'daily_bar_count':'日K数量'}
+    columns = ['ticker', 'signal', 'data_date', 'close', 'supertrend', 'execution_date']
+    st.subheader('当日卖出触发记录')
+    today = [r for r in payload.get('triggers', []) if r.get('signal') == '卖出'
+             and r.get('health') == '正常' and r.get('data_date') == payload.get('latest_date')]
+    if today:
+        st.dataframe(pd.DataFrame(today).reindex(columns=columns).rename(columns=rename), use_container_width=True, hide_index=True)
+    elif payload.get('success_count', 0):
+        st.info('该交易日无有效卖出触发。')
+    else:
+        st.warning('本次无有效日线行情，无法确认卖出信号。')
+    with st.expander('股票池与数据状态'):
+        cols = ['ticker', 'data_date', 'close', 'supertrend', 'last_event_date', 'daily_bar_count', 'health']
+        st.dataframe(pd.DataFrame(payload.get('records', [])).reindex(columns=cols).rename(columns=rename), use_container_width=True, hide_index=True)
+        if payload.get('failures'):
+            st.dataframe(pd.DataFrame(payload['failures']), use_container_width=True, hide_index=True)
+    with st.expander('历史卖出触发'):
+        history = [r for r in payload.get('history', []) if r.get('signal') == '卖出']
+        if history:
+            st.dataframe(pd.DataFrame(history).sort_values(['data_date', 'ticker'], ascending=[False, True])
+                         .reindex(columns=columns[:-1]).rename(columns=rename), use_container_width=True, hide_index=True)
+        else:
+            st.info('暂无历史卖出触发。')
+
+
 def render_smc(path=None, label="SMC", module="smc") -> None:
     path = SMC_PATH if path is None else path
     st.header(label)
@@ -375,7 +430,7 @@ def render_single_module_page(module_label: str, triggers: pd.DataFrame, reports
 def main() -> None:
     st.set_page_config(page_title="股票监控仪表盘", page_icon="📈", layout="wide")
     st.title("股票技术监控仪表盘")
-    st.caption("云端版：Supertrend、SMC、ST-pick、SMC-pick与短线风险监控。")
+    st.caption("云端版：Supertrend、ST-dip、SMC、ST-pick、SMC-pick与短线风险监控。")
 
     triggers = load_trigger_records()
     reports = load_reports()
@@ -385,7 +440,7 @@ def main() -> None:
     selected_modules = st.sidebar.multiselect("模块筛选", module_labels, default=module_labels)
     page = st.sidebar.radio(
         "页面",
-        ["总览", "super-trend", "SMC", "ST-pick", "SMC-pick", "短线风险", "报告中心", "数据诊断"],
+        ["总览", "super-trend", "ST-dip", "SMC", "ST-pick", "SMC-pick", "短线风险", "报告中心", "数据诊断"],
     )
     st.sidebar.caption(f"数据目录：{BASE_DIR}")
     if run_status:
@@ -416,6 +471,9 @@ def main() -> None:
 
     elif page == "SMC":
         render_smc()
+
+    elif page == "ST-dip":
+        render_st_dip()
 
     elif page == "ST-pick":
         render_super_trend(ST_PICK_PATH, "ST-pick")

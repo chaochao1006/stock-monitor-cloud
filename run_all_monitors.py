@@ -19,6 +19,7 @@ BEIJING_TZ = ZoneInfo("Asia/Shanghai")
 
 MONITORS = [
     ("super-trend", SCRIPTS_DIR / "super_trend_monitor.py", DATA_DIR / "super-trend" / "signals.json"),
+    ("ST-dip", SCRIPTS_DIR / "st_dip_monitor.py", DATA_DIR / "st-dip" / "signals.json"),
     ("SMC", SCRIPTS_DIR / "smc_monitor.py", DATA_DIR / "smc" / "signals.json"),
     ("ST-pick", SCRIPTS_DIR / "st_pick_monitor.py", DATA_DIR / "st-pick" / "signals.json"),
     ("SMC-pick", SCRIPTS_DIR / "smc_pick_monitor.py", DATA_DIR / "smc-pick" / "signals.json"),
