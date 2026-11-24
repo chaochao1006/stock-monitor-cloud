@@ -2,15 +2,15 @@
   "module": "st-dip",
   "schema_version": 2,
   "data_interval": "1d",
-  "latest_date": "2026-11-20",
-  "generated_at_cn": "2026-11-23T19:10:43+08:00",
+  "latest_date": "2026-11-23",
+  "generated_at_cn": "2026-11-24T09:26:28+08:00",
   "atr_length": 10,
   "multiplier": 3.0,
   "stock_pool_count": 29,
   "price_basis": "Yahoo adjusted OHLC; fixed calculation start 2016-01-01 or listing",
-  "success_count": 29,
+  "success_count": 0,
   "failure_count": 0,
-  "stale_count": 0,
+  "stale_count": 29,
   "records": [
     {
       "ticker": "AAOI",
@@ -23,7 +23,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -32,14 +32,14 @@
       "ticker": "AMD",
       "data_date": "2026-11-20",
       "state": "观望",
-      "event": "卖出",
+      "event": "",
       "close": 424.39,
       "supertrend": 593.8155,
       "last_event_date": "2026-11-20",
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -55,7 +55,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -71,7 +71,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 1157,
       "history_start": "2022-04-27"
@@ -87,7 +87,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -103,7 +103,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2094,
       "history_start": "2018-08-07"
@@ -119,7 +119,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 369,
       "history_start": "2025-06-18"
@@ -135,7 +135,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 133,
       "history_start": "2026-05-28"
@@ -151,7 +151,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -167,7 +167,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 1410,
       "history_start": "2021-04-27"
@@ -183,7 +183,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 369,
       "history_start": "2025-06-18"
@@ -199,7 +199,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 416,
       "history_start": "2025-04-10"
@@ -215,7 +215,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 1479,
       "history_start": "2021-01-15"
@@ -231,7 +231,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 1258,
       "history_start": "2021-12-01"
@@ -247,7 +247,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -263,7 +263,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -279,7 +279,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -295,7 +295,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -311,7 +311,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 524,
       "history_start": "2024-11-01"
@@ -327,7 +327,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -343,7 +343,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
@@ -359,7 +359,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 1544,
       "history_start": "2020-10-13"
@@ -375,7 +375,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 1493,
       "history_start": "2020-12-24"
@@ -391,7 +391,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 1404,
       "history_start": "2021-05-05"
@@ -407,7 +407,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 95,
       "history_start": "2026-07-23"
@@ -423,25 +423,25 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
     },
     {
       "ticker": "SNDK",
-      "data_date": "2026-11-20",
+      "data_date": "2026-11-19",
       "state": "观望",
       "event": "",
-      "close": 79.24,
-      "supertrend": 122.3875,
+      "close": 94.395,
+      "supertrend": 134.8873,
       "last_event_date": "2026-10-12",
       "last_event": "卖出",
-      "execution_date": "2026-11-23",
+      "execution_date": "2026-11-20",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
-      "daily_bar_count": 446,
+      "daily_bar_count": 445,
       "history_start": "2025-02-27"
     },
     {
@@ -455,7 +455,7 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 113,
       "history_start": "2026-06-26"
@@ -471,31 +471,13 @@
       "last_event": "卖出",
       "execution_date": "2026-11-23",
       "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
+      "health": "行情过期",
       "data_interval": "1d",
       "daily_bar_count": 2738,
       "history_start": "2016-01-15"
     }
   ],
-  "triggers": [
-    {
-      "ticker": "AMD",
-      "data_date": "2026-11-20",
-      "state": "观望",
-      "event": "卖出",
-      "close": 424.39,
-      "supertrend": 593.8155,
-      "last_event_date": "2026-11-20",
-      "last_event": "卖出",
-      "execution_date": "2026-11-23",
-      "data_source": "Yahoo Chart API query1.finance.yahoo.com (verified 1d)",
-      "health": "正常",
-      "data_interval": "1d",
-      "daily_bar_count": 2738,
-      "history_start": "2016-01-15",
-      "signal": "卖出"
-    }
-  ],
+  "triggers": [],
   "history": [
     {
       "ticker": "AAOI",
@@ -2931,7 +2913,7 @@
       "data_date": "2016-11-02",
       "signal": "卖出",
       "close": 125.9636,
-      "supertrend": 133.3166
+      "supertrend": 133.3165
     },
     {
       "ticker": "META",
@@ -2958,7 +2940,7 @@
       "ticker": "META",
       "data_date": "2018-01-12",
       "signal": "卖出",
-      "close": 177.6683,
+      "close": 177.6684,
       "supertrend": 187.2776
     },
     {
@@ -2966,7 +2948,7 @@
       "data_date": "2018-02-08",
       "signal": "卖出",
       "close": 169.9523,
-      "supertrend": 192.0046
+      "supertrend": 192.0047
     },
     {
       "ticker": "META",
@@ -2979,14 +2961,14 @@
       "ticker": "META",
       "data_date": "2019-03-18",
       "signal": "卖出",
-      "close": 158.9476,
+      "close": 158.9477,
       "supertrend": 173.0727
     },
     {
       "ticker": "META",
       "data_date": "2019-05-13",
       "signal": "卖出",
-      "close": 179.8177,
+      "close": 179.8178,
       "supertrend": 195.0648
     },
     {
@@ -2994,7 +2976,7 @@
       "data_date": "2019-08-02",
       "signal": "卖出",
       "close": 187.2268,
-      "supertrend": 204.2586
+      "supertrend": 204.2585
     },
     {
       "ticker": "META",
@@ -3014,7 +2996,7 @@
       "ticker": "META",
       "data_date": "2020-09-10",
       "signal": "卖出",
-      "close": 265.5466,
+      "close": 265.5467,
       "supertrend": 303.6383
     },
     {
@@ -3029,20 +3011,20 @@
       "data_date": "2021-02-25",
       "signal": "卖出",
       "close": 252.2738,
-      "supertrend": 278.5311
+      "supertrend": 278.531
     },
     {
       "ticker": "META",
       "data_date": "2021-05-12",
       "signal": "卖出",
-      "close": 299.6797,
-      "supertrend": 322.7534
+      "close": 299.6798,
+      "supertrend": 322.7535
     },
     {
       "ticker": "META",
       "data_date": "2021-09-20",
       "signal": "卖出",
-      "close": 352.3256,
+      "close": 352.3255,
       "supertrend": 375.0667
     },
     {
@@ -3050,13 +3032,13 @@
       "data_date": "2021-12-01",
       "signal": "卖出",
       "close": 307.6534,
-      "supertrend": 349.773
+      "supertrend": 349.7729
     },
     {
       "ticker": "META",
       "data_date": "2022-01-18",
       "signal": "卖出",
-      "close": 315.1318,
+      "close": 315.1317,
       "supertrend": 349.248
     },
     {
@@ -3099,14 +3081,14 @@
       "data_date": "2023-12-06",
       "signal": "卖出",
       "close": 314.4384,
-      "supertrend": 337.5613
+      "supertrend": 337.5612
     },
     {
       "ticker": "META",
       "data_date": "2024-04-19",
       "signal": "卖出",
-      "close": 477.0118,
-      "supertrend": 532.1581
+      "close": 477.0117,
+      "supertrend": 532.158
     },
     {
       "ticker": "META",
@@ -3120,13 +3102,13 @@
       "data_date": "2024-11-15",
       "signal": "卖出",
       "close": 550.476,
-      "supertrend": 596.3548
+      "supertrend": 596.3549
     },
     {
       "ticker": "META",
       "data_date": "2024-12-20",
       "signal": "卖出",
-      "close": 581.9122,
+      "close": 581.9123,
       "supertrend": 639.4467
     },
     {
@@ -3141,14 +3123,14 @@
       "data_date": "2025-07-30",
       "signal": "卖出",
       "close": 692.3925,
-      "supertrend": 737.0073
+      "supertrend": 737.0074
     },
     {
       "ticker": "META",
       "data_date": "2025-10-01",
       "signal": "卖出",
       "close": 714.9149,
-      "supertrend": 763.1499
+      "supertrend": 763.1498
     },
     {
       "ticker": "META",
@@ -3540,13 +3522,13 @@
       "data_date": "2019-08-01",
       "signal": "卖出",
       "close": 42.5093,
-      "supertrend": 48.3826
+      "supertrend": 48.3827
     },
     {
       "ticker": "MU",
       "data_date": "2019-09-27",
       "signal": "卖出",
-      "close": 42.1291,
+      "close": 42.129,
       "supertrend": 48.9806
     },
     {
@@ -3561,13 +3543,13 @@
       "data_date": "2020-01-31",
       "signal": "卖出",
       "close": 51.7619,
-      "supertrend": 58.2342
+      "supertrend": 58.2343
     },
     {
       "ticker": "MU",
       "data_date": "2020-02-25",
       "signal": "卖出",
-      "close": 50.7967,
+      "close": 50.7966,
       "supertrend": 59.7542
     },
     {
@@ -3610,7 +3592,7 @@
       "data_date": "2022-01-20",
       "signal": "卖出",
       "close": 83.1464,
-      "supertrend": 96.3194
+      "supertrend": 96.3195
     },
     {
       "ticker": "MU",
@@ -3644,7 +3626,7 @@
       "ticker": "MU",
       "data_date": "2023-06-29",
       "signal": "卖出",
-      "close": 63.4896,
+      "close": 63.4895,
       "supertrend": 70.7128
     },
     {
@@ -3749,8 +3731,8 @@
       "ticker": "MU",
       "data_date": "2026-06-05",
       "signal": "卖出",
-      "close": 863.7411,
-      "supertrend": 1108.5494
+      "close": 863.7412,
+      "supertrend": 1108.5493
     },
     {
       "ticker": "MU",
@@ -3966,8 +3948,8 @@
       "ticker": "NVDA",
       "data_date": "2021-07-15",
       "signal": "卖出",
-      "close": 18.8798,
-      "supertrend": 20.9229
+      "close": 18.8797,
+      "supertrend": 20.9228
     },
     {
       "ticker": "NVDA",
@@ -4016,7 +3998,7 @@
       "data_date": "2023-09-20",
       "signal": "卖出",
       "close": 42.1132,
-      "supertrend": 47.852
+      "supertrend": 47.8521
     },
     {
       "ticker": "NVDA",
@@ -4043,7 +4025,7 @@
       "ticker": "NVDA",
       "data_date": "2024-06-24",
       "signal": "卖出",
-      "close": 117.7839,
+      "close": 117.7838,
       "supertrend": 138.5754
     },
     {
@@ -4085,7 +4067,7 @@
       "ticker": "NVDA",
       "data_date": "2026-02-04",
       "signal": "卖出",
-      "close": 173.7834,
+      "close": 173.7833,
       "supertrend": 193.2022
     },
     {
@@ -4113,7 +4095,7 @@
       "ticker": "ORCL",
       "data_date": "2016-05-04",
       "signal": "卖出",
-      "close": 33.5926,
+      "close": 33.5927,
       "supertrend": 35.2083
     },
     {
@@ -4212,7 +4194,7 @@
       "data_date": "2018-10-09",
       "signal": "卖出",
       "close": 43.2883,
-      "supertrend": 45.6306
+      "supertrend": 45.6307
     },
     {
       "ticker": "ORCL",
@@ -4226,7 +4208,7 @@
       "data_date": "2019-05-13",
       "signal": "卖出",
       "close": 47.9198,
-      "supertrend": 50.0593
+      "supertrend": 50.0594
     },
     {
       "ticker": "ORCL",
@@ -4261,7 +4243,7 @@
       "data_date": "2020-10-26",
       "signal": "卖出",
       "close": 52.9156,
-      "supertrend": 56.3331
+      "supertrend": 56.333
     },
     {
       "ticker": "ORCL",
@@ -4317,7 +4299,7 @@
       "data_date": "2022-04-22",
       "signal": "卖出",
       "close": 71.7711,
-      "supertrend": 79.0891
+      "supertrend": 79.089
     },
     {
       "ticker": "ORCL",
@@ -4373,14 +4355,14 @@
       "data_date": "2024-05-30",
       "signal": "卖出",
       "close": 113.8281,
-      "supertrend": 123.5188
+      "supertrend": 123.5187
     },
     {
       "ticker": "ORCL",
       "data_date": "2024-07-30",
       "signal": "卖出",
-      "close": 132.2628,
-      "supertrend": 142.9692
+      "close": 132.2629,
+      "supertrend": 142.9693
     },
     {
       "ticker": "ORCL",
@@ -5073,7 +5055,7 @@
       "data_date": "2026-07-02",
       "signal": "卖出",
       "close": 218.125,
-      "supertrend": 308.9633
+      "supertrend": 308.9632
     },
     {
       "ticker": "SNDK",
