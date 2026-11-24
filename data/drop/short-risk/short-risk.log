@@ -1690,3 +1690,358 @@
 2026-11-21 11:59:22,335 [INFO] [81/81] 分析 IOVA
 2026-11-21 11:59:23,186 [INFO] 本交易日无新增短线风险触发记录。
 2026-11-21 11:59:23,186 [INFO] 监控完成：Word=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/short-risk/美股短线反弹风险监控_2026-11-20.docx TXT=/home/runner/work/stock-monitor-cloud/stock-monitor-cloud/data/drop/short-risk/RISK.txt
+2026-11-24 10:17:17,974 [INFO] 开始短线反弹风险监控，共88只股票；目标交易日：2026-11-23。
+2026-11-24 10:17:17,974 [INFO] [1/88] 分析 NOK
+2026-11-24 10:17:19,874 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:19,874 [ERROR] ['NOK']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:21,723 [INFO] [2/88] 分析 XE
+2026-11-24 10:17:23,149 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:23,149 [ERROR] ['XE']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:24,775 [INFO] [3/88] 分析 RKLB
+2026-11-24 10:17:25,768 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:25,769 [ERROR] ['RKLB']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:27,543 [INFO] [4/88] 分析 NBIS
+2026-11-24 10:17:28,969 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:28,969 [ERROR] ['NBIS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:30,990 [INFO] [5/88] 分析 ARM
+2026-11-24 10:17:31,979 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:31,979 [ERROR] ['ARM']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:34,162 [INFO] [6/88] 分析 OPTX
+2026-11-24 10:17:35,596 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:35,596 [ERROR] ['OPTX']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:37,316 [INFO] [7/88] 分析 GLW
+2026-11-24 10:17:38,315 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:38,315 [ERROR] ['GLW']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:40,363 [INFO] [8/88] 分析 COHR
+2026-11-24 10:17:41,816 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:41,816 [ERROR] ['COHR']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:43,402 [INFO] [9/88] 分析 LITE
+2026-11-24 10:17:44,425 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:44,425 [ERROR] ['LITE']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:46,063 [INFO] [10/88] 分析 MRVL
+2026-11-24 10:17:47,865 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:47,865 [ERROR] ['MRVL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:49,499 [INFO] [11/88] 分析 INTC
+2026-11-24 10:17:50,550 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:50,550 [ERROR] ['INTC']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:17:57,341 [INFO] [12/88] 分析 ALAB
+2026-11-24 10:17:58,776 [ERROR] 
+1 Failed download:
+2026-11-24 10:17:58,777 [ERROR] ['ALAB']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:00,295 [INFO] [13/88] 分析 CRWV
+2026-11-24 10:18:01,297 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:01,299 [ERROR] ['CRWV']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:03,005 [INFO] [14/88] 分析 ORCL
+2026-11-24 10:18:05,199 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:05,199 [ERROR] ['ORCL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:06,840 [INFO] [15/88] 分析 NVTS
+2026-11-24 10:18:07,808 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:07,808 [ERROR] ['NVTS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:09,480 [INFO] [16/88] 分析 POET
+2026-11-24 10:18:10,921 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:10,921 [ERROR] ['POET']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:12,668 [INFO] [17/88] 分析 DELL
+2026-11-24 10:18:14,058 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:14,058 [ERROR] ['DELL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:20,811 [INFO] [18/88] 分析 BB
+2026-11-24 10:18:22,135 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:22,135 [ERROR] ['BB']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:23,802 [INFO] [19/88] 分析 ONDS
+2026-11-24 10:18:24,773 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:24,773 [ERROR] ['ONDS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:26,408 [INFO] [20/88] 分析 SMR
+2026-11-24 10:18:28,003 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:28,003 [ERROR] ['SMR']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:29,713 [INFO] [21/88] 分析 OKLO
+2026-11-24 10:18:30,694 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:30,694 [ERROR] ['OKLO']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:32,313 [INFO] [22/88] 分析 IONQ
+2026-11-24 10:18:34,835 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:34,835 [ERROR] ['IONQ']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:36,441 [INFO] [23/88] 分析 QBTS
+2026-11-24 10:18:37,419 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:37,419 [ERROR] ['QBTS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:39,038 [INFO] [24/88] 分析 NVDA
+2026-11-24 10:18:41,536 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:41,536 [ERROR] ['NVDA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:43,309 [INFO] [25/88] 分析 AMZN
+2026-11-24 10:18:44,550 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:44,551 [ERROR] ['AMZN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:46,268 [INFO] [26/88] 分析 AMD
+2026-11-24 10:18:47,668 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:47,668 [ERROR] ['AMD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:49,680 [INFO] [27/88] 分析 CRCL
+2026-11-24 10:18:50,668 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:50,668 [ERROR] ['CRCL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:52,147 [INFO] [28/88] 分析 FLY
+2026-11-24 10:18:54,209 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:54,210 [ERROR] ['FLY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:55,817 [INFO] [29/88] 分析 CBRS
+2026-11-24 10:18:56,815 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:56,815 [ERROR] ['CBRS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:18:58,266 [INFO] [30/88] 分析 SIVEF
+2026-11-24 10:18:59,702 [ERROR] 
+1 Failed download:
+2026-11-24 10:18:59,702 [ERROR] ['SIVEF']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:01,081 [INFO] [31/88] 分析 SHAZ
+2026-11-24 10:19:05,234 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:05,234 [ERROR] ['SHAZ']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:06,762 [INFO] [32/88] 分析 LUNR
+2026-11-24 10:19:08,135 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:08,135 [ERROR] ['LUNR']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:09,818 [INFO] [33/88] 分析 ASTS
+2026-11-24 10:19:11,060 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:11,060 [ERROR] ['ASTS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:12,677 [INFO] [34/88] 分析 AAOI
+2026-11-24 10:19:14,059 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:14,059 [ERROR] ['AAOI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:15,683 [INFO] [35/88] 分析 SPCX
+2026-11-24 10:19:18,174 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:18,174 [ERROR] ['SPCX']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:19,589 [INFO] [36/88] 分析 RDW
+2026-11-24 10:19:20,985 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:20,985 [ERROR] ['RDW']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:22,648 [INFO] [37/88] 分析 QCOM
+2026-11-24 10:19:23,896 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:23,896 [ERROR] ['QCOM']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:25,527 [INFO] [38/88] 分析 COIN
+2026-11-24 10:19:26,908 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:26,908 [ERROR] ['COIN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:28,473 [INFO] [39/88] 分析 VELO
+2026-11-24 10:19:29,515 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:29,515 [ERROR] ['VELO']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:31,184 [INFO] [40/88] 分析 MSFT
+2026-11-24 10:19:34,635 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:34,635 [ERROR] ['MSFT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:36,255 [INFO] [41/88] 分析 GOOG
+2026-11-24 10:19:37,245 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:37,245 [ERROR] ['GOOG']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:39,022 [INFO] [42/88] 分析 AVGO
+2026-11-24 10:19:40,459 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:40,459 [ERROR] ['AVGO']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:42,282 [INFO] [43/88] 分析 AMAT
+2026-11-24 10:19:43,468 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:43,469 [ERROR] ['AMAT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:45,108 [INFO] [44/88] 分析 AMKR
+2026-11-24 10:19:46,444 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:46,444 [ERROR] ['AMKR']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:48,202 [INFO] [45/88] 分析 LRCX
+2026-11-24 10:19:49,191 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:49,192 [ERROR] ['LRCX']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:50,871 [INFO] [46/88] 分析 SNDK
+2026-11-24 10:19:52,303 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:52,304 [ERROR] ['SNDK']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:53,927 [INFO] [47/88] 分析 MU
+2026-11-24 10:19:54,914 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:54,914 [ERROR] ['MU']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:56,592 [INFO] [48/88] 分析 TSLA
+2026-11-24 10:19:58,024 [ERROR] 
+1 Failed download:
+2026-11-24 10:19:58,025 [ERROR] ['TSLA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:19:59,672 [INFO] [49/88] 分析 PLTR
+2026-11-24 10:20:00,634 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:00,634 [ERROR] ['PLTR']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:02,291 [INFO] [50/88] 分析 IBM
+2026-11-24 10:20:03,773 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:03,773 [ERROR] ['IBM']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:05,464 [INFO] [51/88] 分析 FORM
+2026-11-24 10:20:06,455 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:06,455 [ERROR] ['FORM']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:08,101 [INFO] [52/88] 分析 MXL
+2026-11-24 10:20:09,466 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:09,466 [ERROR] ['MXL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:11,285 [INFO] [53/88] 分析 MRNA
+2026-11-24 10:20:12,274 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:12,275 [ERROR] ['MRNA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:13,994 [INFO] [54/88] 分析 BE
+2026-11-24 10:20:15,388 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:15,388 [ERROR] ['BE']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:16,910 [INFO] [55/88] 分析 NNE
+2026-11-24 10:20:17,894 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:17,895 [ERROR] ['NNE']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:24,579 [INFO] [56/88] 分析 INSP
+2026-11-24 10:20:26,426 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:26,426 [ERROR] ['INSP']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:28,262 [INFO] [57/88] 分析 BWAY
+2026-11-24 10:20:29,236 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:29,236 [ERROR] ['BWAY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:30,907 [INFO] [58/88] 分析 MANE
+2026-11-24 10:20:32,350 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:32,350 [ERROR] ['MANE']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:33,794 [INFO] [59/88] 分析 CRSP
+2026-11-24 10:20:35,660 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:35,660 [ERROR] ['CRSP']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:37,378 [INFO] [60/88] 分析 TEM
+2026-11-24 10:20:38,770 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:38,770 [ERROR] ['TEM']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:40,463 [INFO] [61/88] 分析 QSI
+2026-11-24 10:20:41,482 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:41,483 [ERROR] ['QSI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:43,114 [INFO] [62/88] 分析 ABCL
+2026-11-24 10:20:44,491 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:44,491 [ERROR] ['ABCL']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:51,728 [INFO] [63/88] 分析 IBRX
+2026-11-24 10:20:52,720 [ERROR] 
+1 Failed download:
+2026-11-24 10:20:52,720 [ERROR] ['IBRX']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:20:59,358 [INFO] [64/88] 分析 TWST
+2026-11-24 10:21:00,750 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:00,750 [ERROR] ['TWST']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:07,386 [INFO] [65/88] 分析 ERAS
+2026-11-24 10:21:08,376 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:08,377 [ERROR] ['ERAS']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:10,040 [INFO] [66/88] 分析 VST
+2026-11-24 10:21:12,191 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:12,191 [ERROR] ['VST']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:13,913 [INFO] [67/88] 分析 CORZ
+2026-11-24 10:21:14,899 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:14,899 [ERROR] ['CORZ']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:16,619 [INFO] [68/88] 分析 VRT
+2026-11-24 10:21:18,011 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:18,011 [ERROR] ['VRT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:19,573 [INFO] [69/88] 分析 IREN
+2026-11-24 10:21:20,620 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:20,620 [ERROR] ['IREN']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:22,553 [INFO] [70/88] 分析 FLNC
+2026-11-24 10:21:24,333 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:24,333 [ERROR] ['FLNC']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:25,952 [INFO] [71/88] 分析 AXTI
+2026-11-24 10:21:26,942 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:26,942 [ERROR] ['AXTI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:28,560 [INFO] [72/88] 分析 APP
+2026-11-24 10:21:30,457 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:30,457 [ERROR] ['APP']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:32,044 [INFO] [73/88] 分析 RDNT
+2026-11-24 10:21:33,063 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:33,063 [ERROR] ['RDNT']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:34,652 [INFO] [74/88] 分析 GEHC
+2026-11-24 10:21:36,531 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:36,531 [ERROR] ['GEHC']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:38,351 [INFO] [75/88] 分析 ISRG
+2026-11-24 10:21:39,340 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:39,340 [ERROR] ['ISRG']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:40,904 [INFO] [76/88] 分析 SDGR
+2026-11-24 10:21:42,704 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:42,704 [ERROR] ['SDGR']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:44,424 [INFO] [77/88] 分析 RXRX
+2026-11-24 10:21:45,410 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:45,410 [ERROR] ['RXRX']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:47,171 [INFO] [78/88] 分析 ABSI
+2026-11-24 10:21:48,622 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:48,622 [ERROR] ['ABSI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:55,366 [INFO] [79/88] 分析 RVMD
+2026-11-24 10:21:56,346 [ERROR] 
+1 Failed download:
+2026-11-24 10:21:56,346 [ERROR] ['RVMD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:21:58,028 [INFO] [80/88] 分析 BNTX
+2026-11-24 10:22:00,461 [ERROR] 
+1 Failed download:
+2026-11-24 10:22:00,461 [ERROR] ['BNTX']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:22:02,236 [INFO] [81/88] 分析 IOVA
+2026-11-24 10:22:03,170 [ERROR] 
+1 Failed download:
+2026-11-24 10:22:03,170 [ERROR] ['IOVA']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:22:04,959 [INFO] [82/88] 分析 META
+2026-11-24 10:22:06,594 [ERROR] 
+1 Failed download:
+2026-11-24 10:22:06,594 [ERROR] ['META']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:22:08,179 [INFO] [83/88] 分析 MSTR
+2026-11-24 10:22:09,192 [ERROR] 
+1 Failed download:
+2026-11-24 10:22:09,193 [ERROR] ['MSTR']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:22:10,818 [INFO] [84/88] 分析 SMCI
+2026-11-24 10:22:12,205 [ERROR] 
+1 Failed download:
+2026-11-24 10:22:12,205 [ERROR] ['SMCI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:22:18,860 [INFO] [85/88] 分析 APLD
+2026-11-24 10:22:19,833 [ERROR] 
+1 Failed download:
+2026-11-24 10:22:19,833 [ERROR] ['APLD']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:22:21,570 [INFO] [86/88] 分析 BMNR
+2026-11-24 10:22:22,912 [ERROR] 
+1 Failed download:
+2026-11-24 10:22:22,913 [ERROR] ['BMNR']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:22:24,672 [INFO] [87/88] 分析 SKHY
+2026-11-24 10:22:25,680 [ERROR] 
+1 Failed download:
+2026-11-24 10:22:25,680 [ERROR] ['SKHY']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:22:27,223 [INFO] [88/88] 分析 RGTI
+2026-11-24 10:22:28,663 [ERROR] 
+1 Failed download:
+2026-11-24 10:22:28,663 [ERROR] ['RGTI']: YFRateLimitError('Too Many Requests. Rate limited. Try after a while.')
+2026-11-24 10:22:30,882 [INFO] 本交易日无新增短线风险触发记录。
+2026-11-24 10:22:30,882 [INFO] 监控完成：Word=C:\Users\81975\Desktop\每日报告\stock-monitor-cloud\data\drop\short-risk\美股短线反弹风险监控_2026-11-23.docx TXT=C:\Users\81975\Desktop\每日报告\stock-monitor-cloud\data\drop\short-risk\RISK.txt

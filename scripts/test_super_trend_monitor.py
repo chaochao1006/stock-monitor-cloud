@@ -87,7 +87,8 @@ class MonitorTests(unittest.TestCase):
                    "indicators": {"quote": [{"open": [100]*15, "high": [102]*15,
                    "low": [99]*15, "close": [101]*15, "volume": [1000]*15}],
                    "adjclose": [{"adjclose": [101]*15}]}}]}}
-        with patch.object(monitor.requests, "get") as get:
+        with patch.object(monitor.requests, "get") as get, \
+             patch.object(monitor, 'download_session_context', return_value=('2026-10-21', pd.DataFrame())):
             get.return_value.json.return_value = payload
             frame, _, error = monitor.fetch_daily("TEST")
             self.assertEqual(len(frame), 15)

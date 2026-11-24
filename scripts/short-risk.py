@@ -175,46 +175,24 @@ def normalize_ohlcv(df: pd.DataFrame, target_day: dt.date) -> Tuple[pd.DataFrame
 
 
 def fetch_yahoo_chart(ticker: str, target_day: dt.date) -> Tuple[pd.DataFrame, str]:
-    """yfinance限流时使用Yahoo Chart API备用获取数据。"""
-
-    end_dt = dt.datetime.combine(target_day + dt.timedelta(days=2), dt.time(0, 0), tzinfo=ZoneInfo("America/New_York"))
-    start_dt = end_dt - dt.timedelta(days=560)
-    url = (
-        f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
-        f"?period1={int(start_dt.timestamp())}&period2={int(end_dt.timestamp())}"
-        f"&interval=1d&events=history&includeAdjustedClose=true"
-    )
+    """Use the shared validated daily recovery when yfinance fails or returns stale bars."""
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=20) as resp:
-            payload = json.loads(resp.read().decode("utf-8"))
-        result = payload["chart"]["result"][0]
-        timestamps = result.get("timestamp") or []
-        quote = result["indicators"]["quote"][0]
-        rows = []
-        for idx, stamp in enumerate(timestamps):
-            rows.append(
-                {
-                    "Date": dt.datetime.fromtimestamp(stamp, ZoneInfo("America/New_York")).date(),
-                    "Open": quote.get("open", [None] * len(timestamps))[idx],
-                    "High": quote.get("high", [None] * len(timestamps))[idx],
-                    "Low": quote.get("low", [None] * len(timestamps))[idx],
-                    "Close": quote.get("close", [None] * len(timestamps))[idx],
-                    "Volume": quote.get("volume", [None] * len(timestamps))[idx],
-                }
-            )
-        df = pd.DataFrame(rows)
+        if __package__:
+            from .super_trend_monitor import fetch_daily
+        else:
+            from super_trend_monitor import fetch_daily
+        df, _, error = fetch_daily(ticker)
         if df.empty:
-            return pd.DataFrame(), "Yahoo Chart API未返回数据"
-        df = df.drop_duplicates("Date").sort_values("Date")
-        df.index = pd.to_datetime(df["Date"])
+            return df, error or 'Yahoo Chart API未返回数据'
+        # Retain this monitor's raw OHLC convention and original 560-day backup window.
+        df = df.loc[pd.Timestamp(target_day - dt.timedelta(days=558)):]
         return normalize_ohlcv(df, target_day)
     except Exception as exc:
         return pd.DataFrame(), f"Yahoo Chart API失败：{exc}"
 
 
 def fetch_stock_data(ticker: str, target_day: dt.date) -> Tuple[pd.DataFrame, str]:
-    """优先用 yfinance 获取数据，失败时自动使用Yahoo Chart API备用。"""
+    """优先用yfinance；失败或行情过期时使用已验证的完整日线备用。"""
 
     try:
         df = yf.download(
@@ -231,12 +209,17 @@ def fetch_stock_data(ticker: str, target_day: dt.date) -> Tuple[pd.DataFrame, st
         yfinance_error = f"yfinance下载失败：{exc}"
     else:
         df, yfinance_error = normalize_ohlcv(df, target_day)
-        if not df.empty:
+        if not df.empty and df.index[-1].date() == target_day:
             return df, ""
+        if not df.empty:
+            yfinance_error = f'yfinance行情过期：{df.index[-1].date()}，目标{target_day}'
 
     fallback_df, fallback_error = fetch_yahoo_chart(ticker, target_day)
-    if not fallback_df.empty:
+    if not fallback_df.empty and fallback_df.index[-1].date() == target_day:
         return fallback_df, ""
+    candidates = [item for item in (df, fallback_df) if not item.empty]
+    if candidates:
+        return max(candidates, key=lambda item: item.index[-1]), f'{yfinance_error}；备用行情亦未更新'
     return pd.DataFrame(), f"{yfinance_error}；备用数据源：{fallback_error}"
 
 
@@ -633,15 +616,23 @@ def run_monitor() -> Tuple[Path, Path, List[ShortRiskResult]]:
     return word_path, txt_path, results
 
 
-def main() -> None:
+def main() -> int:
     """程序入口，供Spyder、命令行和计划任务直接运行。"""
 
-    word_path, txt_path, _ = run_monitor()
+    word_path, txt_path, results = run_monitor()
     print("")
     print("美股短线反弹风险监控完成：")
     print(f"Word报告：{word_path}")
     print(f"触发记录：{txt_path}")
+    if __package__:
+        from .super_trend_monitor import snapshot_exit_code
+    else:
+        from super_trend_monitor import snapshot_exit_code
+    target = latest_closed_us_trading_day()
+    fresh = sum(not row.error and row.date == target for row in results)
+    print(f'短线风险：{fresh}/{len(results)} 最新交易日行情正常', flush=True)
+    return snapshot_exit_code({'stock_pool_count':len(results),'success_count':fresh}, '短线风险')
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

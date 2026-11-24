@@ -134,7 +134,7 @@ def main(module=None):
         payload = snapshots[key]
         print(f"{MODULE_LABELS[key]}: {payload['success_count']}/{payload['stock_pool_count']} 正常，"
               f"{payload['failure_count']}失败，{len(payload['triggers'])}个当日触发", flush=True)
-        failed |= payload['success_count'] == 0
+        failed |= bool(st_monitor.snapshot_exit_code(payload, MODULE_LABELS[key]))
     return int(failed)
 
 

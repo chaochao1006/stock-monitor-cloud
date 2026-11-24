@@ -117,7 +117,11 @@ def main():
     temporary.replace(path)
     fresh = sum(row["health"] == "正常" for row in payload["records"])
     print(f"SMC: {fresh}/{len(payload['records'])} 正常，{len(payload['triggers'])} 个当日触发")
-    return 0 if fresh else 1
+    try:
+        from .super_trend_monitor import snapshot_exit_code
+    except ImportError:
+        from super_trend_monitor import snapshot_exit_code
+    return snapshot_exit_code(payload, 'SMC')
 
 
 if __name__ == "__main__":

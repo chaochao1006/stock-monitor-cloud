@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -58,20 +59,93 @@ def decode_daily(payload):
     return frame
 
 
+@lru_cache(maxsize=8)
+def download_session_context(minute):
+    return session_dates(minute)
+
+
+def complete_latest_session(frame, payload, expected, schedule):
+    """Recover one missing daily bar only from a fully closed, verified regular session."""
+    day = pd.Timestamp(expected)
+    previous = schedule.index[schedule.index < day]
+    if not len(previous) or frame.empty or frame.index[-1] != previous[-1]:
+        raise ValueError('备用仅补齐紧邻上一交易日的一根日K，不跨越缺失历史')
+    block = payload['chart']['result'][0]
+    meta = block['meta']
+    if meta.get('dataGranularity') not in ('60m', '1h') or meta.get('exchangeTimezoneName') != 'America/New_York':
+        raise ValueError('备用行情周期或时区不符合美股常规交易时段')
+    opening, closing = schedule.loc[day, ['market_open', 'market_close']]
+    quoted_at = pd.to_datetime(meta['regularMarketTime'], unit='s', utc=True)
+    if quoted_at.tz_convert('America/New_York').date().isoformat() != expected or quoted_at < closing - pd.Timedelta(seconds=60):
+        raise ValueError('备用报价未达到目标交易日收盘')
+    if pd.Timestamp.now(tz='UTC') < closing + pd.Timedelta(minutes=15):
+        raise ValueError('目标交易日尚未完成收盘校验等待时间')
+    bars = pd.DataFrame(block['indicators']['quote'][0],
+                        index=pd.to_datetime(block['timestamp'], unit='s', utc=True))
+    bars = bars.loc[(bars.index >= opening) & (bars.index <= closing)]
+    required = pd.date_range(opening, closing, freq='60min', inclusive='left')
+    if not bars.index.is_unique or not required.isin(bars.index).all() or bars.index[-1] != closing:
+        raise ValueError('备用缺少完整常规交易时段或最终收盘记录')
+    prices = bars[['open', 'high', 'low', 'close']].apply(pd.to_numeric, errors='coerce')
+    if not np.isfinite(prices.to_numpy()).all() or (prices <= 0).any().any():
+        raise ValueError('备用时段包含无效OHLC')
+    if (prices.high < prices.max(axis=1)).any() or (prices.low > prices.min(axis=1)).any():
+        raise ValueError('备用时段OHLC关系无效')
+    close = float(meta['regularMarketPrice'])
+    high, low = float(meta['regularMarketDayHigh']), float(meta['regularMarketDayLow'])
+    volume = float(meta['regularMarketVolume'])
+    if not np.isfinite([close, high, low, volume]).all() or min(close, high, low, volume) <= 0:
+        raise ValueError('缺少有效的常规交易日收盘报价或成交量')
+    # Intraday bars can omit auction/consolidated-tape extremes. Use the final
+    # daily quote's high/low, allowing at most 25bp discrepancy for verification;
+    # the final closing print must still agree at quote precision.
+    if (not np.allclose([prices.high.max(), prices.low.min()], [high, low], rtol=.0025, atol=1e-4)
+            or not np.isclose(prices.close.iloc[-1], close, rtol=1e-5, atol=1e-4)):
+        raise ValueError('备用时段OHLC与最终常规交易日报价不一致')
+    open_price = float(prices.open.iloc[0])
+    if high < max(open_price, close, low) or low > min(open_price, close, high):
+        raise ValueError('备用日线OHLC关系无效')
+    # The quoted session must be the most recent actual market session. Its adjusted
+    # close equals its raw close; all previous Yahoo adjusted bars remain untouched.
+    result = frame.copy()
+    result.loc[day] = [open_price, high, low, close, close, volume]
+    validate_daily(result)
+    return result
+
+
 def fetch_daily(symbol):
     # Explicit timestamps prevent Yahoo's range=max automatic quarterly aggregation.
     params = {"period1": int(pd.Timestamp("2016-01-01", tz="America/New_York").timestamp()),
               "period2": int(pd.Timestamp.now(tz="UTC").timestamp()),
               "interval": "1d", "events": "history", "includeAdjustedClose": "true"}
-    errors = []
+    errors, candidates = [], []
+    expected, schedule = download_session_context(pd.Timestamp.now(tz='UTC').floor('min').isoformat())
     for host in ("query1.finance.yahoo.com", "query2.finance.yahoo.com"):
         try:
             response = requests.get(f"https://{host}/v8/finance/chart/{symbol}", params=params,
                                     headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
             response.raise_for_status()
-            return decode_daily(response.json()), f"Yahoo Chart API {host} (verified 1d)", ""
+            frame = decode_daily(response.json())
+            source = f"Yahoo Chart API {host} (verified 1d)"
+            if not frame.loc[:expected].empty and frame.loc[:expected].index[-1].date().isoformat() == expected:
+                return frame, source, ''
+            candidates.append((frame, source))
         except Exception as exc:
             errors.append(f"{host}: {exc}")
+    if candidates:
+        frame, source = max(candidates, key=lambda pair: pair[0].index[-1])
+        for host in ('query1.finance.yahoo.com', 'query2.finance.yahoo.com'):
+            try:
+                response = requests.get(f'https://{host}/v8/finance/chart/{symbol}',
+                                        params={'range':'5d', 'interval':'60m', 'includePrePost':'false'},
+                                        headers={'User-Agent':'Mozilla/5.0'}, timeout=20)
+                response.raise_for_status()
+                repaired = complete_latest_session(frame, response.json(), expected, schedule)
+                return repaired, source + '; latest 1d OHLCV verified from complete regular session and closing quote', ''
+            except Exception as exc:
+                errors.append(f'{host} completed-session fallback: {exc}')
+        # Preserve its real date. Never relabel an old bar as today's signal.
+        return frame, source, '; '.join(errors)
     return pd.DataFrame(), "", "; ".join(errors)
 
 
@@ -190,6 +264,16 @@ def build_snapshot(symbols=None):
             "records": records, "triggers": today, "history": events, "failures": failures}
 
 
+def snapshot_exit_code(payload, label):
+    records = payload.get('records', [])
+    total = payload.get('stock_pool_count', len(records))
+    fresh = payload.get('success_count', sum(row.get('health') == '正常' for row in records))
+    if not total or fresh / total < .9:
+        print(f'{label}: 新鲜行情覆盖不足 {fresh}/{total}，要求至少90%；真实状态已保存。', flush=True)
+        return 1
+    return 0
+
+
 def main():
     payload = build_snapshot()
     OUTPUT.mkdir(parents=True, exist_ok=True)
@@ -199,7 +283,7 @@ def main():
     temporary.replace(path)
     print(f"super-trend: {payload['success_count']}/{payload['stock_pool_count']} 正常，"
           f"{len(payload['triggers'])} 个最新交易日触发；输出 {path}", flush=True)
-    return 1 if payload["success_count"] == 0 else 0
+    return snapshot_exit_code(payload, 'super-trend')
 
 
 if __name__ == "__main__":

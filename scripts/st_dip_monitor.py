@@ -43,7 +43,7 @@ def main():
     write_json(OUTPUT / 'signals.json', payload)
     print(f"ST-dip: {payload['success_count']}/{payload['stock_pool_count']} 正常，"
           f"{len(payload['triggers'])} 个最新交易日卖出触发", flush=True)
-    return int(payload['success_count'] == 0)
+    return st.snapshot_exit_code(payload, 'ST-dip')
 
 
 if __name__ == '__main__':
