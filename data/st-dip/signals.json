@@ -3,7 +3,7 @@
   "schema_version": 2,
   "data_interval": "1d",
   "latest_date": "2026-11-24",
-  "generated_at_cn": "2026-11-25T11:22:43+08:00",
+  "generated_at_cn": "2026-11-25T13:26:38+08:00",
   "atr_length": 10,
   "multiplier": 3.0,
   "stock_pool_count": 29,
@@ -2913,7 +2913,7 @@
       "data_date": "2016-11-02",
       "signal": "卖出",
       "close": 125.9636,
-      "supertrend": 133.3166
+      "supertrend": 133.3165
     },
     {
       "ticker": "META",
@@ -2940,7 +2940,7 @@
       "ticker": "META",
       "data_date": "2018-01-12",
       "signal": "卖出",
-      "close": 177.6684,
+      "close": 177.6683,
       "supertrend": 187.2776
     },
     {
@@ -2954,21 +2954,21 @@
       "ticker": "META",
       "data_date": "2018-07-26",
       "signal": "卖出",
-      "close": 174.5879,
+      "close": 174.5878,
       "supertrend": 198.3679
     },
     {
       "ticker": "META",
       "data_date": "2019-03-18",
       "signal": "卖出",
-      "close": 158.9476,
+      "close": 158.9477,
       "supertrend": 173.0727
     },
     {
       "ticker": "META",
       "data_date": "2019-05-13",
       "signal": "卖出",
-      "close": 179.8177,
+      "close": 179.8178,
       "supertrend": 195.0648
     },
     {
@@ -2982,7 +2982,7 @@
       "ticker": "META",
       "data_date": "2020-01-30",
       "signal": "卖出",
-      "close": 207.5423,
+      "close": 207.5422,
       "supertrend": 222.0081
     },
     {
@@ -2997,7 +2997,7 @@
       "data_date": "2020-09-10",
       "signal": "卖出",
       "close": 265.5467,
-      "supertrend": 303.6383
+      "supertrend": 303.6384
     },
     {
       "ticker": "META",
@@ -3038,7 +3038,7 @@
       "ticker": "META",
       "data_date": "2022-01-18",
       "signal": "卖出",
-      "close": 315.1317,
+      "close": 315.1318,
       "supertrend": 349.248
     },
     {
@@ -3087,7 +3087,7 @@
       "ticker": "META",
       "data_date": "2024-04-19",
       "signal": "卖出",
-      "close": 477.0118,
+      "close": 477.0117,
       "supertrend": 532.1581
     },
     {
@@ -3095,20 +3095,20 @@
       "data_date": "2024-07-16",
       "signal": "卖出",
       "close": 486.1404,
-      "supertrend": 535.2904
+      "supertrend": 535.2905
     },
     {
       "ticker": "META",
       "data_date": "2024-11-15",
       "signal": "卖出",
       "close": 550.476,
-      "supertrend": 596.355
+      "supertrend": 596.3549
     },
     {
       "ticker": "META",
       "data_date": "2024-12-20",
       "signal": "卖出",
-      "close": 581.9122,
+      "close": 581.9123,
       "supertrend": 639.4467
     },
     {
@@ -3116,13 +3116,13 @@
       "data_date": "2025-02-24",
       "signal": "卖出",
       "close": 664.3196,
-      "supertrend": 727.5012
+      "supertrend": 727.5013
     },
     {
       "ticker": "META",
       "data_date": "2025-07-30",
       "signal": "卖出",
-      "close": 692.3924,
+      "close": 692.3925,
       "supertrend": 737.0073
     },
     {
@@ -3543,7 +3543,7 @@
       "data_date": "2020-01-31",
       "signal": "卖出",
       "close": 51.7619,
-      "supertrend": 58.2342
+      "supertrend": 58.2343
     },
     {
       "ticker": "MU",
@@ -3599,7 +3599,7 @@
       "data_date": "2022-03-04",
       "signal": "卖出",
       "close": 80.0578,
-      "supertrend": 96.909
+      "supertrend": 96.9089
     },
     {
       "ticker": "MU",
@@ -3626,7 +3626,7 @@
       "ticker": "MU",
       "data_date": "2023-06-29",
       "signal": "卖出",
-      "close": 63.4896,
+      "close": 63.4895,
       "supertrend": 70.7128
     },
     {
@@ -3668,7 +3668,7 @@
       "ticker": "MU",
       "data_date": "2024-09-03",
       "signal": "卖出",
-      "close": 88.0126,
+      "close": 88.0125,
       "supertrend": 104.7857
     },
     {
@@ -3690,7 +3690,7 @@
       "data_date": "2024-12-19",
       "signal": "卖出",
       "close": 86.6295,
-      "supertrend": 106.3078
+      "supertrend": 106.3077
     },
     {
       "ticker": "MU",
@@ -3724,7 +3724,7 @@
       "ticker": "MU",
       "data_date": "2026-03-25",
       "signal": "卖出",
-      "close": 381.8108,
+      "close": 381.8107,
       "supertrend": 459.3668
     },
     {
@@ -3949,7 +3949,7 @@
       "data_date": "2021-07-15",
       "signal": "卖出",
       "close": 18.8797,
-      "supertrend": 20.9229
+      "supertrend": 20.9228
     },
     {
       "ticker": "NVDA",
@@ -4025,7 +4025,7 @@
       "ticker": "NVDA",
       "data_date": "2024-06-24",
       "signal": "卖出",
-      "close": 117.7838,
+      "close": 117.7839,
       "supertrend": 138.5754
     },
     {
@@ -4047,7 +4047,7 @@
       "data_date": "2025-01-13",
       "signal": "卖出",
       "close": 132.8826,
-      "supertrend": 149.7288
+      "supertrend": 149.7289
     },
     {
       "ticker": "NVDA",
@@ -4095,7 +4095,7 @@
       "ticker": "ORCL",
       "data_date": "2016-05-04",
       "signal": "卖出",
-      "close": 33.5926,
+      "close": 33.5927,
       "supertrend": 35.2083
     },
     {
@@ -4123,7 +4123,7 @@
       "ticker": "ORCL",
       "data_date": "2016-12-16",
       "signal": "卖出",
-      "close": 33.6832,
+      "close": 33.6831,
       "supertrend": 35.913
     },
     {
@@ -4291,7 +4291,7 @@
       "ticker": "ORCL",
       "data_date": "2021-12-20",
       "signal": "卖出",
-      "close": 85.648,
+      "close": 85.6479,
       "supertrend": 98.6528
     },
     {
@@ -4299,7 +4299,7 @@
       "data_date": "2022-04-22",
       "signal": "卖出",
       "close": 71.7711,
-      "supertrend": 79.089
+      "supertrend": 79.0891
     },
     {
       "ticker": "ORCL",
@@ -4369,14 +4369,14 @@
       "data_date": "2024-12-02",
       "signal": "卖出",
       "close": 177.2518,
-      "supertrend": 191.2098
+      "supertrend": 191.2097
     },
     {
       "ticker": "ORCL",
       "data_date": "2025-01-27",
       "signal": "卖出",
       "close": 155.0321,
-      "supertrend": 184.6771
+      "supertrend": 184.677
     },
     {
       "ticker": "ORCL",
