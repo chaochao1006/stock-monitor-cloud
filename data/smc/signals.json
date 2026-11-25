@@ -3,7 +3,7 @@
   "data_interval": "1d",
   "swing_length": 50,
   "latest_date": "2026-11-24",
-  "generated_at_cn": "2026-11-25T11:20:40+08:00",
+  "generated_at_cn": "2026-11-25T11:22:48+08:00",
   "records": [
     {
       "ticker": "NOK",
@@ -752,13 +752,6 @@
     },
     {
       "ticker": "NOK",
-      "data_date": "2024-08-15",
-      "signal": "Swing BOS",
-      "close": 3.9344,
-      "level": 3.8529
-    },
-    {
-      "ticker": "NOK",
       "data_date": "2025-02-12",
       "signal": "Swing BOS",
       "close": 4.9097,
@@ -916,7 +909,7 @@
       "data_date": "2020-07-27",
       "signal": "Swing CHoCH",
       "close": 26.1546,
-      "level": 25.8984
+      "level": 25.8983
     },
     {
       "ticker": "GLW",
@@ -936,7 +929,7 @@
       "ticker": "GLW",
       "data_date": "2024-10-09",
       "signal": "Swing BOS",
-      "close": 45.2393,
+      "close": 45.2394,
       "level": 44.6099
     },
     {
@@ -1154,7 +1147,7 @@
       "data_date": "2024-10-15",
       "signal": "Swing CHoCH",
       "close": 79.0291,
-      "level": 77.9343
+      "level": 77.9344
     },
     {
       "ticker": "MRVL",
@@ -1272,7 +1265,7 @@
       "ticker": "ORCL",
       "data_date": "2017-06-22",
       "signal": "Swing BOS",
-      "close": 43.6886,
+      "close": 43.6887,
       "level": 40.6386
     },
     {
@@ -1328,7 +1321,7 @@
       "ticker": "ORCL",
       "data_date": "2024-06-12",
       "signal": "Swing BOS",
-      "close": 136.4692,
+      "close": 136.4693,
       "level": 128.6561
     },
     {
@@ -1336,7 +1329,7 @@
       "data_date": "2025-06-12",
       "signal": "Swing BOS",
       "close": 196.4621,
-      "level": 193.7645
+      "level": 193.7644
     },
     {
       "ticker": "NVTS",
@@ -2070,7 +2063,7 @@
       "ticker": "QCOM",
       "data_date": "2018-08-28",
       "signal": "Swing BOS",
-      "close": 56.866,
+      "close": 56.8659,
       "level": 55.0953
     },
     {
@@ -2078,7 +2071,7 @@
       "data_date": "2019-04-17",
       "signal": "Swing BOS",
       "close": 66.502,
-      "level": 62.9099
+      "level": 62.91
     },
     {
       "ticker": "QCOM",
@@ -2106,13 +2099,13 @@
       "data_date": "2021-11-04",
       "signal": "Swing BOS",
       "close": 140.0272,
-      "level": 135.9586
+      "level": 135.9585
     },
     {
       "ticker": "QCOM",
       "data_date": "2023-12-07",
       "signal": "Swing CHoCH",
-      "close": 125.5517,
+      "close": 125.5516,
       "level": 123.909
     },
     {
@@ -2190,13 +2183,13 @@
       "data_date": "2019-03-15",
       "signal": "Swing BOS",
       "close": 108.0187,
-      "level": 107.3461
+      "level": 107.3462
     },
     {
       "ticker": "MSFT",
       "data_date": "2020-06-09",
       "signal": "Swing BOS",
-      "close": 179.7175,
+      "close": 179.7176,
       "level": 179.5777
     },
     {
@@ -2211,7 +2204,7 @@
       "data_date": "2023-04-26",
       "signal": "Swing CHoCH",
       "close": 286.8182,
-      "level": 283.5463
+      "level": 283.5464
     },
     {
       "ticker": "MSFT",
@@ -2231,15 +2224,15 @@
       "ticker": "MSFT",
       "data_date": "2025-05-19",
       "signal": "Swing CHoCH",
-      "close": 453.5023,
-      "level": 449.0975
+      "close": 453.5024,
+      "level": 449.0974
     },
     {
       "ticker": "MSFT",
       "data_date": "2026-11-04",
       "signal": "Swing CHoCH",
       "close": 554.7284,
-      "level": 548.1424
+      "level": 548.1425
     },
     {
       "ticker": "GOOG",
@@ -2273,7 +2266,7 @@
       "ticker": "GOOG",
       "data_date": "2019-04-29",
       "signal": "Swing CHoCH",
-      "close": 63.7749,
+      "close": 63.775,
       "level": 63.0969
     },
     {
@@ -2309,7 +2302,7 @@
       "data_date": "2025-08-25",
       "signal": "Swing CHoCH",
       "close": 208.4291,
-      "level": 207.4846
+      "level": 207.4847
     },
     {
       "ticker": "GOOG",
@@ -2329,7 +2322,7 @@
       "ticker": "AVGO",
       "data_date": "2018-06-15",
       "signal": "Swing BOS",
-      "close": 21.5802,
+      "close": 21.5801,
       "level": 21.5534
     },
     {
@@ -2365,7 +2358,7 @@
       "data_date": "2024-05-15",
       "signal": "Swing BOS",
       "close": 140.2643,
-      "level": 139.8639
+      "level": 139.864
     },
     {
       "ticker": "AVGO",
@@ -2428,14 +2421,14 @@
       "data_date": "2022-12-13",
       "signal": "Swing CHoCH",
       "close": 108.3438,
-      "level": 107.593
+      "level": 107.5929
     },
     {
       "ticker": "AMAT",
       "data_date": "2025-10-01",
       "signal": "Swing CHoCH",
       "close": 216.2165,
-      "level": 211.9851
+      "level": 211.9852
     },
     {
       "ticker": "AMKR",
@@ -2547,14 +2540,14 @@
       "data_date": "2023-12-11",
       "signal": "Swing BOS",
       "close": 71.7483,
-      "level": 70.6511
+      "level": 70.651
     },
     {
       "ticker": "LRCX",
       "data_date": "2024-06-12",
       "signal": "Swing BOS",
       "close": 101.7032,
-      "level": 98.5272
+      "level": 98.5271
     },
     {
       "ticker": "LRCX",
@@ -2567,7 +2560,7 @@
       "ticker": "MU",
       "data_date": "2017-09-11",
       "signal": "Swing BOS",
-      "close": 32.6034,
+      "close": 32.6035,
       "level": 32.1355
     },
     {
@@ -2750,7 +2743,7 @@
       "data_date": "2019-07-18",
       "signal": "Swing CHoCH",
       "close": 105.0651,
-      "level": 100.8894
+      "level": 100.8895
     },
     {
       "ticker": "IBM",
@@ -2771,7 +2764,7 @@
       "data_date": "2022-05-27",
       "signal": "Swing BOS",
       "close": 118.5687,
-      "level": 118.1886
+      "level": 118.1885
     },
     {
       "ticker": "IBM",
@@ -3506,7 +3499,7 @@
       "data_date": "2025-10-01",
       "signal": "Swing CHoCH",
       "close": 161.3315,
-      "level": 155.4273
+      "level": 155.4272
     },
     {
       "ticker": "VRT",
@@ -4051,7 +4044,7 @@
       "ticker": "META",
       "data_date": "2017-02-08",
       "signal": "Swing BOS",
-      "close": 132.9268,
+      "close": 132.9269,
       "level": 132.2335
     },
     {
@@ -4059,7 +4052,7 @@
       "data_date": "2017-10-17",
       "signal": "Swing BOS",
       "close": 174.4393,
-      "level": 173.8252
+      "level": 173.8251
     },
     {
       "ticker": "META",
@@ -4100,22 +4093,22 @@
       "ticker": "META",
       "data_date": "2023-10-11",
       "signal": "Swing BOS",
-      "close": 324.71,
+      "close": 324.7101,
       "level": 323.1054
     },
     {
       "ticker": "META",
       "data_date": "2024-07-05",
       "signal": "Swing BOS",
-      "close": 535.8869,
+      "close": 535.887,
       "level": 527.0064
     },
     {
       "ticker": "META",
       "data_date": "2025-07-31",
       "signal": "Swing BOS",
-      "close": 770.3053,
-      "level": 736.6845
+      "close": 770.3054,
+      "level": 736.6844
     },
     {
       "ticker": "META",
